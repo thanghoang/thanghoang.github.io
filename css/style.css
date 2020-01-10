@@ -251,8 +251,8 @@ a.active {
 	color:#000;
 }
 
-.navbar-default .nav li a:hover
-.navbar-default .nav li a:focus,
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus
 {
     text-decoration: none;
     outline: 0;
@@ -277,15 +277,16 @@ a.active {
 
 .pubTitle
 {
-	width:100%;
-	float:left;
-	color:#003B5C;
+    color: #003B5C;
+	width: 100%;
+	float: left;
 }
+
 .pubAuthor
 {
-	clear:both;
-	margin:0 0 0 30px;
-	float:left;
+	clear: both;
+	margin: 0 0 0 30px;
+	float: left;
 }
 
 .pubLink
