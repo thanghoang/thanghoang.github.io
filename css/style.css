@@ -105,7 +105,7 @@ section {
 
 .section-heading
 {
-	color:#C34500;
+	color:#007852;
 }
 section h2.section-heading {
     margin-top: 0;
@@ -168,7 +168,7 @@ header {
 }
 #group .portfolio-item a:hover
 {
-	color:#C34500;
+	color:#007852;
 }
 
 .updateItem
@@ -231,7 +231,7 @@ a.secondLink:hover
 }
 
 a {
-    color: #C34500;
+    color: #007852;
 	text-decoration:underline;
 }
 
@@ -239,7 +239,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-    color: #C34500;
+    color: #007852;
 
 }
 .pubLink a
@@ -251,8 +251,8 @@ a.active {
 	color:#000;
 }
 
-.navbar-default .nav li a:hover
-.navbar-default .nav li a:focus,
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus
 {
     text-decoration: none;
     outline: 0;
@@ -262,31 +262,33 @@ a.active {
 
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
-    color: #C34500;
+    color: #007852;
     background-color: #fbfbfb;
   /*  background-color: #1ee2e7;*/
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
-    color: #C34500;
+    color: #007852;
     background-color: #fbfbfb;
 }
 
 /* publication decoration */
 
-.pubTitle
-{
-	width:100%;
-	float:left;
-	color:#003B5C;
-}
 .pubAuthor
 {
-	clear:both;
-	margin:0 0 0 30px;
-	float:left;
+	clear: both;
+	margin: 0 0 0 30px;
+	float: left;
 }
+
+.pubTitle2
+{
+    color: #003B5C;
+	width: 100%;
+	float: left;
+}
+
 
 .pubLink
 {
@@ -404,7 +406,7 @@ h3{
 .navbar-default {
     border-color: transparent;
   /*  background-color: #222;*/
-     background-color: #C34500;
+     background-color: #007852;
 
 }
 
@@ -473,7 +475,7 @@ h3{
     .navbar-default.navbar-shrink {
         padding: 5px 0;
         /*background-color: #222;*/
-		background-color: #C34500;
+		background-color: #007852;
 		
     }
 
