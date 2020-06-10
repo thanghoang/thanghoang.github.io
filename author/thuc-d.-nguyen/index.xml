@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Thuc D. Nguyen | Thang Hoang</title>
+    <link>/author/thuc-d.-nguyen/</link>
+      <atom:link href="/author/thuc-d.-nguyen/index.xml" rel="self" type="application/rss+xml" />
+    <description>Thuc D. Nguyen</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 06 Jun 2013 21:42:17 -0700</lastBuildDate>
+    <image>
+      <url>/images/icon_hu94dd35cfef659efa4008271481542408_367278_512x512_fill_lanczos_center_2.png</url>
+      <title>Thuc D. Nguyen</title>
+      <link>/author/thuc-d.-nguyen/</link>
+    </image>
+    
+    <item>
+      <title>Adaptive Cross-Device Gait Recognition Using Mobile Accelerometer</title>
+      <link>/publication/13_jips_gait/</link>
+      <pubDate>Thu, 06 Jun 2013 21:42:17 -0700</pubDate>
+      <guid>/publication/13_jips_gait/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

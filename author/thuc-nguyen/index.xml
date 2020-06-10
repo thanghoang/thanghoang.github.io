@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Thuc Nguyen | Thang Hoang</title>
+    <link>/author/thuc-nguyen/</link>
+      <atom:link href="/author/thuc-nguyen/index.xml" rel="self" type="application/rss+xml" />
+    <description>Thuc Nguyen</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 06 Nov 2017 21:41:33 -0700</lastBuildDate>
+    <image>
+      <url>/images/icon_hu94dd35cfef659efa4008271481542408_367278_512x512_fill_lanczos_center_2.png</url>
+      <title>Thuc Nguyen</title>
+      <link>/author/thuc-nguyen/</link>
+    </image>
+    
+    <item>
+      <title>Improving Gait Cryptosystem Security Using Gray Code Quantization and Linear Discriminant Analysis</title>
+      <link>/publication/17_isc/</link>
+      <pubDate>Mon, 06 Nov 2017 21:41:33 -0700</pubDate>
+      <guid>/publication/17_isc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gait Authentication on Mobile Phone Using Biometric Cryptosystem and Fuzzy Commitment Scheme</title>
+      <link>/publication/15_ijis/</link>
+      <pubDate>Fri, 06 Nov 2015 21:42:28 -0700</pubDate>
+      <guid>/publication/15_ijis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>On the Instability of Sensor Orientation in Gait Verification on Mobile Phone</title>
+      <link>/publication/15_secrypt_gait/</link>
+      <pubDate>Mon, 06 Jul 2015 21:41:02 -0700</pubDate>
+      <guid>/publication/15_secrypt_gait/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Lightweight Gait Authentication on Mobile Phone Regardless of Installation Error</title>
+      <link>/publication/13_ifipsec_gait/</link>
+      <pubDate>Sat, 06 Jul 2013 21:40:53 -0700</pubDate>
+      <guid>/publication/13_ifipsec_gait/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gait Identification Using Accelerometer on Mobile Phone</title>
+      <link>/publication/12_iccais_gait/</link>
+      <pubDate>Thu, 01 Nov 2012 21:28:55 -0700</pubDate>
+      <guid>/publication/12_iccais_gait/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

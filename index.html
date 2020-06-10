@@ -1,839 +1,2117 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en-us" >
 
 <head>
-    <meta charset="UTF-8">
-    <title>Thang Hoang @ Univerisity of South Florida</title>
-    <link rel='stylesheet prefetch' href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
-    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
-    <link rel='stylesheet prefetch' href='https://startbootstrap.com/templates/agency/font-awesome-4.1.0/css/font-awesome.min.css'>
 
-    <link rel="stylesheet" href="css/style.css">
-			<meta name="viewport" content="width=device-width, initial-scale=1.0" /> <! responsive design>
-	
-    <script src='https://www.google.com/recaptcha/api.js'></script>
-	
-	<meta name="google-site-verification" content="asM_I7n63eBJy_5D_PZCJzx8nEvVw0WFU0QT3u4OlJw" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Thang Hoang">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Research Assistant">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#006747">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Solway:wght@400;500&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-68425805-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-68425805-1', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+
+  
+  
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  
+
+  
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Thang Hoang">
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu94dd35cfef659efa4008271481542408_367278_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu94dd35cfef659efa4008271481542408_367278_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Thang Hoang">
+  <meta property="og:url" content="/">
+  <meta property="og:title" content="Thang Hoang">
+  <meta property="og:description" content="Research Assistant"><meta property="og:image" content="/images/icon_hu94dd35cfef659efa4008271481542408_367278_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="/images/icon_hu94dd35cfef659efa4008271481542408_367278_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    <meta property="og:updated_time" content="2020-03-06T21:41:50-07:00">
+  
+
+  
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  },
+  "url": "/"
+}
+</script>
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Thang Hoang</title>
 
 </head>
 
-<body>
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" >
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">THANG HOANG</a>
-            </div>
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden active">
-                        <a href="#page-top"></a>
-                    </li>
-                    <!-- <li class="">
-                        <a class="page-scroll" href="#about">About</a>
-                    </li> -->
-                    <li class="">
-                        <a class="page-scroll" href="#about">ABOUT</a>
-                    </li>
-                
-                    <li class="">
-                        <a class="page-scroll" href="#publication">Publication</a>
-                    </li>
-					<li class="">
-                        <a class="page-scroll" href="#misc">Misc</a>
-                    </li>
-
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
         </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-    <!-- Header -->
-    <header id="page-top" >
-        <div class="container" style="width:100%!important" >
-		<div class ="row">
-            <div class="col-lg-6 col-md-6">
-
-                <div id="myPotrait">
-				
-                   <img src="img/TH.jpg" class="img-responsive"  />
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-5 info">
-                <div class="portfolio-caption">
-                    <span class="name"><b>  Thang Hoang, PhD Student</b></span>
-                    <br/> <a href="http://cse.usf.edu/" style="text-decoration:none">Computer Science and Engineering</a>
-					<br/> <a href="http://usf.edu"  style="text-decoration:none" >University of South Florida</a>
-                    <br/>
-                    <br/> Email: hoangm(at)mail(dot)usf(dot)edu</a>
-                    <br/> <a href="docs/Thang.Hoang.CV.Academic.pdf" >CV</a> - <a href="https://scholar.google.com/citations?user=VCjqqogAAAAJ&hl=en" >Google Scholar</a> - <a href="http://dblp.uni-trier.de/pers/hd/h/Hoang:Thang" >DBLP</a> - <a href="https://www.linkedin.com/in/hoangth/" >Linkedin</a> - <a href="https://github.com/thanghoang/" >Github</a>
-                    
-                </div>
-            </div>
-		</div>
-
-
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
         </div>
-    </header>
-    <content>
-        <!-- News Section -->
-        <section id="news" class="bg-light-gray">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h2 class="section-heading">News</h2>
-                        </div>
-                    </div>
-		<div>
-			<div class="updateItem">
-                            <div class = "updateBullet">&#9679;</div>
-                            <div class ="updateDate updateHighlight">12/08/2019</div>
-                            <div class="updateContent">
-                                Our multi-server ORAM with active security accepted to <a href= "https://www.ndss-symposium.org/">NDSS 2020</a>.
-                            </div>
-                    	</div>
-			
-			<div class="updateItem">
-                            <div class = "updateBullet">&#9679;</div>
-                            <div class ="updateDate updateHighlight">11/30/2019</div>
-                            <div class="updateContent">
-                                Our multi-client ORAM with SGX accepted to <a href= "http://www.codaspy.org/2020/">ACM CODASPY 2020</a>.
-                            </div>
-                    	</div>
-			
-			<div class="updateItem">
-                            <div class = "updateBullet">&#9679;</div>
-                            <div class ="updateDate updateHighlight">10/21/2019</div>
-                            <div class="updateContent">
-                                Our multi-server ORAM framework accepted to <a href= "https://tops.acm.org/">ACM Transactions on Privacy and Security</a>
-                            </div>
-                    	</div>
-			
-			    
-			<div class="updateItem">
-                            <div class = "updateBullet">&#9679;</div>
-                            <div class ="updateDate ">08/30/2019</div>
-                            <div class="updateContent">
-                                POSUP implementation is now <a href="https://github.com/thanghoang/POSUP/">available</a>!
-                            </div>
-                    	</div>
-			    
-			<div class="updateItem">
-                            <div class = "updateBullet">&#9679;</div>
-                            <div class ="updateDate ">08/09/2019</div>
-                            <div class="updateContent">
-                                I will serve as PC in <a href="https://cosdeo.aalto.fi">CoSDEO'20</a> workshop (affiliated with <a href="http://www.percom.org/">PerCom'20</a>).
-                            </div>
-                    	</div>
-					
-					<div class="updateItem">
-                            <div class = "updateBullet">&#9679;</div>
-                            <div class ="updateDate ">05/29/2019</div>
-                            <div class="updateContent">
-                                Our oblivious searchable encryption framework (DBSec'18 extension) got accepted to <a href="https://www.iospress.nl/journal/journal-of-computer-security/">Journal of Computer Security</a>.
-                            </div>
-                    </div>
-					
-					<div class="updateItem">
-                            <div class = "updateBullet">&#9679;</div>
-                            <div class ="updateDate">01/24/2019</div>
-                            <div class="updateContent">
-                                Our paper on <a href="https://eprint.iacr.org/2017/1237.pdf"  class="PubUrl">searchable encryption</a> got accepted to <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=4629386">IEEE Transactions on Services Computing</a>.
-                            </div>
-                    </div>
-					<div class="updateItem">
-                            <div class = "updateBullet">&#9679;</div>
-                            <div class ="updateDate">10/14/2018</div>
-                            <div class="updateContent">
-                                Our paper on <a href="https://eprint.iacr.org/2017/1238.pdf"  class="PubUrl">oblivious data structures</a> got accepted to <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6245519">IEEE Transactions on Cloud Computing</a>.
-                            </div>
-                    </div>
-                        <div class="updateItem">
-                            <div class = "updateBullet">&#9679;</div>
-                            <div class ="updateDate">08/01/2018</div>
-                            <div class="updateContent">
-                                Our paper on <a href="https://eprint.iacr.org/2018/247">oblivious searchable encryption with SGX</a> got accepted to <a href="https://petsymposium.org">PETS 2019</a>.
-                            </div>
-                        </div>
-                        <div class="updateItem">    
-                            <div class = "updateBullet ">&#9679;</div>
-                            <div class ="updateDate">06/25/2018</div>
-                            <div class="updateContent">
-                                    I joined S&P group at  <a  href="https://www.bosch.us/">Robert Bosch RTC</a> in Pittburgh, PA 
-                                    for 2018 summer internship.
-                            </div>
-                        </div>    
-                        <div class="updateItem">
-                            <div class = "updateBullet">&#9679;</div>
-                            <div class ="updateDate">05/21/2018</div>
-                            <div class="updateContent">
-                                    Our paper on <a href="pub/c/2018_DBSec.pdf">oblivious distributed searchable encryption</a> 
-                                    got accepted to <a href="https://dbsec18.unibg.it/">IFIP DBSec 2018</a>. 
-                                    We got <span class ="researchHighlight">Best Paper Award</span>!       
-                            </div>
-                        </div>
-                        <div class="updateItem">   
-                            <div class = "updateBullet">&#9679;</div>
-                            <div class ="updateDate">01/08/2018</div>
-                            <div class="updateContent">
-                                    Our paper on <a href="https://eprint.iacr.org/2017/1222">forward-private sublinear searchable encryption</a> 
-                                    got accepted to <a href="http://icc2018.ieee-icc.org">IEEE ICC 2018</a>.         
-                            </div>
-                        </div>
-                        <div class="updateItem">
-                            <div class = "updateBullet">&#9679;</div>
-                            <div class ="updateDate">12/26/2017</div>
-                            <div class="updateContent">
-                                    The <a href="https://github.com/thanghoang/GaitAuth">dataset and implementation</a> of 
-                                    my paper on <a href="https://arxiv.org/abs/1602.03199">gait authentication</a> are now available online. 
-                            </div>
-                        </div>
-                        <div class="updateItem">
-                            <div class = "updateBullet">&#9679;</div>
-                            <div class ="updateDate">12/25/2017</div>
-                            <div class="updateContent">
-                                    The <a href="https://github.com/thanghoang/ODSE">implementation</a> of our paper on 
-                                    <a href="https://eprint.iacr.org/2017/1158">oblivious distributed searchable encryption</a> 
-                                    is now available online.                           
-                            </div>
-                        </div>
-                        <div class="updateItem">    
-                            <div class = "updateBullet ">&#9679;</div>
-                            <div class ="updateDate">12/24/2017</div>
-                            <div class="updateContent">
-                                    The <a href="https://github.com/thanghoang/IM-DSSE"> implmenetation</a> of our 
-                                    <a href="https://eprint.iacr.org/2017/1237">dynamic searchable encryption framework</a> 
-                                    is now available online.</li>
-							</div>
-                        </div>
-                        <div class="updateItem">
-                            <div class = "updateBullet ">&#9679;</div>
-                            <div class ="updateDate">08/26/2017</div>
-                            <div class="updateContent">
-                                    Our paper on <a href="pub/c/2017_ISC.pdf">gait biocrypto</a> 
-                                    got accepted to <a href="http://isc2017.vgu.edu.vn"> ISC 2017</a>.
-                            </div>
-                        </div>
-                        <div class="updateItem">
-                            <div class = "updateBullet ">&#9679;</div>
-                            <div class ="updateDate">08/04/2017</div>
-                            <div class="updateContent">
-                                    I will be on PC for <a href="https://cosdeo.github.io/"> CosDEO  2018 workshop</a> 
-                                    (affiliated with <a href="http://www.percom.org/">PerCom 2018</a>).
-							</div>
-                        </div>
-                        <div class="updateItem">
-                            <div class = "updateBullet">&#9679;</div>
-                            <div class ="updateDate">08/03/2017</div>
-                            <div class="updateContent">
-                                    Our paper on <a href="https://eprint.iacr.org/2017/819">multi-server ORAM</a> 
-                                    got accepted to <a  href="https://ccs2017.sigsac.org">CCS 2017</a>. 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+      </div>
 
-        <!-- Services Section -->
-        <section id="about" >
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h2 class="section-heading">Short Bio</h2>
-I am a PhD student  at <a href="http://usf.edu/" >University of South Florida</a> advised by Dr. <a class="attila">Attila A. Yavuz</a>. I am studying cryptography and machine learning, with special interests in privacy-enhancing technologies (i.e., Searchable Encryption, ORAM, Biometric Cryptosystems).
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
 
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h3 class="section-heading">Professional Experience</h3>
-                    </div>
-                </div>
-                <div class="row">
-                        <ul>
-                            <li>
-                                <b>Research Intern</b>, <a  href="https://www.bosch.us/"  class="secondLink">Robert Bosch RTC</a>, Pittsburgh, PA, USA (Summer 2016, Summer 2018)<br/> 
-								<u>Mentor</u>: Dr. <a class ="jorge" href="">Jorge Guajardo</a>
-								
-                            </li>
-                            <li>
-                                <b>Research Scientist</b>, <a href="http://redone-technologies.com/en/" class="secondLink">RedOne Technologies Co. Ltd.</a>, Gwangju, South Korea (2014)</li>
-                            <li>
-                                <b>Lecturer</b>, <a href="http://stu.edu.vn/en/" class="secondLink">Saigon Technology University</a>, HCMC, Vietnam (2010-2012, 2014-2015)</li>
-                        </ul>
-                </div>
-				<div class="row">
-                    <div class="col-lg-12">
-                        <h3 class="section-heading">Education</h3>
-                    </div>
-                </div>
-					<ul class="list-unstyled">
-                        <li>
-                            <b> PhD student, Computer Science (2019 - present) </b>
-                        </li>
-                        <ul class="just-padding">
-                            <li> <a class ="secondLink" href="http://www.usf.edu/" > University of South Florida</a>, Tampa, Florida, United States </li>
-                            <li> <u>Advisor</u>: Dr. <a class ="attila">Attila A. Yavuz</a> </li>
+    </section>
+    <section class="section-search-results">
 
-                        </ul>
-                    </ul>
-                    <ul class="list-unstyled">
-                        <li>
-                            <b> PhD student, Computer Science (2015 - 2018) </b>
-                        </li>
-                        <ul class="just-padding">
-                            <li> <a class ="secondLink" href="http://www.oregonstate.edu/" > Oregon State University</a>, Corvallis, Oregon, United States </li>
-                            <li> <u>Advisor</u>: Dr. <a class ="attila">Attila A. Yavuz</a> </li>
+      <div id="search-hits">
+        
+      </div>
 
-                        </ul>
-                    </ul>
-                        <ul class="list-unstyled">
-                            <li>
-                                <b> MS, Computer Science (2012 - 2014) </b>
-                            </li>
-                            <ul class="just-padding">
-                                <li> <a class ="secondLink" href="http://www.jnu.ac.kr/" > Chonnam National University</a>, Gwangju, South Korea </li>
-                                <li> <u>Advisor</u>: Dr. Deokjai Choi </li>
+    </section>
+  </div>
+</aside>
 
-                            </ul>
-                        </ul>
-                        <ul class="list-unstyled">
-                            <li>
-                                <b> BS, Computer Science (2006 - 2010) </b>
-                            </li>
-                            <ul class="just-padding">
-                                <li> <a class ="secondLink" href="http://web.hcmus.edu.vn/en/index.php" > University of Natural Sciences</a>, HCMC, Vietnam </li>
-								<li> <u>Advisor</u>: Dr. Thuc D. Nguyen
-                            </ul>
-                        </ul>
-                    </div>
-                </div>
-				
 
-               
+  
 
-            </div>
-        </section>
 
-        <!-- Publication Section -->
-        <section id="publication"  class="bg-light-gray">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h2 class="section-heading">Publication</h2>
-                        <h4 class="section-subheading text-muted"> For a complete list, check out my <a href="https://scholar.google.com/citations?user=VCjqqogAAAAJ&hl=en" style="text-decoration:underline;">Google scholar</a>.</h4>
-                    </div>
-                </div>
-		    
-		    <div class="pubWrap">
-                                <div class="pubTitle2"> [C] MACAO: A Maliciously-Secure and Client-Efficient Active ORAM Framework </div>
-                                <div class="pubAuthor">   <b>Thang Hoang</b>, <a href="" class ="jorge authorLink">Jorge Guajardo</a>, <a href="" class ="attila authorLink">Attila A. Yavuz</a></div>
-			    	<div class="pubVenue">NDSS 2020 </div>
-                                <div class="pubLink">
-					<span class="outerPubUrl">
-                                            <a href="pub/c/2020_NDSS_MACAO.pdf"  class="PubUrl">PDF</a>
-                                        </span>
-					<span class ="outerPubUrl"> <a href="pub/c/slide/2020_NDSS.pptx"   class ="PubUrl" >[slide]</a></span>
-					<span class="outerPubUrl">
-                                            <a href="https://github.com/thanghoang/MACAO/"    class ="PubUrl" >[artifact]</a>
-                                        </span>
-					
-                                </div>
-			</div>
-		    
-		    
-		    
-		    <div class="pubWrap">
-                                <div class="pubTitle2"> [C] MOSE: Practical Multi-User Oblivious Storage via Secure Enclaves </div>
-                                <div class="pubAuthor">   <b>Thang Hoang</b>, <a href="" class ="rouzbeh authorLink">Rouzbeh Behnia</a>, <a href="" class ="yeongjin authorLink">Yeongjin Jang</a>, <a href="" class ="attila authorLink">Attila A. Yavuz</a></div>
-			    	<div class="pubVenue">ACM CODASPY 2020 </div>
-                                <div class="pubLink">
-					<span class="outerPubUrl">
-                                            <a href="pub/c/2020_CODASPY_MOSE.pdf"  class="PubUrl">PDF</a>
-                                        </span>
-                                </div>
-			</div>
-		    
-		    <div class="pubWrap">
-                                <div class="pubTitle2"> [J] A Multi-server ORAM Framework with Constant Client Bandwidth Blowup </div>
-                                <div class="pubAuthor">   <b>Thang Hoang</b>, <a href="" class ="attila authorLink">Attila A. Yavuz</a>, <a href="" class ="jorge authorLink">Jorge Guajardo</a></div>
-                                <div class="pubVenue">ACM Transactions on Privacy and Security 2020</div>
-                                <div class="pubLink">
-					<span class="outerPubUrl">
-                                            <a href="pub/j/2020_ACMTOPS_S3ORAM.pdf"  class="PubUrl">PDF</a>
-                                        </span>
-					<span class="outerPubUrl">
-                                            <a href="https://github.com/thanghoang/S3ORAM/tree/Extension" class ="PubUrl" >[artifact]</a>
-                                        </span>
-                                </div>
-			</div>
-				
-			<div class="pubWrap">
-                                <div class="pubTitle2"> [J] A Multi-server Oblivious Dynamic Searchable Encryption Framework </div>
-                                <div class="pubAuthor">   <b>Thang Hoang</b>, <a href="" class ="attila authorLink">Attila A. Yavuz</a>, <a href="" class ="betul authorLink">F. Bet&uuml;l Durak</a>, <a href="" class ="jorge authorLink">Jorge Guajardo</a></div>
-                                <div class="pubVenue">Journal of Computer Security 2019 </div>
-                                <div class="pubLink">
-					<span class="outerPubUrl">
-                                            <a href="pub/j/2019_JCS.pdf"  class="PubUrl">PDF</a>
-                                        </span>
-					<span class="outerPubUrl">
-                                            <a href="https://github.com/thanghoang/ODSE/"    class ="PubUrl" >[artifact]</a>
-                                        </span>
-                                </div>
-			</div>
-						
-			<div class="pubWrap">
-                                <div class="pubTitle2"> [J] A Secure Searchable Encryption Framework for Privacy-Critical Cloud Storage Services </div>
-                                <div class="pubAuthor">   <b>Thang Hoang</b>, <a href="" class ="attila authorLink">Attila A. Yavuz</a>, <a href="" class ="jorge authorLink">Jorge Guajardo</a></div>
-                                <div class="pubVenue">IEEE Transactions on Services Computing 2019 </div>
-                                <div class="pubLink">
-                                        <span class="outerPubUrl">
-                                            <a href="pub/j/2019_TSC.pdf"  class="PubUrl">PDF</a>
-                                        </span>
-                                        <span class="outerPubUrl">
-                                            <a href="https://github.com/thanghoang/IM-DSSE"    class ="PubUrl" >[artifact]</a>
-                                        </span>
-                                    
-                                </div>
-			</div>
-                        
-						
-                        <div class="pubWrap">
-                                <div class="pubTitle2"> [C] Hardware-Supported ORAM in Effect: Practical Oblivious Search and Update on Very Large Dataset</div>
-                                <div class="pubAuthor">   <b>Thang Hoang</b>, <a href="" class ="ozgur authorLink">Muslum O. Ozmen</a>, <a href="" class ="yeongjin authorLink">Yeongjin Jang</a>, <a href="" class ="attila authorLink">Attila A. Yavuz</a></div>
-                                <div class="pubVenue">PETS 2019</span>
-                                </div> 
-                                <div class="pubLink">
-                                    <span class="outerPubUrl">
-                                        <a href="https://www.degruyter.com/downloadpdf/j/popets.2019.2019.issue-1/popets-2019-0010/popets-2019-0010.pdf"  class="PubUrl">PDF</a> 
-                                    </span>   
-				    <span class ="outerPubUrl"> <a href="pub/c/slide/2019_PETS.pptx"   class ="PubUrl" >[slide]</a></span> 
-                                    <span class="outerPubUrl">
-                                        <a href="https://github.com/thanghoang/POSUP/"  class ="PubUrl" >[artifact]</a>
-                                    </span>
-                                </div>
-                        </div>
-                        <div class="pubWrap">
-                            <div class="pubTitle2"> [J]  Efficient Oblivious Data Structures for Database Services on the Cloud </div>
-                            <div class="pubAuthor">   <b>Thang Hoang</b>, <a href="" class ="ceyhun authorLink">Ceyhun D. Ozkaptan</a>, <a href="" class ="gabe authorLink">Gabriel Hackebeil</a>, <a href="" class ="attila authorLink">Attila A. Yavuz</a> </div>
-                            <div class="pubVenue">IEEE Transactions on Cloud Computing 2018</div>
-                            <div class="pubLink">
-                                    <span class="outerPubUrl">
-                                        <a href="pub/j/2018_TCC.pdf"  class="PubUrl">PDF</a>
-                                    </span>
-				     <span class="outerPubUrl">
-                                        <a href="https://github.com/ceyhunozkaptan/OMAT-OTREE"  class ="PubUrl" >[artifact]</a>
-                                    </span>
-				    
-				    
-                                </div>
-                        </div>
-                        <div class="pubWrap">
-                                <div class="pubTitle2"> [C] Oblivious Dynamic Searchable Encryption on Distributed Cloud Systems</div>
-                                <div class="pubAuthor">   <b>Thang Hoang</b>, <a href="" class ="attila authorLink">Attila A. Yavuz</a>, <a href="" class ="betul authorLink">F. Bet&uuml;l Durak</a>, <a href="" class ="jorge authorLink">Jorge Guajardo</a></div>
-                                <div class="pubVenue">IFIP DBSec 2018 <span class ="researchHighlight">*Best Paper Award*</span>
-                                </div> 
-                                <div class="pubLink">
-                                        <span class="outerPubUrl">
-                                            <a href="pub/c/2018_DBSec.pdf"  class="PubUrl">PDF</a>
-                                        </span>
-                                        <span class="outerPubUrl">
-                                                <a href="https://github.com/thanghoang/ODSE"    class ="PubUrl" >[artifact]</a>
-                                            </span>
-                                    </div>
-                        </div>
 
-                        <div class="pubWrap">
-                                <div class="pubTitle2"> [C]  Forward-Private Dynamic Searchable Symmetric Encryption with Efficient Search </div>
-                                <div class="pubAuthor">  <a href="" class ="ozgur authorLink">Muslum O. Ozmen</a>, <b>Thang Hoang</b>, <a href="" class ="attila authorLink">Attila A. Yavuz</a> </div>
-                                <div class="pubVenue">IEEE ICC 2018</div>
-                                <div class="pubLink">
-                                        <span class="outerPubUrl">
-                                            <a href="https://eprint.iacr.org/2017/1222.pdf"  class="PubUrl">PDF</a>
-                                        </span>
-                                    </div>
-                        </div>
 
-									<div class = "pubWrap">
-										<div class ="pubTitle2">
-											[C] Improving Gait Cryptosystem Security Using Gray Code Quantization and Linear Discriminant Analysis
-										</div>
-										<div class ="pubAuthor">
-											Lam Tran, <b>Thang Hoang</b>, Thuc Nguyen, Deokjai Choi
-										</div>
-										<div class ="pubVenue">
-											ISC 2017
-										</div>
-										<div class ="pubLink">
-											<span class ="outerPubUrl"> <a href="pub/c/2017_ISC.pdf" class ="PubUrl" >PDF</a></span>
-											<span class ="outerPubUrl"> <a href="pub/c/slide/2017_ISC.pptx"   class ="PubUrl" >[slide]</a></span> 
-										</div>
-									</div>
 
-									<div class = "pubWrap">
-										<div class ="pubTitle2">
-											[C] S<sup>3</sup>ORAM: A Computation-Efficient and Constant Client Bandwidth Blowup ORAM with Shamir Secret Sharing
-										</div>
-										<div class ="pubAuthor">
-											<b>Thang Hoang</b>, <a href="" class="ceyhun authorLink">Ceyhun D. Ozkaptan</a>, <a href="" class ="attila authorLink">Attila A. Yavuz</a>, <a href="" class ="jorge authorLink">Jorge Guajardo</a>, <a href="" class="tam authorLink">Tam Nguyen</a>
-										</div>
-										<div class ="pubVenue">
-											ACM CCS 2017
-										</div>
-										<div class ="pubLink">
-                                            <span class ="outerPubUrl"><a class ="PubUrl" href="https://eprint.iacr.org/2017/819" >PDF</a></span>
-                                            <span class ="outerPubUrl"> <a href="pub/c/slide/2017_S3ORAM.pptx"   class ="PubUrl" >[slide]</a></span>
-                                            <span class ="outerPubUrl"> <a href="https://www.youtube.com/watch?v=v2KD2wF-SQI" class ="PubUrl" >[talk]</a></span>
-                                            <span class ="outerPubUrl"><a href="https://github.com/thanghoang/S3ORAM"    class ="PubUrl" >[artifact]</a></span>
 
-										</div>
-									</div>
-									
-									<div class = "pubWrap">
-										<div class ="pubTitle2">
-											[C] Practical and Secure Dynamic Searchable Encryption via Oblivious Access on Distributed Data Structure
-										</div>
-										<div class ="pubAuthor">
-											<b>Thang Hoang</b>, <a href="" class ="attila authorLink">Attila A. Yavuz</a>, <a href="" class ="jorge authorLink">Jorge Guajardo</a>
-										</div>
-										<div class ="pubVenue">
-											ACSAC 2016
-										</div>
-										<div class ="pubLink">
-											<span class ="outerPubUrl"> <a  href="pub/c/2016_ACSAC.pdf"  class ="PubUrl " >PDF</a></span> <span class ="outerPubUrl"> <a href="pub/c/slide/2016_ACSAC.pptx"   class ="PubUrl" >[slide]</a></span> 
-										</div>
-									</div>
-									
-									
-									<div class = "pubWrap">
-										<div class ="pubTitle2">
-											[C] On the Instability of Sensor Orientation in Gait Verification on Mobile Phone
-										</div>
-										<div class ="pubAuthor">
-											<b>Thang Hoang</b>, Deokjai Choi, Thuc Nguyen
-										</div>
-										<div class ="pubVenue">
-											SECRYPT 2015 
-										</div>
-										<div class ="pubLink">
-											<span class ="outerPubUrl"> <a  href="pub/c/2015_SECRYPT_rv1.pdf"  class ="PubUrl " >PDF</a></span> <span class ="outerPubUrl"> <a href="pub/c/slide/2015_SECRYPT.pptx"   class ="PubUrl" >[slide]</a></span> <span class ="outerPubUrl"> <a href="https://github.com/thanghoang/GaitAuth"   class ="PubUrl" >[artifact]</a></span>
-										</div>
-									</div>
-									
-									<div class = "pubWrap">
-										<div class ="pubTitle2">
-											[J] Gait Authentication on Mobile Phone Using Biometric Cryptosystem and Fuzzy Commitment Scheme
-										</div>
-										<div class ="pubAuthor">
-											<b>Thang Hoang</b>, Thuc Nguyen, Deokjai Choi
-										</div>
-										<div class ="pubVenue">
-											International Journal of Information Security 2015
-										</div>
-										<div class ="pubLink">
-											<span class ="outerPubUrl"> <a  href="pub/j/2015_IJIS.pdf"   class ="PubUrl" >PDF</a></span>
-										</div>
-									</div>
-                                    
-                                    <div class = "pubWrap">
-										<div class ="pubTitle2">
-											[J] Secure and Privacy Enhanced Gait Authentication on Smart Phone
-										</div>
-										<div class ="pubAuthor">
-											<b>Thang Hoang</b>, Deokjai Choi
-										</div>
-										<div class ="pubVenue">
-											The Scientific World Journal 2014
-										</div>
-										<div class ="pubLink">
-											<span class ="outerPubUrl"> <a  href="pub/j/2014_TSWJ.pdf"   class ="PubUrl" >PDF</a></span> 
-										</div>
-                                    </div>
-                                    
-                                    <div class = "pubWrap">
-										<div class ="pubTitle2">
-											[J] Adaptive Cross-Device Gait Recognition Using Mobile Accelerometer
-										</div>
-										<div class ="pubAuthor">
-											<b>Thang Hoang</b>, Thuc Nguyen, Chuyen Luong, Son Do, Deokjai Choi
-										</div>
-										<div class ="pubVenue">
-											Journal of Information Processing System 2013 (KIPS) 
-										</div>
-										<div class ="pubLink">
-											<span class ="outerPubUrl"> <a  href="pub/j/2013_JIPS.pdf"   class ="PubUrl" >PDF</a></span> 
-										</div>
-                                    </div>
 
-                                     <div class = "pubWrap">
-										<div class ="pubTitle2">
-											[C] A Lightweight Gait Authentication on Mobile Phone Regardless of Installation Error
-										</div>
-										<div class ="pubAuthor">
-											<b>Thang Hoang</b>, Deokjai Choi, <a href="" class ="viet authorLink">Viet Vo</a>, Anh Nguyen, Thuc Nguyen
-										</div>
-										<div class ="pubVenue">
-											IFIP SEC 2013
-										</div>
-										<div class ="pubLink">
-											<span class ="outerPubUrl"> <a  href="pub/c/2013_IFIPSEC.pdf"   class ="PubUrl" >PDF</a></span> 
-										</div>
-									</div>
-									
-									<div class = "pubWrap">
-										<div class ="pubTitle2">
-											[C] Gait Identification Using Accelerometer on Mobile Phone
-										</div>
-										<div class ="pubAuthor">
-											<b>Thang Hoang</b>, <a href="" class ="viet authorLink">Viet Vo</a>, Thuc Nguyen, Deokjai Choi
-										</div>
-										<div class ="pubVenue">
-											ICCAIS 2012 <span class ="researchHighlight"> *Best Paper Award*</span>
-										</div>										
-										<div class ="pubLink">
-											<span class ="outerPubUrl"> <a href="pub/c/2012_ICCAIS.pdf"   class ="PubUrl" >PDF</a></span>
-                                            <span class ="outerPubUrl"> <a href="pub/c/slide/2012_ICCAIS.pptx"   class ="PubUrl" >[slide]</a></span> 
-                                        </div>
-									</div>
-				
-				<div class="row">
-                    <div class="col-lg-12">
-                        <h3 class="section-heading">PATENT</h3>
-						<div class = "pubWrap">
-										<div class ="pubTitle2">
-											[P] Forward-Private Dynamic Searchable Symmetric Encryption with Efficient Search
-										</div>
-										<div class ="pubAuthor">
-											Muslum O. Ozmen, <b>Thang Hoang</b>, Attila A. Yavuz
-										</div>
-										<div class ="pubVenue">
-											OSU-17-55, Provisional Application No: 62/572,339, Submitted: October 10, 2017
-										</div>
-										
-						</div>
-						
-						<div class = "pubWrap">
-										<div class ="pubTitle2">
-											[P] Device and Method for Authentication System using Prime Number
-										</div>
-										<div class ="pubTitle2">
-											소수 특징을 이용한  인증  제어 장치 및 방법
-										</div>
-										<div class ="pubAuthor">
-											Deokjai Choi, <b>Thang Hoang</b>, Thuc D. Nguyen, Thu D. Tran
-										</div>
-										<div class ="pubVenue">
-											Korea Patent 10-1754796, Filed: September 17, 2014, <a href="pub/p/10-1754796.pdf"   class ="PubUrl" >Issued: June 30, 2017</a>
-										</div>
-						</div>
-						
-						<div class = "pubWrap">
-										<div class ="pubTitle2">
-										
-											[P] Secure Authentication System, and its Device and Method for Biometric Information, Derived Information from User Characteristic Information 
-										</div>
-										<div class ="pubTitle2">
-											파생된 정보 또는 사용자 특징 정보를 이용한 안전한 인증 시스템, 그 시스템에서의 인 증 제어를 위한 장치 및 방법
-										</div>
-										<div class ="pubAuthor">
-											Deokjai Choi, <b>Thang Hoang</b>
-										</div>
-										<div class ="pubVenue">
-											Korea Patent 10-1622253, Filed: July 09, 2014, <a href="pub/p/10-1622253.pdf">Issued: May 12, 2016</a>
-										</div>										
-						</div>
-						
-                        <div class = "pubWrap">
-										<div class ="pubTitle2">
-											[P] Gait Authentication System and its Device and Method
-										</div>
-										<div class ="pubTitle2">
-											보행 인증을 위한 시스템 및 그 시스템에서의 보행 인증을 위한 장치 및 방법
-										</div>
-										<div class ="pubAuthor">
-											<b>Thang Hoang</b>, Deokjai Choi, Chilwoo Lee
-										</div>
-										<div class ="pubVenue">
-											Korea Patent 10-1622252, Filed: December 11, 2013, <a href="pub/p/10-1622252.pdf" class ="PubUrl" >Issued: May 12, 2016</a>
-										</div>										
-						</div>
-                    </div>
-                </div>
-                
-                <!--<div class="row">
-                        <div class="col-lg-12">
-                            <h3 class="section-heading">OTHER WRITE-UP</h3>
-                            
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main" >
+  <div class="container">
 
-                          
-                        </div>
-                    </div>
-				-->
-                
-                    
-                
-            </div>
-        </section>
-		
-		
-        <!-- Service Section -->
-        <section id="misc">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h2 class="section-heading">Services</h2>
-                        <h4 class="section-subheading text-muted">I am fortunate to get involved with some venues and journals as a reviewer and program committee member</h4>
-                    </div>
-                </div>
-                <div class="row" style="border-top:1px solid rgba(34, 25, 25, 0.2);">
-                    <div class="col-lg-3 ">
-                        <h3 class="section-heading">Program Committee
-                            <br/>
-                        </h3>
-                    </div>
-                </div>
-				<div class="row">
-                <ul >
-					<li>CoSDEO Workshop (2018, 2020) (affiliated with Percom 2018, 2020) </li>                 
-                </ul>	
-				</div>
-				<div class="row" style="border-top:1px solid rgba(34, 25, 25, 0.2);">
-				    <div class="col-lg-6 ">
-					<h4 class="section-subheading"> </h4>
-                        <h3 class="section-heading">Journal
-                            <br/>
-                        </h3>
-                    </div>
-                </div>
-				<div class="row">
-                <ul>
-                    <li>ACM Transactions on Privacy and Security (2017*,2020*)</li>
-                    <li>IEEE Transactions on Dependable and Secure Computing (2017*, 2018*)</li>
-                    <li>IEEE Transactions on Information Forensics and Security (2018*)</li>
-		    <li>IEEE Transactions on Cloud Computing (2019)</li>
-		    <li>IEEE Transactions on Cybernetics (2019*)</li>
-                    <li>Elsevier Computers & Security (20202)</li>                 
-		    <li>Elsevier Information Sciences (2017)</li>                 
-		    <li>Elsevier Journal of Information Security and Applications (2019)</li>
-		
-                </ul>
-				<h4 class="section-subheading text-muted">(* External reviewer)</h4>
-				</div>
-				<div class="row" style="border-top:1px solid rgba(34, 25, 25, 0.2);">
-					<div class="col-lg-6 ">
-						<h3 class="section-heading">Conference<br/></h3>
-					</div>
-				</div>
-				<div class="row">
-				<ul>
-                    <li>ACSAC (2017-2019)</li>
-                    <li>ASIACRYPT (2018)</li>
-                    <li>EUROCRYPT (2018)</li>
-		    <li>IEEE CNS (2019) </li>
-		    <li>IEEE SmartGridComm (2019)</li>
-                    <li>IFIP DBSec (2018-2019)</li>
-		    <li>WWW (2019)</li>
-		    
-				</ul>
-                </div>
-			</div>
-		</div>
-		</section>
-		<section id="award" class="bg-light-gray">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h2 class="section-heading">Awards</h2>
-                    </div>
-                </div>
-				<div class ="row">
-					<ul class ="outerList">
-						<li>	Student Conferenceship Travel Grant (ACSAC 2016)</li>
-						<li>National Research Foundation of Korea Scholarship</li>
-						<li>Ministry of Science, ICT&Future Planning Research Scholarship</li>
-						<li>	Global IT Government (NIPA) Scholarship</li>
-						<li>Brain Korea 21 (BK21 & BK21+) Research Scholarship</li>
-					</ul>					
-				</div>
-			</div>
-        </section>
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Thang Hoang</a>
+    </div>
+    
 
-    </content>
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright © Thang Hoang</span>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        <li>
-							Template credited to <a href="https://codepen.io/celincky/" >celincky@codepen.io</a>
-                            <a href="#">
-                                
-                            </a>
-                        </li>
-                 
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li>
-                           Last Update: 11/23/2017
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Thang Hoang</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about" data-target="#about"><span class="navItem">Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#publications" data-target="#publications"><span class="navItem">Publication</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact" data-target="#contact"><span class="navItem">Contact</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/files/Thang.Hoang.CV.Academic.pdf"><span class="navItem">CV</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search " href="#" aria-label="Search"><i class="fas fa-search navItem" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item dropdown theme-dropdown" >
+        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true" >
+          <i class="fas fa-palette navItem" aria-hidden="true" ></i>
+        </a>
+        <div class="dropdown-menu" >
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto ">
+            <span>Automatic</span>
+          </a>
         </div>
-    </footer>
-	</body>
-	
-	<!-- Google Analytics -->
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      </li>
+      
 
-	  ga('create', 'UA-68425805-1', 'auto');
-	  ga('send', 'pageview');
+      
 
-	</script>
+    </ul>
+
+  </div>
+</nav>
 
 
-    <!-- jQuery Version 1.11.0 -->
-    <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/jquery-1.11.0.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/classie.js"></script>
-    <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/cbpAnimatedHeader.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/jqBootstrapValidation.js"></script>
-    <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/contact_me.js"></script>
+  
 
 
 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
-<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
-
-<script src="js/index.js"></script>
 
 
+
+
+
+
+
+
+<span class="js-widget-page d-none"></span>
+
+
+
+
+
+  
+  
+  
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="about" class="home-section wg-about   "  >
+    <div class="container">
+      
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+  <div class="col-12 col-lg-4">
+    <div id="profile">
+      
+      
+      <img class="avatar avatar-circle" src="/author/thang-hoang/avatar_hu9663fda654b0980736a6bdf16a4a92d4_1052737_270x270_fill_q90_lanczos_center.jpg" alt="Thang Hoang">
+      
+
+      <div class="portrait-title">
+        <h2>Thang Hoang</h2>
+        <h3>Research Assistant</h3>
+
+        
+        <h3>
+          
+          <span>University of South Florida</span>
+          
+        </h3>
+        
+      </div>
+
+      <ul class="network-icon" aria-hidden="true">
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a href="/#contact" >
+            <i class="fas fa-envelope big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a href="https://scholar.google.com/citations?user=VCjqqogAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+            <i class="ai ai-google-scholar big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a href="https://github.com/thanghoang" target="_blank" rel="noopener">
+            <i class="fab fa-github big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a href="http://dblp.uni-trier.de/pers/hd/h/Hoang:Thang" target="_blank" rel="noopener">
+            <i class="ai ai-dblp big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a href="https://www.linkedin.com/in/hoangth/" target="_blank" rel="noopener">
+            <i class="fab fa-linkedin-in big-icon"></i>
+          </a>
+        </li>
+        
+      </ul>
+
+    </div>
+  </div>
+  <div class="col-12 col-lg-8">
+
+    
+    <h1>About</h1>
+
+    <p>I am a PhD Candidate in the department of 
+<a href="https://www.usf.edu/engineering/cse/" target="_blank" rel="noopener">Computer Science and Engineering</a> at the 
+<a href="https://www.usf.edu" target="_blank" rel="noopener">University of South Florida</a>. I am studying cryptography and machine learning, with special interests in privacy-enhancing technologies (i.e., Searchable Encryption, ORAM, Biometric Cryptosystems).</p>
+
+
+
+    
+    
+    <div class="row">
+
+      
+      <div class="col-md-5">
+        <h3>Interests</h3>
+        <ul class="ul-interests">
+          
+          <li>Applied Cryptograhy</li>
+          
+          <li>Security and Privacy</li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="col-md-7">
+        <h3>Education</h3>
+        <ul class="ul-edu fa-ul">
+          
+          <li>
+            <i class="fa-li fas fa-graduation-cap"></i>
+            <div class="description">
+              <p class="course">PhD in Computer Science, 2020</p>
+              <p class="institution">University of South Florida</p>
+            </div>
+          </li>
+          
+          <li>
+            <i class="fa-li fas fa-graduation-cap"></i>
+            <div class="description">
+              <p class="course">MS in Computer Science, 2014</p>
+              <p class="institution">Chonnam National University</p>
+            </div>
+          </li>
+          
+          <li>
+            <i class="fa-li fas fa-graduation-cap"></i>
+            <div class="description">
+              <p class="course">BS in Computer Science, 2010</p>
+              <p class="institution">University of Science, VNU-HCMC</p>
+            </div>
+          </li>
+          
+        </ul>
+      </div>
+      
+    </div>
+
+    <span class="highlight"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> I will be joining the department of <a href="https://cs.vt.edu/">Computer Science</a> at <a href="https://vt.edu">Virginia Tech</a> as tenrue-track assistant professor in Spring 2021!</span>
+  
+    <h3> Opening PhD positions</h3>
+    I am looking for several talented, <b>hardworking</b> and <b>self-motivated</b> PhD students to work in the fields of cybersecurity and applied cryptography at VT.
+    Please read this <a href="recruitment/">detailed description</a> carefully and send your <a href="recruitment/#apply">application package </a>to <a href="mailto:thanghoang@vt.edu">thanghoang(at)vt(dot)edu</a> if interested.
+    
+
+
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="news" class="home-section wg-news   " style="custom" >
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+<div class="row">
+  <div class="col-12 col-lg-4 section-heading">
+    <h1>Recent News</h1>
+    
+
+    <div class="see-all">
+      <a href="/news/">
+        All news
+        <i class="fas fa-angle-double-right"></i>
+       </a>
+       
+    </div>
+    
+  </div>
+  <div class="col-12 col-lg-8 news" >
+    
+    
+    
+    
+      <div class="view-list-item">
+        <i class="" aria-hidden="true"></i>
+        
+        
+       
+        
+          <div class="newsDate newsHighlightDate">
+        
+          
+          May 1, 2020
+        </div>
+
+        
+          <div class="newsTitle newsHighlightTitle">
+                
+           I will be joining <a href="https://cs.vt.edu">Virginia Tech</a> as assistant professor in Spring 2021!.       </div> 
+      
+
+      
+       
+        
+          <div class="newsDate">
+        
+          
+          Dec 8, 2019
+        </div>
+
+        
+          <div class="newsTitle">
+                
+           Our multi-server ORAM with active security accepted to <a href="https://www.ndss-symposium.org/">NDSS 2020</a>.       </div> 
+      
+
+      
+       
+        
+          <div class="newsDate">
+        
+          
+          Nov 30, 2019
+        </div>
+
+        
+          <div class="newsTitle">
+                
+           Our multi-client ORAM with SGX accepted to <a href="http://www.codaspy.org/2020/">ACM CODASPY 2020</a>.       </div> 
+      
+
+      
+       
+        
+          <div class="newsDate">
+        
+          
+          Oct 21, 2019
+        </div>
+
+        
+          <div class="newsTitle">
+                
+           Our multi-server ORAM framework accepted to <a href="https://tops.acm.org/">ACM Transactions on Privacy and Security</a>.       </div> 
+      
+
+      
+       
+        
+          <div class="newsDate">
+        
+          
+          Aug 30, 2019
+        </div>
+
+        
+          <div class="newsTitle">
+                
+           <a href="https://github.com/thanghoang/POSUP/">POSUP implementation</a> is now available!.       </div> 
+      
+
+      
+
+
+
+      
+      </div>
+    
+
+    
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="publications" class="home-section wg-pages   "  >
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+<div class="row">
+  <div class="col-12 col-lg-4 section-heading">
+    <h1>Publications</h1>
+    
+
+    <div class="see-all">
+      <a href="/publication/">
+        All publications
+        <i class="fas fa-angle-double-right"></i>
+      </a>
+    </div>
+
+  </div>
+  <div class="col-12 col-lg-8">
+
+    
+
+    
+      
+        <div class="pub-list-item" style="margin-bottom: 1rem">
+  
+  
+  
+
+  
+  <a href="/publication/20_codaspy_mose/">MOSE: Practical Multi-User Oblivious Storage via Secure Enclaves</a><br/>
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span><a href="/author/thang-hoang/"><b>Thang Hoang</b></a></span>, <span>Rouzbeh Behnia</span>, <span>Yeongjin Jang</span>, <span>Attila A. Yavuz</span>
+  </span> 
+  <br/>
+
+  
+   10th ACM Conference on Data and Application Security and Privacy&nbsp;
+    
+      (CODASPY),&nbsp;
+    
+  2020<p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/20_codaspy_mose/20_codaspy_mose.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1145/3374664.3375749" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+</p>
+
+  
+  
+</div>
+
+      
+    
+      
+        <div class="pub-list-item" style="margin-bottom: 1rem">
+  
+  
+  
+
+  
+  <a href="/publication/20_ndss_macao/">MACAO: A Maliciously-Secure and Client-Efficient Active ORAM Framework</a><br/>
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span><a href="/author/thang-hoang/"><b>Thang Hoang</b></a></span>, <span>Jorge Guajardo</span>, <span>Attila A. Yavuz</span>
+  </span> 
+  <br/>
+
+  
+   Annual Network and Distributed System Security Symposium&nbsp;
+    
+      (NDSS),&nbsp;
+    
+  2020<p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/20_ndss_macao/20_ndss_macao.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/thanghoang/macao" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/slides/20_ndss_macao.pptx" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.youtube.com/watch?v=hFQdpePZeZY" target="_blank" rel="noopener">
+  Video
+</a>
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.14722/ndss.2020.24313" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+</p>
+
+  
+  
+</div>
+
+      
+    
+      
+        <div class="pub-list-item" style="margin-bottom: 1rem">
+  
+  
+  
+
+  
+  <a href="/publication/20_acmtops_s3oram_ext/">A Multi-server ORAM Framework with Constant Client Bandwidth Blowup</a><br/>
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span><a href="/author/thang-hoang/"><b>Thang Hoang</b></a></span>, <span>Attila A. Yavuz</span>, <span>Jorge Guajardo</span>
+  </span> 
+  <br/>
+
+  
+    ACM Transactions on Privacy and Security,&nbsp;
+  2020<p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/20_acmtops_s3oram_ext/20_acmtops_s3oram_ext.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/thanghoang/s3oram" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1145/3369108" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+</p>
+
+  
+  
+</div>
+
+      
+    
+      
+        <div class="pub-list-item" style="margin-bottom: 1rem">
+  
+  
+  
+
+  
+  <a href="/publication/19_pets_posup/">Hardware-Supported ORAM in Effect: Practical Oblivious Search and Update on Very Large Dataset</a><br/>
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span><a href="/author/thang-hoang/"><b>Thang Hoang</b></a></span>, <span>Muslum O. Ozmen</span>, <span>Yeongjin Jang</span>, <span>Attila A. Yavuz</span>
+  </span> 
+  <br/>
+
+  
+   19th Privacy Enhancing Technologies Symposium&nbsp;
+    
+      (PETS),&nbsp;
+    
+  2019<p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/19_pets_posup/19_pets_posup.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/thanghoang/posup" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/slides/19_pets_posup.pptx" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.2478/popets-2019-0010" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+</p>
+
+  
+  
+</div>
+
+      
+    
+      
+        <div class="pub-list-item" style="margin-bottom: 1rem">
+  
+  
+  
+
+  
+  <a href="/publication/19_jcs_odse_ext/">A Multi-Server Oblivious Dynamic Searchable Encryption Framework</a><br/>
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span><a href="/author/thang-hoang/"><b>Thang Hoang</b></a></span>, <span>Attila A. Yavuz</span>, <span>F. Betül Durak</span>, <span>Jorge Guajardo</span>
+  </span> 
+  <br/>
+
+  
+    Journal of Computer Security,&nbsp;
+  2019<p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/19_jcs_odse_ext/19_jcs_odse_ext.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/thanghoang/odse" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.3233/JCS-191300" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+</p>
+
+  
+  
+</div>
+
+      
+    
+
+ 
+    
+ 
+
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="experience" class="home-section wg-experience   "  >
+    <div class="container">
+      
+
+
+
+<div class="row">
+  <div class="col-12 col-lg-4 section-heading">
+    <h1>Experience</h1>
+    
+  </div>
+  <div class="col-12 col-lg-8">
+    
+
+    
+    
+    
+    
+    <div class="row experience">
+      
+      <div class="col-auto text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col ">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="m-2">
+          <span class="badge badge-pill border exp-fill">&nbsp;</span>
+        </div>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+      
+      
+      <div class="col py-2">
+        <div class="card">
+          <div class="card-body_exp">
+          
+            <div class="exp_title">Graduate Research Assistant</div>
+            <div class ="exp_date text-muted" >
+              
+              
+              01.19 –
+            
+              Present
+            
+            
+            
+              
+
+            </div>
+           
+            
+            
+
+            <div class="exp_comp  my-0 text-muted">University of South Florida</div>
+            <div class="exp_location text-muted"> Tampa, FL </div>
+
+
+            <div class="text-muted exp-meta">
+                
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="row experience">
+      
+      <div class="col-auto text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="m-2">
+          <span class="badge badge-pill border ">&nbsp;</span>
+        </div>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+      
+      
+      <div class="col py-2">
+        <div class="card">
+          <div class="card-body_exp">
+          
+            <div class="exp_title">Security Research Intern</div>
+            <div class ="exp_date text-muted" >
+              
+                  
+                
+                   
+                  
+                  06.16 –
+                  08.16, 
+                
+              
+              
+              06.18 –
+            
+              08.18
+            
+            
+            
+              
+
+            </div>
+           
+            
+            
+
+            <div class="exp_comp  my-0 text-muted">Robert Bosch RTC</div>
+            <div class="exp_location text-muted"> Pittsburgh, PA </div>
+
+
+            <div class="text-muted exp-meta">
+                
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="row experience">
+      
+      <div class="col-auto text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="m-2">
+          <span class="badge badge-pill border ">&nbsp;</span>
+        </div>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+      
+      
+      <div class="col py-2">
+        <div class="card">
+          <div class="card-body_exp">
+          
+            <div class="exp_title">Graduate Research Assistant</div>
+            <div class ="exp_date text-muted" >
+              
+              
+              09.15 –
+            
+              12.18
+            
+            
+            
+              
+
+            </div>
+           
+            
+            
+
+            <div class="exp_comp  my-0 text-muted">Oregon State University</div>
+            <div class="exp_location text-muted"> Corvallis, OR </div>
+
+
+            <div class="text-muted exp-meta">
+                
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="row experience">
+      
+      <div class="col-auto text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="m-2">
+          <span class="badge badge-pill border ">&nbsp;</span>
+        </div>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+      
+      
+      <div class="col py-2">
+        <div class="card">
+          <div class="card-body_exp">
+          
+            <div class="exp_title">Lecturer</div>
+            <div class ="exp_date text-muted" >
+              
+              
+              09.14 –
+            
+              08.15
+            
+            
+            
+              
+
+            </div>
+           
+            
+            
+
+            <div class="exp_comp  my-0 text-muted">Saigon Technology University</div>
+            <div class="exp_location text-muted"> Saigon, Vietnam </div>
+
+
+            <div class="text-muted exp-meta">
+                
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="row experience">
+      
+      <div class="col-auto text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="m-2">
+          <span class="badge badge-pill border ">&nbsp;</span>
+        </div>
+        <div class="row h-50">
+          <div class="col ">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+      
+      
+      <div class="col py-2">
+        <div class="card">
+          <div class="card-body_exp">
+          
+            <div class="exp_title">Research Scientist</div>
+            <div class ="exp_date text-muted" >
+              
+              
+              03.14 –
+            
+              09.14
+            
+            
+            
+              
+
+            </div>
+           
+            
+            
+
+            <div class="exp_comp  my-0 text-muted">RedOne Technologies</div>
+            <div class="exp_location text-muted"> Gwangju, S. Korea </div>
+
+
+            <div class="text-muted exp-meta">
+                
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="contact" class="home-section wg-contact   "  >
+    <div class="container">
+      
+
+
+
+
+
+<div class="row contact-widget">
+  <div class="col-12 col-lg-4 section-heading">
+    <h1>Contact</h1>
+    
+  </div>
+  <div class="col-12 col-lg-8">
+    
+
+    
+
+    
+    
+      
+      
+    
+
+    <div class="mb-3">
+      <form name="contact" method="POST" action="https://formspree.io/hoangm@usf.edu">
+        <div class="form-group form-inline">
+          <label class="sr-only" for="inputName">Name</label>
+          <input type="text" name="name" class="form-control w-100" id="inputName" placeholder="Name" required>
+        </div>
+        <div class="form-group form-inline">
+          <label class="sr-only" for="inputEmail">Email</label>
+          <input type="email" name="email" class="form-control w-100" id="inputEmail" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+          <label class="sr-only" for="inputMessage">Message</label>
+          <textarea name="message" class="form-control" id="inputMessage" rows="5" placeholder="Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-outline-primary px-3 py-2">Send</button>
+      </form>
+    </div>
+    
+
+    <ul class="fa-ul">
+      
+      
+      <li>
+        <i class="fa-li fas fa-envelope fa-2x" aria-hidden="true"></i>
+        <span id="person-email"><a href="mailto:hoangm@usf.edu">hoangm(at)usf(dot)edu</a></span>
+      </li>
+      
+      
+      <li>
+        <i class="fa-li fas fa-phone fa-2x" aria-hidden="true"></i>
+        <span id="person-telephone"><a href="tel:541-230-8807">541-230-tu&#43;s</a></span>
+      </li>
+      
+
+      
+      
+        
+        <li>
+          <i class="fa-li fas fa-map-marker fa-2x" aria-hidden="true"></i>
+          <span id="person-address">Interdisciplinary Research Building, IDR 400, 3720 Spectrum Blvd, Tampa, FL 33612</span>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+      
+
+    </ul>
+
+    
+    <div class="d-none">
+      <input id="map-provider" value="2">
+      <input id="map-lat" value="28.056732">
+      <input id="map-lng" value="-82.415245">
+      <input id="map-dir" value="Interdisciplinary Research Building, IDR 400, 3720 Spectrum Blvd, Tampa, FL 33612">
+      <input id="map-zoom" value="15">
+      <input id="map-api-key" value="">
+    </div>
+    <div id="map"></div>
+    
+
+  </div>
+</div>
+
+    </div>
+  </section>
+
+
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.37431be2d92d7fb0160054761ab79602.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+  <p class="powered-by">
+    
+      <a href="/privacy/">Privacy Policy</a>
+    
+    
+       &middot; 
+      <a href="/terms/">Terms</a>
+    
+  </p>
+  
+
+  <p class="powered-by">
+    
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
 </html>

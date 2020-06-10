@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ceyhun D. Ozkaptan | Thang Hoang</title>
+    <link>/author/ceyhun-d.-ozkaptan/</link>
+      <atom:link href="/author/ceyhun-d.-ozkaptan/index.xml" rel="self" type="application/rss+xml" />
+    <description>Ceyhun D. Ozkaptan</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 06 Dec 2018 21:42:40 -0700</lastBuildDate>
+    <image>
+      <url>/images/icon_hu94dd35cfef659efa4008271481542408_367278_512x512_fill_lanczos_center_2.png</url>
+      <title>Ceyhun D. Ozkaptan</title>
+      <link>/author/ceyhun-d.-ozkaptan/</link>
+    </image>
+    
+    <item>
+      <title>Efficient Oblivious Data Structures for Database Services on the Cloud</title>
+      <link>/publication/18_ieeetcc_ods/</link>
+      <pubDate>Thu, 06 Dec 2018 21:42:40 -0700</pubDate>
+      <guid>/publication/18_ieeetcc_ods/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>S3ORAM: A Computation-Efficient and Constant Client Bandwidth Blowup ORAM with Shamir Secret Sharing</title>
+      <link>/publication/17_ccs_s3oram/</link>
+      <pubDate>Fri, 06 Oct 2017 21:41:20 -0700</pubDate>
+      <guid>/publication/17_ccs_s3oram/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
