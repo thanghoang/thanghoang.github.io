@@ -237,6 +237,10 @@
   </url>
   
   <url>
+    <loc>/services/data/</loc>
+  </url>
+  
+  <url>
     <loc>/categories/</loc>
   </url>
   
@@ -254,6 +258,10 @@
   
   <url>
     <loc>/talk/</loc>
+  </url>
+  
+  <url>
+    <loc>/services/</loc>
   </url>
   
   <url>
