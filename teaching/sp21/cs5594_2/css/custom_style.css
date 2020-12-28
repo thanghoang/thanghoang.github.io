@@ -1,0 +1,123 @@
+body{
+    background-color: #fff;
+    color:black;
+    font-family: 'Helvetica';
+
+    font-family: 'Source Serif Pro', serif;
+
+
+    font-size:30px;
+    line-height: 160%;
+}
+a:hover 
+{
+    color: #61142D;
+}
+
+a 
+{
+    color:#007bff;
+}
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5 {
+    font-family: 'Helvetica';
+    font-family: 'Roboto', sans-serif;
+
+    
+}
+h1, .h1{
+    font-size: 4rem;
+    padding-top:20px;
+    padding-bottom: 20px;
+    color: #61142D;
+}
+
+
+
+h2, .h2{
+    font-size: 3.5rem;
+    padding-top:20px;
+    padding-bottom: 20px;
+    color: #61142D;
+}
+
+
+h3, .h3{
+    font-size: 3rem;
+    padding-top:20px;
+    padding-bottom: 20px;
+    color: #61142D;
+}
+
+
+h4, .h4{
+    font-size: 2.75rem;
+    padding-top:10px;
+    padding-bottom: 10px;
+    color: #61142D;
+}
+
+
+h5, .h5{
+    font-size: 2.5rem;
+    padding-top:10px;
+    padding-bottom: 10px;
+    color: #61142D;
+}
+
+
+#sidebar
+{
+    color:red;
+    font-size:5rem;
+}
+
+table
+{
+    vertical-align: middle;
+}
+
+#tableSchedule
+{
+    margin: 20px 20px 20px 20px;
+    
+}
+#tableSchedule td
+{
+    height: 100px;
+    padding-left: 15px;
+    padding-right:15px;
+}
+#tableSchedule th
+{
+    padding-left: 15px;
+    padding-right:15px;
+}
+
+#tableSchedule th
+{
+    border-bottom: 1px solid black;
+}
+
+.table-striped>tbody>tr:nth-of-type(even) {
+    background-color: #F8F4F5;
+    border-bottom: 1px solid black;
+}
+
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: white;
+}
+
+#sidebar ul li {
+    font-size: 24px; 
+    line-height: 120%;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#sidebar h1 {
+    font-size: 36px; 
+    font-family: 'Roboto', sans-serif;
+}
+
