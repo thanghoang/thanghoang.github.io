@@ -2,14 +2,14 @@
   "name": "Thang Hoang",
   "short_name": "Thang Hoang",
   "lang": "en-us",
-  "theme_color": "#006747",
-  "background_color": "#006747",
+  "theme_color": "#861F41",
+  "background_color": "#861F41",
   "icons": [{
-    "src": "/images/icon_hu94dd35cfef659efa4008271481542408_367278_192x192_fill_lanczos_center_2.png",
+    "src": "/images/icon_hu90c008e4d96deb53d5ad25d414e3485e_13497_192x192_fill_lanczos_center_2.png",
     "sizes": "192x192",
     "type": "image/png"
     }, {
-    "src": "/images/icon_hu94dd35cfef659efa4008271481542408_367278_512x512_fill_lanczos_center_2.png",
+    "src": "/images/icon_hu90c008e4d96deb53d5ad25d414e3485e_13497_512x512_fill_lanczos_center_2.png",
     "sizes": "512x512",
     "type": "image/png"
      }],

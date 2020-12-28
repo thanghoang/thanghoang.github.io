@@ -38,7 +38,7 @@
   
   
   
-  <meta name="theme-color" content="#006747">
+  <meta name="theme-color" content="#861F41">
   
 
   
@@ -192,7 +192,7 @@
   
   
   
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Solway:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:wght@400;Roboto:wght@400;&display=swap">
   
 
   
@@ -253,8 +253,8 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu94dd35cfef659efa4008271481542408_367278_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu94dd35cfef659efa4008271481542408_367278_192x192_fill_lanczos_center_2.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu90c008e4d96deb53d5ad25d414e3485e_13497_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu90c008e4d96deb53d5ad25d414e3485e_13497_192x192_fill_lanczos_center_2.png">
 
   <link rel="canonical" href="/publication/20_codaspy_mose/">
 
@@ -274,8 +274,8 @@
   <meta property="og:site_name" content="Thang Hoang">
   <meta property="og:url" content="/publication/20_codaspy_mose/">
   <meta property="og:title" content="MOSE: Practical Multi-User Oblivious Storage via Secure Enclaves | Thang Hoang">
-  <meta property="og:description" content="Multi-user oblivious storage allows users to access their shared data on the cloud while retaining access pattern obliviousness and data confidentiality simultaneously. Most secure and efficient oblivious storage systems focus on the utilization of the maximum network bandwidth in serving concurrent accesses via a trusted proxy. However, since the proxy executes a standard ORAM protocol over the network, the performance is capped by the network bandwidth and latency. Moreover, some important features such as access control and security against active adversaries have not been thoroughly explored in such proxy settings. In this paper, we propose MOSE, a multi-user oblivious storage system that is efficient and enjoys from some desirable security properties. Our main idea is to harness a secure enclave, namely Intel SGX, residing on the untrusted storage server to execute proxy logic, thereby, minimizing the network bottleneck of proxy-based designs. In this regard, we address various technical design challenges such as memory constraints, side-channel attacks and scalability issues when enabling proxy logic in the secure enclave. We present a formal security model and analysis for secure enclave multi-user ORAM with access control. We optimize MOSE to boost its throughput in serving concurrent requests. We implemented MOSE and evaluated its performance on commodity hardware. Our evaluation confirmed the efficiency of MOSE, where it achieves approximately two orders of magnitudes higher throughput than the state-of-the-art proxy-based design, and also, its performance is scalable proportional to the available system resources."><meta property="og:image" content="/images/icon_hu94dd35cfef659efa4008271481542408_367278_512x512_fill_lanczos_center_2.png">
-  <meta property="twitter:image" content="/images/icon_hu94dd35cfef659efa4008271481542408_367278_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="Multi-user oblivious storage allows users to access their shared data on the cloud while retaining access pattern obliviousness and data confidentiality simultaneously. Most secure and efficient oblivious storage systems focus on the utilization of the maximum network bandwidth in serving concurrent accesses via a trusted proxy. However, since the proxy executes a standard ORAM protocol over the network, the performance is capped by the network bandwidth and latency. Moreover, some important features such as access control and security against active adversaries have not been thoroughly explored in such proxy settings. In this paper, we propose MOSE, a multi-user oblivious storage system that is efficient and enjoys from some desirable security properties. Our main idea is to harness a secure enclave, namely Intel SGX, residing on the untrusted storage server to execute proxy logic, thereby, minimizing the network bottleneck of proxy-based designs. In this regard, we address various technical design challenges such as memory constraints, side-channel attacks and scalability issues when enabling proxy logic in the secure enclave. We present a formal security model and analysis for secure enclave multi-user ORAM with access control. We optimize MOSE to boost its throughput in serving concurrent requests. We implemented MOSE and evaluated its performance on commodity hardware. Our evaluation confirmed the efficiency of MOSE, where it achieves approximately two orders of magnitudes higher throughput than the state-of-the-art proxy-based design, and also, its performance is scalable proportional to the available system resources."><meta property="og:image" content="/images/icon_hu90c008e4d96deb53d5ad25d414e3485e_13497_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="/images/icon_hu90c008e4d96deb53d5ad25d414e3485e_13497_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2020-03-06T21:41:50-07:00">
@@ -319,7 +319,7 @@
     "name": "Thang Hoang",
     "logo": {
       "@type": "ImageObject",
-      "url": "/images/icon_hu94dd35cfef659efa4008271481542408_367278_192x192_fill_lanczos_center_2.png"
+      "url": "/images/icon_hu90c008e4d96deb53d5ad25d414e3485e_13497_192x192_fill_lanczos_center_2.png"
     }
   },
   "description": "Multi-user oblivious storage allows users to access their shared data on the cloud while retaining access pattern obliviousness and data confidentiality simultaneously. Most secure and efficient oblivious storage systems focus on the utilization of the maximum network bandwidth in serving concurrent accesses via a trusted proxy. However, since the proxy executes a standard ORAM protocol over the network, the performance is capped by the network bandwidth and latency. Moreover, some important features such as access control and security against active adversaries have not been thoroughly explored in such proxy settings. In this paper, we propose MOSE, a multi-user oblivious storage system that is efficient and enjoys from some desirable security properties. Our main idea is to harness a secure enclave, namely Intel SGX, residing on the untrusted storage server to execute proxy logic, thereby, minimizing the network bottleneck of proxy-based designs. In this regard, we address various technical design challenges such as memory constraints, side-channel attacks and scalability issues when enabling proxy logic in the secure enclave. We present a formal security model and analysis for secure enclave multi-user ORAM with access control. We optimize MOSE to boost its throughput in serving concurrent requests. We implemented MOSE and evaluated its performance on commodity hardware. Our evaluation confirmed the efficiency of MOSE, where it achieves approximately two orders of magnitudes higher throughput than the state-of-the-art proxy-based design, and also, its performance is scalable proportional to the available system resources."
@@ -469,6 +469,35 @@
 
         <li class="nav-item">
           <a class="nav-link " href="/#publications"><span class="navItem">Publication</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#teaching"><span class="navItem">Teaching</span></a>
         </li>
 
         

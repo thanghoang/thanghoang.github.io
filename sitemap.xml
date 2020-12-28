@@ -241,6 +241,10 @@
   </url>
   
   <url>
+    <loc>/teaching/data/</loc>
+  </url>
+  
+  <url>
     <loc>/categories/</loc>
   </url>
   
@@ -266,6 +270,10 @@
   
   <url>
     <loc>/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>/teaching/</loc>
   </url>
   
   <url>
