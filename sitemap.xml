@@ -3,30 +3,54 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/publication-type/1/</loc>
-    <lastmod>2020-03-06T21:41:50-07:00</lastmod>
+    <lastmod>2021-04-16T21:28:55-07:00</lastmod>
   </url><url>
     <loc>/author/attila-a.-yavuz/</loc>
-    <lastmod>2020-03-06T21:41:50-07:00</lastmod>
+    <lastmod>2021-04-16T21:28:55-07:00</lastmod>
   </url><url>
     <loc>/authors/</loc>
-    <lastmod>2020-03-06T21:41:50-07:00</lastmod>
+    <lastmod>2021-04-16T21:28:55-07:00</lastmod>
+  </url><url>
+    <loc>/author/efe-ulas-akay-seyitoglu/</loc>
+    <lastmod>2021-04-16T21:28:55-07:00</lastmod>
+  </url><url>
+    <loc>/publication/21_secrypt_pouw/</loc>
+    <lastmod>2021-04-16T21:28:55-07:00</lastmod>
+  </url><url>
+    <loc>/publication_types/</loc>
+    <lastmod>2021-04-16T21:28:55-07:00</lastmod>
+  </url><url>
+    <loc>/publication/</loc>
+    <lastmod>2021-04-16T21:28:55-07:00</lastmod>
+  </url><url>
+    <loc>/author/thang-hoang/</loc>
+    <lastmod>2021-04-16T21:28:55-07:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2021-04-16T21:28:55-07:00</lastmod>
+  </url><url>
+    <loc>/publication-type/2/</loc>
+    <lastmod>2021-01-25T21:28:55-07:00</lastmod>
+  </url><url>
+    <loc>/author/deokjai-choi/</loc>
+    <lastmod>2021-01-25T21:28:55-07:00</lastmod>
+  </url><url>
+    <loc>/author/hyunil-kim/</loc>
+    <lastmod>2021-01-25T21:28:55-07:00</lastmod>
+  </url><url>
+    <loc>/author/lam-tran/</loc>
+    <lastmod>2021-01-25T21:28:55-07:00</lastmod>
+  </url><url>
+    <loc>/publication/21_ieeeaccess_gait/</loc>
+    <lastmod>2021-01-25T21:28:55-07:00</lastmod>
+  </url><url>
+    <loc>/author/thuc-nguyen/</loc>
+    <lastmod>2021-01-25T21:28:55-07:00</lastmod>
   </url><url>
     <loc>/publication/20_codaspy_mose/</loc>
     <lastmod>2020-03-06T21:41:50-07:00</lastmod>
   </url><url>
-    <loc>/publication_types/</loc>
-    <lastmod>2020-03-06T21:41:50-07:00</lastmod>
-  </url><url>
-    <loc>/publication/</loc>
-    <lastmod>2020-03-06T21:41:50-07:00</lastmod>
-  </url><url>
     <loc>/author/rouzbeh-behnia/</loc>
-    <lastmod>2020-03-06T21:41:50-07:00</lastmod>
-  </url><url>
-    <loc>/author/thang-hoang/</loc>
-    <lastmod>2020-03-06T21:41:50-07:00</lastmod>
-  </url><url>
-    <loc>/</loc>
     <lastmod>2020-03-06T21:41:50-07:00</lastmod>
   </url><url>
     <loc>/author/yeongjin-jang/</loc>
@@ -37,9 +61,6 @@
   </url><url>
     <loc>/publication/20_ndss_macao/</loc>
     <lastmod>2020-02-06T21:41:54-07:00</lastmod>
-  </url><url>
-    <loc>/publication-type/2/</loc>
-    <lastmod>2020-01-01T21:43:01-07:00</lastmod>
   </url><url>
     <loc>/publication/20_acmtops_s3oram_ext/</loc>
     <lastmod>2020-01-01T21:43:01-07:00</lastmod>
@@ -77,16 +98,7 @@
     <loc>/publication/18_icc_fsdsse/</loc>
     <lastmod>2018-05-06T21:41:37-07:00</lastmod>
   </url><url>
-    <loc>/author/deokjai-choi/</loc>
-    <lastmod>2017-11-06T21:41:33-07:00</lastmod>
-  </url><url>
     <loc>/publication/17_isc/</loc>
-    <lastmod>2017-11-06T21:41:33-07:00</lastmod>
-  </url><url>
-    <loc>/author/lam-tran/</loc>
-    <lastmod>2017-11-06T21:41:33-07:00</lastmod>
-  </url><url>
-    <loc>/author/thuc-nguyen/</loc>
     <lastmod>2017-11-06T21:41:33-07:00</lastmod>
   </url><url>
     <loc>/publication/17_ccs_s3oram/</loc>

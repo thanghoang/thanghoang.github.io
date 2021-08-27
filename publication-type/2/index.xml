@@ -5,12 +5,20 @@
     <link>/publication-type/2/</link>
       <atom:link href="/publication-type/2/index.xml" rel="self" type="application/rss+xml" />
     <description>2</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2020 21:43:01 -0700</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 25 Jan 2021 21:28:55 -0700</lastBuildDate>
     <image>
       <url>/images/icon_hu90c008e4d96deb53d5ad25d414e3485e_13497_512x512_fill_lanczos_center_3.png</url>
       <title>2</title>
       <link>/publication-type/2/</link>
     </image>
+    
+    <item>
+      <title>Multi-Model Long Short-Term Memory Network for Gait Recognition Using Window-Based Data Segment</title>
+      <link>/publication/21_ieeeaccess_gait/</link>
+      <pubDate>Mon, 25 Jan 2021 21:28:55 -0700</pubDate>
+      <guid>/publication/21_ieeeaccess_gait/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>A Multi-server ORAM Framework with Constant Client Bandwidth Blowup</title>
