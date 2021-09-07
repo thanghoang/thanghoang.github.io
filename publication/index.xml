@@ -5,12 +5,20 @@
     <link>/publication/</link>
       <atom:link href="/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 16 Apr 2021 21:28:55 -0700</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 10 Aug 2022 21:28:55 -0700</lastBuildDate>
     <image>
       <url>/images/icon_hu90c008e4d96deb53d5ad25d414e3485e_13497_512x512_fill_lanczos_center_3.png</url>
       <title>Publications</title>
       <link>/publication/</link>
     </image>
+    
+    <item>
+      <title>Polynomial Commitment with a One-to-Many Prover and Applications</title>
+      <link>/publication/22_usenixsec_pc/</link>
+      <pubDate>Wed, 10 Aug 2022 21:28:55 -0700</pubDate>
+      <guid>/publication/22_usenixsec_pc/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Proof-of-Useful-Randomness: Mitigating the Energy Waste in Blockchain Proof-of-Work</title>
