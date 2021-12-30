@@ -27,11 +27,10 @@
   
     
   
-  <meta name="description" content="Dynamic Searchable Symmetric Encryption (DSSE) allows a client to perform keyword searches over encrypted files via an encrypted data structure. Despite its merits, DSSE leaks search and update patterns when the client accesses the encrypted data structure. These leakages may create severe privacy problems as already shown, for example, in recent statistical attacks on DSSE. While Oblivious Random Access Memory (ORAM) can hide such access patterns, it incurs significant communication overhead and, therefore, it is not yet fully practical for cloud computing systems. Hence, there is a critical need to develop private access schemes over the encrypted data structure that can seal the leakages of DSSE while achieving practical search/update operations.
-In this paper, we propose a new oblivious access scheme over the encrypted data structure for searchable encryption purposes, that we call Distributed Oblivious Data structure DSSE (DOD-DSSE). The main idea is to create a distributed encrypted incidence matrix on two non-colluding servers such that no arbitrary queries on these servers can be linked to each other. This strategy prevents not only recent statistical attacks on the encrypted data structure but also other potential threats exploiting query linkability. Our security analysis proves that DOD-DSSE ensures the unlinkability of queries and, therefore, offers much higher security than traditional DSSE. At the same time, our performance evaluation demonstrates that DOD-DSSE is two orders of magnitude faster than ORAM-based techniques (e.g., Path ORAM), since it only incurs a small-constant number of communication overhead. That is, we deployed DOD-DSSE on geographically distributed Amazon EC2 servers, and showed that, a search/update operation on a very large dataset only takes around one second with DOD-DSSE, while it takes 3 to 13 minutes with Path ORAM-based methods.">
+  <meta name="description" content="">
 
   
-  <link rel="alternate" hreflang="en-us" href="/publication/16_acsac_doddsse/">
+  <link rel="alternate" hreflang="en-us" href="/publication/22_ndss_oblivfileshare/">
 
   
 
@@ -257,7 +256,7 @@ In this paper, we propose a new oblivious access scheme over the encrypted data 
   <link rel="icon" type="image/png" href="/images/icon_hu90c008e4d96deb53d5ad25d414e3485e_13497_32x32_fill_lanczos_center_3.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu90c008e4d96deb53d5ad25d414e3485e_13497_192x192_fill_lanczos_center_3.png">
 
-  <link rel="canonical" href="/publication/16_acsac_doddsse/">
+  <link rel="canonical" href="/publication/22_ndss_oblivfileshare/">
 
   
   
@@ -273,16 +272,15 @@ In this paper, we propose a new oblivious access scheme over the encrypted data 
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Thang Hoang">
-  <meta property="og:url" content="/publication/16_acsac_doddsse/">
-  <meta property="og:title" content="Practical and Secure Dynamic Searchable Encryption via Oblivious Access on Distributed Data Structure | Thang Hoang">
-  <meta property="og:description" content="Dynamic Searchable Symmetric Encryption (DSSE) allows a client to perform keyword searches over encrypted files via an encrypted data structure. Despite its merits, DSSE leaks search and update patterns when the client accesses the encrypted data structure. These leakages may create severe privacy problems as already shown, for example, in recent statistical attacks on DSSE. While Oblivious Random Access Memory (ORAM) can hide such access patterns, it incurs significant communication overhead and, therefore, it is not yet fully practical for cloud computing systems. Hence, there is a critical need to develop private access schemes over the encrypted data structure that can seal the leakages of DSSE while achieving practical search/update operations.
-In this paper, we propose a new oblivious access scheme over the encrypted data structure for searchable encryption purposes, that we call Distributed Oblivious Data structure DSSE (DOD-DSSE). The main idea is to create a distributed encrypted incidence matrix on two non-colluding servers such that no arbitrary queries on these servers can be linked to each other. This strategy prevents not only recent statistical attacks on the encrypted data structure but also other potential threats exploiting query linkability. Our security analysis proves that DOD-DSSE ensures the unlinkability of queries and, therefore, offers much higher security than traditional DSSE. At the same time, our performance evaluation demonstrates that DOD-DSSE is two orders of magnitude faster than ORAM-based techniques (e.g., Path ORAM), since it only incurs a small-constant number of communication overhead. That is, we deployed DOD-DSSE on geographically distributed Amazon EC2 servers, and showed that, a search/update operation on a very large dataset only takes around one second with DOD-DSSE, while it takes 3 to 13 minutes with Path ORAM-based methods."><meta property="og:image" content="/images/icon_hu90c008e4d96deb53d5ad25d414e3485e_13497_512x512_fill_lanczos_center_3.png">
+  <meta property="og:url" content="/publication/22_ndss_oblivfileshare/">
+  <meta property="og:title" content="A Metadata-Hiding File-Sharing System with Malicious Security | Thang Hoang">
+  <meta property="og:description" content=""><meta property="og:image" content="/images/icon_hu90c008e4d96deb53d5ad25d414e3485e_13497_512x512_fill_lanczos_center_3.png">
   <meta property="twitter:image" content="/images/icon_hu90c008e4d96deb53d5ad25d414e3485e_13497_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2016-12-01T21:41:15-07:00">
+      <meta property="article:published_time" content="2021-12-30T00:00:00-07:00">
     
-    <meta property="article:modified_time" content="2016-12-01T21:41:15-07:00">
+    <meta property="article:modified_time" content="2022-02-27T21:28:55-07:00">
   
 
   
@@ -304,16 +302,16 @@ In this paper, we propose a new oblivious access scheme over the encrypted data 
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "/publication/16_acsac_doddsse/"
+    "@id": "/publication/22_ndss_oblivfileshare/"
   },
-  "headline": "Practical and Secure Dynamic Searchable Encryption via Oblivious Access on Distributed Data Structure",
+  "headline": "A Metadata-Hiding File-Sharing System with Malicious Security",
   
-  "datePublished": "2016-12-01T21:41:15-07:00",
-  "dateModified": "2016-12-01T21:41:15-07:00",
+  "datePublished": "2021-12-30T00:00:00-07:00",
+  "dateModified": "2022-02-27T21:28:55-07:00",
   
   "author": {
     "@type": "Person",
-    "name": "Thang Hoang"
+    "name": "Weikeng Chen"
   },
   
   "publisher": {
@@ -324,7 +322,7 @@ In this paper, we propose a new oblivious access scheme over the encrypted data 
       "url": "/images/icon_hu90c008e4d96deb53d5ad25d414e3485e_13497_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "Dynamic Searchable Symmetric Encryption (DSSE) allows a client to perform keyword searches over encrypted files via an encrypted data structure. Despite its merits, DSSE leaks search and update patterns when the client accesses the encrypted data structure. These leakages may create severe privacy problems as already shown, for example, in recent statistical attacks on DSSE. While Oblivious Random Access Memory (ORAM) can hide such access patterns, it incurs significant communication overhead and, therefore, it is not yet fully practical for cloud computing systems. Hence, there is a critical need to develop private access schemes over the encrypted data structure that can seal the leakages of DSSE while achieving practical search/update operations.\nIn this paper, we propose a new oblivious access scheme over the encrypted data structure for searchable encryption purposes, that we call Distributed Oblivious Data structure DSSE (DOD-DSSE). The main idea is to create a distributed encrypted incidence matrix on two non-colluding servers such that no arbitrary queries on these servers can be linked to each other. This strategy prevents not only recent statistical attacks on the encrypted data structure but also other potential threats exploiting query linkability. Our security analysis proves that DOD-DSSE ensures the unlinkability of queries and, therefore, offers much higher security than traditional DSSE. At the same time, our performance evaluation demonstrates that DOD-DSSE is two orders of magnitude faster than ORAM-based techniques (e.g., Path ORAM), since it only incurs a small-constant number of communication overhead. That is, we deployed DOD-DSSE on geographically distributed Amazon EC2 servers, and showed that, a search/update operation on a very large dataset only takes around one second with DOD-DSSE, while it takes 3 to 13 minutes with Path ORAM-based methods."
+  "description": ""
 }
 </script>
 
@@ -342,7 +340,7 @@ In this paper, we propose a new oblivious access scheme over the encrypted data 
 
 
 
-  <title>Practical and Secure Dynamic Searchable Encryption via Oblivious Access on Distributed Data Structure | Thang Hoang</title>
+  <title>A Metadata-Hiding File-Sharing System with Malicious Security | Thang Hoang</title>
 
 </head>
 
@@ -675,7 +673,7 @@ In this paper, we propose a new oblivious access scheme over the encrypted data 
   
   
 <div class="article-container pt-3">
-  <h1>Practical and Secure Dynamic Searchable Encryption via Oblivious Access on Distributed Data Structure</h1>
+  <h1>A Metadata-Hiding File-Sharing System with Malicious Security</h1>
 
   
 
@@ -693,7 +691,7 @@ In this paper, we propose a new oblivious access scheme over the encrypted data 
     
 
   
-  <span><a href="/author/thang-hoang/"><b>Thang Hoang</b></a></span>, <span>Attila A. Yavuz</span>, <span>Jorge Guajardo</span>
+  <span>Weikeng Chen</span>, <span><a href="/author/thang-hoang/"><b>Thang Hoang</b></a></span>, <span>Jorge Guajardo</span>, <span>Attila A. Yavuz</span>
   </div>
   
   
@@ -704,7 +702,7 @@ In this paper, we propose a new oblivious access scheme over the encrypted data 
     
       
     
-    December 2016
+    February 2022
   </span>
   
 
@@ -730,61 +728,10 @@ In this paper, we propose a new oblivious access scheme over the encrypted data 
 
 
 
-  
 
 
 
 
-
-
-<div class="btn-links mb-3">
-  
-  
-
-
-
-
-
-
-
-
-  
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1" href="/publication/16_acsac_doddsse/16_acsac_doddsse.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1" href="/slides/16_acsac_doddsse.pptx" target="_blank" rel="noopener">
-  Slides
-</a>
-
-
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1" href="https://doi.org/10.1145/2991079.2991088" target="_blank" rel="noopener">
-  DOI
-</a>
-
-
-
-</div>
 
 
   
@@ -794,10 +741,6 @@ In this paper, we propose a new oblivious access scheme over the encrypted data 
 
   <div class="article-container">
   
-    
-    <h3>Abstract</h3>
-    <p class="pub-abstract">Dynamic Searchable Symmetric Encryption (DSSE) allows a client to perform keyword searches over encrypted files via an encrypted data structure. Despite its merits, DSSE leaks search and update patterns when the client accesses the encrypted data structure. These leakages may create severe privacy problems as already shown, for example, in recent statistical attacks on DSSE. While Oblivious Random Access Memory (ORAM) can hide such access patterns, it incurs significant communication overhead and, therefore, it is not yet fully practical for cloud computing systems. Hence, there is a critical need to develop private access schemes over the encrypted data structure that can seal the leakages of DSSE while achieving practical search/update operations.
-In this paper, we propose a new oblivious access scheme over the encrypted data structure for searchable encryption purposes, that we call Distributed Oblivious Data structure DSSE (DOD-DSSE). The main idea is to create a distributed encrypted incidence matrix on two non-colluding servers such that no arbitrary queries on these servers can be linked to each other. This strategy prevents not only recent statistical attacks on the encrypted data structure but also other potential threats exploiting query linkability. Our security analysis proves that DOD-DSSE ensures the unlinkability of queries and, therefore, offers much higher security than traditional DSSE. At the same time, our performance evaluation demonstrates that DOD-DSSE is two orders of magnitude faster than ORAM-based techniques (e.g., Path ORAM), since it only incurs a small-constant number of communication overhead. That is, we deployed DOD-DSSE on geographically distributed Amazon EC2 servers, and showed that, a search/update operation on a very large dataset only takes around one second with DOD-DSSE, while it takes 3 to 13 minutes with Path ORAM-based methods.</p>
     
 
     
@@ -827,7 +770,7 @@ In this paper, we propose a new oblivious access scheme over the encrypted data 
       <div class="col-md-10">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">Annual Computer Security Applications Conference</div>
+          <div class="col-12 col-md-9">Annual Network and Distributed System Security Symposium</div>
         </div>
       </div>
       <div class="col-md-1"></div>
@@ -858,7 +801,7 @@ In this paper, we propose a new oblivious access scheme over the encrypted data 
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=/publication/16_acsac_doddsse/&amp;text=Practical%20and%20Secure%20Dynamic%20Searchable%20Encryption%20via%20Oblivious%20Access%20on%20Distributed%20Data%20Structure" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=/publication/22_ndss_oblivfileshare/&amp;text=A%20Metadata-Hiding%20File-Sharing%20System%20with%20Malicious%20Security" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -871,7 +814,7 @@ In this paper, we propose a new oblivious access scheme over the encrypted data 
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=/publication/16_acsac_doddsse/&amp;t=Practical%20and%20Secure%20Dynamic%20Searchable%20Encryption%20via%20Oblivious%20Access%20on%20Distributed%20Data%20Structure" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=/publication/22_ndss_oblivfileshare/&amp;t=A%20Metadata-Hiding%20File-Sharing%20System%20with%20Malicious%20Security" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -884,7 +827,7 @@ In this paper, we propose a new oblivious access scheme over the encrypted data 
       
       
       <li>
-        <a href="mailto:?subject=Practical%20and%20Secure%20Dynamic%20Searchable%20Encryption%20via%20Oblivious%20Access%20on%20Distributed%20Data%20Structure&amp;body=/publication/16_acsac_doddsse/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=A%20Metadata-Hiding%20File-Sharing%20System%20with%20Malicious%20Security&amp;body=/publication/22_ndss_oblivfileshare/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -897,7 +840,7 @@ In this paper, we propose a new oblivious access scheme over the encrypted data 
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=/publication/16_acsac_doddsse/&amp;title=Practical%20and%20Secure%20Dynamic%20Searchable%20Encryption%20via%20Oblivious%20Access%20on%20Distributed%20Data%20Structure" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=/publication/22_ndss_oblivfileshare/&amp;title=A%20Metadata-Hiding%20File-Sharing%20System%20with%20Malicious%20Security" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -910,7 +853,7 @@ In this paper, we propose a new oblivious access scheme over the encrypted data 
       
       
       <li>
-        <a href="whatsapp://send?text=Practical%20and%20Secure%20Dynamic%20Searchable%20Encryption%20via%20Oblivious%20Access%20on%20Distributed%20Data%20Structure%20/publication/16_acsac_doddsse/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=A%20Metadata-Hiding%20File-Sharing%20System%20with%20Malicious%20Security%20/publication/22_ndss_oblivfileshare/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -923,7 +866,7 @@ In this paper, we propose a new oblivious access scheme over the encrypted data 
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=/publication/16_acsac_doddsse/&amp;title=Practical%20and%20Secure%20Dynamic%20Searchable%20Encryption%20via%20Oblivious%20Access%20on%20Distributed%20Data%20Structure" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=/publication/22_ndss_oblivfileshare/&amp;title=A%20Metadata-Hiding%20File-Sharing%20System%20with%20Malicious%20Security" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -976,6 +919,17 @@ In this paper, we propose a new oblivious access scheme over the encrypted data 
 
 
   
+    
+    
+
+
+
+
+
+  
+
+
+  
 
 
 
@@ -992,14 +946,14 @@ In this paper, we propose a new oblivious access scheme over the encrypted data 
   
   <div class="post-nav-item">
     <div class="meta-nav">Next</div>
-    <a href="/publication/17_ccs_s3oram/" rel="next">S3ORAM: A Computation-Efficient and Constant Client Bandwidth Blowup ORAM with Shamir Secret Sharing</a>
+    <a href="/publication/22_usenixsec_pc/" rel="next">Polynomial Commitment with a One-to-Many Prover and Applications</a>
   </div>
   
   
   
   <div class="post-nav-item">
     <div class="meta-nav">Previous</div>
-    <a href="/publication/15_ijis/" rel="prev">Gait Authentication on Mobile Phone Using Biometric Cryptosystem and Fuzzy Commitment Scheme</a>
+    <a href="/publication/21_secrypt_pouw/" rel="prev">Proof-of-Useful-Randomness: Mitigating the Energy Waste in Blockchain Proof-of-Work</a>
   </div>
   
 </div>
@@ -1014,8 +968,6 @@ In this paper, we propose a new oblivious access scheme over the encrypted data 
     <h3>Related</h3>
     <ul>
       
-      <li><a href="/publication/22_ndss_oblivfileshare/">A Metadata-Hiding File-Sharing System with Malicious Security</a></li>
-      
       <li><a href="/publication/20_ndss_macao/">MACAO: A Maliciously-Secure and Client-Efficient Active ORAM Framework</a></li>
       
       <li><a href="/publication/20_acmtops_s3oram_ext/">A Multi-server ORAM Framework with Constant Client Bandwidth Blowup</a></li>
@@ -1023,6 +975,8 @@ In this paper, we propose a new oblivious access scheme over the encrypted data 
       <li><a href="/publication/19_jcs_odse_ext/">A Multi-Server Oblivious Dynamic Searchable Encryption Framework</a></li>
       
       <li><a href="/publication/18_ieeetsc_imdsse/">A Secure Searchable Encryption Framework for PrivacyCritical Cloud Storage Services</a></li>
+      
+      <li><a href="/publication/18_dbsec_odse/">Oblivious Dynamic Searchable Encryption on Distributed Cloud Systems</a></li>
       
     </ul>
   </div>

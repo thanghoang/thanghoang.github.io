@@ -5,12 +5,20 @@
     <link>/author/attila-a.-yavuz/</link>
       <atom:link href="/author/attila-a.-yavuz/index.xml" rel="self" type="application/rss+xml" />
     <description>Attila A. Yavuz</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 16 Apr 2021 21:28:55 -0700</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 27 Feb 2022 21:28:55 -0700</lastBuildDate>
     <image>
       <url>/images/icon_hu90c008e4d96deb53d5ad25d414e3485e_13497_512x512_fill_lanczos_center_3.png</url>
       <title>Attila A. Yavuz</title>
       <link>/author/attila-a.-yavuz/</link>
     </image>
+    
+    <item>
+      <title>A Metadata-Hiding File-Sharing System with Malicious Security</title>
+      <link>/publication/22_ndss_oblivfileshare/</link>
+      <pubDate>Sun, 27 Feb 2022 21:28:55 -0700</pubDate>
+      <guid>/publication/22_ndss_oblivfileshare/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Proof-of-Useful-Randomness: Mitigating the Energy Waste in Blockchain Proof-of-Work</title>
