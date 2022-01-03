@@ -27,10 +27,11 @@
   
     
   
-  <meta name="description" content="Assistant Professor">
+  <meta name="description" content=" End-to-end encrypted file-sharing systems, such as Keybase Filesystem, enable users to share files stored in the cloud without revealing the contents to the servers. However, the servers still learn metadata, such as user identities and access patterns. Prior works have tried to remove such leakage but relied on strong trust assumptions. Metal (NDSS’20) is not secure against malicious servers. MCORAM (ASIACRYPT’20) offers confiden- tiality against malicious servers, but not integrity.\
+We present Titanium, a metadata-hiding file-sharing system with confidentiality and integrity against both malicious users and servers. Compared with MCORAM, the state-of-the-art with con- fidentiality (but not integrity) against malicious servers, Titanium additionally offers integrity. Experiments show that Titanium is 5× to 200× faster, or even more, than MCORAM. ">
 
   
-  <link rel="alternate" hreflang="en-us" href="/404.html">
+  <link rel="alternate" hreflang="en-us" href="/publication/22_ndss_titanium/">
 
   
 
@@ -256,7 +257,7 @@
   <link rel="icon" type="image/png" href="/images/icon_hu90c008e4d96deb53d5ad25d414e3485e_13497_32x32_fill_lanczos_center_3.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu90c008e4d96deb53d5ad25d414e3485e_13497_192x192_fill_lanczos_center_3.png">
 
-  <link rel="canonical" href="/404.html">
+  <link rel="canonical" href="/publication/22_ndss_titanium/">
 
   
   
@@ -272,18 +273,62 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Thang Hoang">
-  <meta property="og:url" content="/404.html">
-  <meta property="og:title" content="404 Page not found | Thang Hoang">
-  <meta property="og:description" content="Assistant Professor"><meta property="og:image" content="/images/icon_hu90c008e4d96deb53d5ad25d414e3485e_13497_512x512_fill_lanczos_center_3.png">
+  <meta property="og:url" content="/publication/22_ndss_titanium/">
+  <meta property="og:title" content="A Metadata-Hiding File-Sharing System with Malicious Security | Thang Hoang">
+  <meta property="og:description" content=" End-to-end encrypted file-sharing systems, such as Keybase Filesystem, enable users to share files stored in the cloud without revealing the contents to the servers. However, the servers still learn metadata, such as user identities and access patterns. Prior works have tried to remove such leakage but relied on strong trust assumptions. Metal (NDSS’20) is not secure against malicious servers. MCORAM (ASIACRYPT’20) offers confiden- tiality against malicious servers, but not integrity.\
+We present Titanium, a metadata-hiding file-sharing system with confidentiality and integrity against both malicious users and servers. Compared with MCORAM, the state-of-the-art with con- fidentiality (but not integrity) against malicious servers, Titanium additionally offers integrity. Experiments show that Titanium is 5× to 200× faster, or even more, than MCORAM. "><meta property="og:image" content="/images/icon_hu90c008e4d96deb53d5ad25d414e3485e_13497_512x512_fill_lanczos_center_3.png">
   <meta property="twitter:image" content="/images/icon_hu90c008e4d96deb53d5ad25d414e3485e_13497_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
   
     
+      <meta property="article:published_time" content="2021-12-30T00:00:00-07:00">
+    
+    <meta property="article:modified_time" content="2022-02-27T21:28:55-07:00">
   
 
   
 
 
+    
 
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/publication/22_ndss_titanium/"
+  },
+  "headline": "A Metadata-Hiding File-Sharing System with Malicious Security",
+  
+  "datePublished": "2021-12-30T00:00:00-07:00",
+  "dateModified": "2022-02-27T21:28:55-07:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Weikeng Chen"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Thang Hoang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/images/icon_hu90c008e4d96deb53d5ad25d414e3485e_13497_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": " End-to-end encrypted file-sharing systems, such as Keybase Filesystem, enable users to share files stored in the cloud without revealing the contents to the servers. However, the servers still learn metadata, such as user identities and access patterns. Prior works have tried to remove such leakage but relied on strong trust assumptions. Metal (NDSS’20) is not secure against malicious servers. MCORAM (ASIACRYPT’20) offers confiden- tiality against malicious servers, but not integrity.\\\nWe present Titanium, a metadata-hiding file-sharing system with confidentiality and integrity against both malicious users and servers. Compared with MCORAM, the state-of-the-art with con- fidentiality (but not integrity) against malicious servers, Titanium additionally offers integrity. Experiments show that Titanium is 5× to 200× faster, or even more, than MCORAM. "
+}
+</script>
+
+  
 
   
 
@@ -291,10 +336,13 @@
   
 
 
+  
 
 
 
-  <title>404 Page not found | Thang Hoang</title>
+
+
+  <title>A Metadata-Hiding File-Sharing System with Malicious Security | Thang Hoang</title>
 
 </head>
 
@@ -606,50 +654,385 @@
 </nav>
 
 
-  <div class="universal-wrapper pt-3">
-
-  <h1>Page not found</h1>
-
-  
-  
-  <form class="d-flex align-items-center mb-3">
-    <input name="q" type="search" class="form-control" placeholder="Search..." autocomplete="off">
-  </form>
-  
+  <div class="pub">
 
   
 
-  <p>Perhaps you were looking for one of these?</p>
+
+
+
+
+
+
+
+
+
+
+
+  
 
   
   
   
-  <h2>Latest</h2>
-  <ul>
+<div class="article-container pt-3">
+  <h1>A Metadata-Hiding File-Sharing System with Malicious Security</h1>
+
+  
+
+  
     
-      <li><a href="/publication/22_usenixsec_pc/">Polynomial Commitment with a One-to-Many Prover and Applications</a></li>
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
     
-      <li><a href="/publication/22_ndss_titanium/">A Metadata-Hiding File-Sharing System with Malicious Security</a></li>
+
+  
+  <span>Weikeng Chen</span>, <span><a href="/author/thang-hoang/"><b>Thang Hoang</b></a></span>, <span>Jorge Guajardo</span>, <span>Attila A. Yavuz</span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
     
-      <li><a href="/publication/21_secrypt_pouw/">Proof-of-Useful-Randomness: Mitigating the Energy Waste in Blockchain Proof-of-Work</a></li>
     
-      <li><a href="/publication/21_ieeeaccess_gait/">Multi-Model Long Short-Term Memory Network for Gait Recognition Using Window-Based Data Segment</a></li>
+      
     
-      <li><a href="/publication/20_codaspy_mose/">MOSE: Practical Multi-User Oblivious Storage via Secure Enclaves</a></li>
+    February 2022
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
     
-      <li><a href="/publication/20_ndss_macao/">MACAO: A Maliciously-Secure and Client-Efficient Active ORAM Framework</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1" href="https://doi.org/10.14722/ndss.2022.24161" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+</div>
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+  
     
-      <li><a href="/publication/20_acmtops_s3oram_ext/">A Multi-server ORAM Framework with Constant Client Bandwidth Blowup</a></li>
+    <h3>Abstract</h3>
+    <p class="pub-abstract">End-to-end encrypted file-sharing systems, such as Keybase Filesystem, enable users to share files stored in the cloud without revealing the contents to the servers. However, the servers still learn metadata, such as user identities and access patterns. Prior works have tried to remove such leakage but relied on strong trust assumptions. Metal (NDSS’20) is not secure against malicious servers. MCORAM (ASIACRYPT’20) offers confiden- tiality against malicious servers, but not integrity.<br>
+We present Titanium, a metadata-hiding file-sharing system with confidentiality and integrity against both malicious users and servers. Compared with MCORAM, the state-of-the-art with con- fidentiality (but not integrity) against malicious servers, Titanium additionally offers integrity. Experiments show that Titanium is 5× to 200× faster, or even more, than MCORAM.</p>
     
-      <li><a href="/publication/19_pets_posup/">Hardware-Supported ORAM in Effect: Practical Oblivious Search and Update on Very Large Dataset</a></li>
+
     
-      <li><a href="/publication/19_jcs_odse_ext/">A Multi-Server Oblivious Dynamic Searchable Encryption Framework</a></li>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Type</div>
+          <div class="col-12 col-md-9">
+            
+            
     
-      <li><a href="/publication/18_ieeetsc_imdsse/">A Secure Searchable Encryption Framework for PrivacyCritical Cloud Storage Services</a></li>
+            <a href="/publication/#1">
+              Conference paper
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Publication</div>
+          <div class="col-12 col-md-9">Annual Network and Distributed System Security Symposium
+            
+              (NDSS)
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    <div class="space-below"></div>
+
+    <div class="article-style"></div>
+
+    
+
+
+
+
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/publication/22_ndss_titanium/&amp;text=A%20Metadata-Hiding%20File-Sharing%20System%20with%20Malicious%20Security" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/publication/22_ndss_titanium/&amp;t=A%20Metadata-Hiding%20File-Sharing%20System%20with%20Malicious%20Security" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=A%20Metadata-Hiding%20File-Sharing%20System%20with%20Malicious%20Security&amp;body=/publication/22_ndss_titanium/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/publication/22_ndss_titanium/&amp;title=A%20Metadata-Hiding%20File-Sharing%20System%20with%20Malicious%20Security" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=A%20Metadata-Hiding%20File-Sharing%20System%20with%20Malicious%20Security%20/publication/22_ndss_titanium/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/publication/22_ndss_titanium/&amp;title=A%20Metadata-Hiding%20File-Sharing%20System%20with%20Malicious%20Security" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
     
   </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+
+
+
+
+
   
 
+
+  
+    
+    
+
+
+
+
+
+  
+
+
+  
+    
+    
+
+
+
+
+
+  
+
+
+  
+    
+    
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+<div class="article-widget">
+  
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/publication/22_usenixsec_pc/" rel="next">Polynomial Commitment with a One-to-Many Prover and Applications</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/publication/21_secrypt_pouw/" rel="prev">Proof-of-Useful-Randomness: Mitigating the Energy Waste in Blockchain Proof-of-Work</a>
+  </div>
+  
+</div>
+
+</div>
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/publication/20_ndss_macao/">MACAO: A Maliciously-Secure and Client-Efficient Active ORAM Framework</a></li>
+      
+      <li><a href="/publication/20_acmtops_s3oram_ext/">A Multi-server ORAM Framework with Constant Client Bandwidth Blowup</a></li>
+      
+      <li><a href="/publication/19_jcs_odse_ext/">A Multi-Server Oblivious Dynamic Searchable Encryption Framework</a></li>
+      
+      <li><a href="/publication/18_ieeetsc_imdsse/">A Secure Searchable Encryption Framework for PrivacyCritical Cloud Storage Services</a></li>
+      
+      <li><a href="/publication/18_dbsec_odse/">Oblivious Dynamic Searchable Encryption on Distributed Cloud Systems</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+
+  </div>
 </div>
 
       
