@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CS 4274: Secure Computing Capstone (Spring'22)</title>
+    <link rel='stylesheet prefetch' href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link rel='stylesheet prefetch' href='https://startbootstrap.com/templates/agency/font-awesome-4.1.0/css/font-awesome.min.css'>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  
+    
+    <link rel="stylesheet" href="css/style.css">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" /> <! responsive design>
+
+            <link rel="icon" href="images/icon.png">
+
+    
+    <link href="fa-5.15.1/css/all.css" rel="stylesheet"> <!--load all styles -->
+
+
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+           
+            <div class="navbar-header page-scroll">
+                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll navbar-right" href="#page-top">CS 4274: Secure Computing Capstone</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden active">
+                        <a href="#page-top"></a>
+                    </li>
+                    <!-- <li class="">
+                        <a class="page-scroll" href="#about">About</a>
+                    </li> -->
+                    <li class="">
+                        <a class="page-scroll" href="#general"><i class="fa fa-info-circle  mr-3"></i> General</a>
+                    </li>
+                
+                    <li class="">
+                        <a class="page-scroll" href="#milestones"><i class="fas fa-calendar-alt mr-3"></i> Milestones</a>
+                    </li>
+					<li class="">
+                        <a class="page-scroll" href="#schedule"><i class="fas fa-chalkboard-teacher mr-3"></i> Schedule</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#referece"><i class="fas fa-book mr-3"></i> References</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#covid"><i class="fa fa-plus-square  mr-3"></i> Covid-19 Policy</a>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header id="page-top" >
+    </header>
+    <content>
+        <section id="general" class="bg-light-gray">
+                <div class="container">
+                    <h2 class="mb-4">CS 4274: Secure Computing Capstone (Spring 2022)</h2>
+                    <div style="text-align: center;"><h4 style="color:#007bff">This Year's Theme: Cryptographic Privacy-Enhancing Technologies </h4></div>
+          
+                    <h3> Course Description</h3> 
+                    <p>The objective of this course is to explore emerging cryptographic protocols that can be deployed to improve system security and user privacy in the era of big data. The students will focus on (i) investigating recent attacks on the personal encrypted data (e.g., emails, medical records) that can extract significant sensitive information from the users; (ii) designing provably secure cryptographic tools to counter some of these attacks thus, improve the user privacy when the users process their own data stored on the untrusted server; (iii) implementing the proposed designs and evaluating their performance on real-world environments (e.g., databases, cloud computing and storage infrastructures). The students will develop some crypto tools such as Searchable Encryption (SE), Oblivious Data Access, and Secure Multi-Party Computation (MPC), which offer useful data processing functionalities such as query, search, and computation, while preserving the data confidentiality and user privacy all the time.
+                    </p>
+
+                    <h3>Syllabus</h3>
+                    The course syllabus is available <a href="files/CS4274_spring22_syllabus.pdf">here</a>.
+                    <h3>When and Where</h3>
+
+                    <p> <u>Time</u>: M W F @ 12:20 - 1:10 PM (EST) </p>
+                    <p> <u>Location</u>: NCB 110A </p>
+                    
+                    <h3>Teaching Staff</h3>
+                    <p>Instructor: <a href="mailto:thanghoang@vt.edu">Dr. Thang Hoang (@thanghoang)</a></p>
+                    <ul>
+                        <li>Office Hours: Mon @ 2:00 PM - 3:00 PM (EST)</li>
+                        <li>Location</u>: KWII 2216 / Zoom (link announced on Canvas)</li>
+                    </ul>
+                    
+                    <h3 id="milestones">Project Milestones</h3>
+                    
+                    This course will be project-based, where the students will form groups of (at most) three members to investigate on selected problems in privacy-enhancing technologies.<br/><br/>
+
+                    There will be <u>three</u> project milestones, each at the beginning of March, April and May (towards the end of the course).
+                    <br/><br/>
+                    For each milestone, each group is expected to deliver the following: 
+                    <ol style="margin-left:20px">
+                        <li>Oral presentation </li>
+                        <li> Project report documenting the progress</li>
+                        <li> Implementation demo</li>
+                    </ol>
+                    <br/>
+
+                    <b>Milestone 1: </b> Each group is expected to deliver 
+                    <ol style="margin-left:20px">
+                        <li>A clear problem statement</li>
+                        <li>Background and related work</li>
+                        <li>A high-level approach to solve the problem</li>
+                        <li>A demo of any programs being developed by the group to get familiar with the problem space</li>
+                    </ol>
+                    <b style="color:red">Due: March 01, 2022 - 11:59 PM (EST)</b>
+
+                    <br/><br/>
+
+                    <b>Milestone 2: </b> Each group is expected to address all feedback given by the instructor for  Milestone 1, plus
+                    <ol style="margin-left:20px">
+                        <li>A more comprehensive research methodology</li>
+                        <li>A complete plan for experimentation and evaluation</li>
+                        <li>A preliminary result and demo</li> 
+                        <li>A <b>statement of contribution</b> section that clearly describe the contribution of each group member</li>
+                        <li>All new contributions and updates to the project (w.r.t writing, methodology, results) since Milestone 1</li> 
+                    </ol>
+                    <b style="color:red">Due: April 03, 2022 - 11:59 PM (EST)</b>
+                    <br/><br/>
+                    <b>Milestone 3: </b> Each group will address feedback from Milestone 2, plus 
+                    <ol style="margin-left:20px">
+                        <li>Final methodology</li>
+                        <li>A complete experimental and evaluation results </li>
+                        <li>A fully Working prototype and demo </li>
+                    </ol>
+                    <b style="color:red">Due: May 03, 2022 - 11:59 PM (EST) </b>
+
+                    <h3>Grading Policy</h3>
+                                        
+                    <table>
+                        <tr>
+                        <td style="text-align:right">Oral Presentations</td> <td style="padding-left: 25px; text-align:right">30%</td>
+                        </tr>
+                        <tr>
+                        <td style="text-align:right">Project Reports</td> <td style="padding-left: 25px; text-align:right">50%</td>
+                        </tr>
+                        <td style="text-align:right">Demos</td> <td style="padding-left: 25px; text-align:right">20%</td>
+                        </tr>
+                        <tr  style="border-top:  1px solid #000;">
+                        <td style="text-align:right"> Total</td> <td style="padding-left: 25px; text-align:right" >100%</td>
+                        </tr>
+                    </table>
+                    
+
+                    <h4>Grading Scale </h4>
+                    <p> A(93+) &nbsp; A-(90-92) &nbsp; B+(87-89) &nbsp; B(83-86) &nbsp; B-(80-82) &nbsp; C+(77-79) &nbsp; C(73-76) &nbsp; C-(70-72) &nbsp;  D+(67-69) &nbsp;  D(63-66) &nbsp;  D-(60-62) &nbsp; F(50-) </p>
+                    
+                    <b>Grading will not be curved!</b> All fractions will be round up.
+
+                    <h4>Late Submission </h4> 
+                    Late submission can only be  accepted  if the student can present a police report or a doctor’s note indicating emergency situation.
+
+
+
+                    <h4>Code of Conduct</h4>
+                    <p>  This course strictly follows the <a href="https://www.honorsystem.vt.edu/">VT code of conduct</a>. </p>
+                    
+					</div>
+                </div>
+            </section>
+
+        <!-- Schedule Section -->
+        <section id="schedule" >
+            <div class="container">
+                <h3>Meeting Schedule</h3>
+                The schedule may be subject to change as the course proceeds.<br/>
+                <table width="100%"  id="tableSchedule">
+                    <thead>
+                    <tr>
+                    <th width="5%" style="text-align: center;">Week</th> 
+                    <th width="15%"><b>Date</b></th> 
+                    <th width="45%"><b>Topic</b></th>
+                    <th wdith="35%"><b>Notes</b></th>
+                    </tr>
+                    </thead>
+                    <tr><td rowspan=2 style="text-align: center;border-bottom: 1px solid black;">1</td>
+                    <td>Jan 19 (W)</td> <td>Intro & Overview</td><td></td>
+                    </tr>
+                    
+                    <tr style="border-bottom: 1px solid black; background-color: #F8F4F5">
+                    <td >Jan 21 (F)</td> <td> </td><td></td>
+                    </tr>
+                    
+                    <tr><td rowspan=3 style="text-align: center;border-bottom: 1px solid black;">2</td>
+                    <td>Jan 24 (M)</td> <td></td><td></td> 
+                    </tr>
+                    <tr style="background-color: #F8F4F5">
+                        <td>Jan 26 (W)</td>  <td> </td><td></td> 
+                        </tr>
+                    <tr style="border-bottom: 1px solid black;">
+                    <td>Jan 28 (F)</td>  <td>  </td><td></td> 
+                    </tr>
+                    <tr><td rowspan=3 style="text-align: center;border-bottom: 1px solid black;">3</td>
+                        <td style="background-color: #F8F4F5">Jan 31 (M)</td> <td style="background-color: #F8F4F5"></td><td style="background-color: #F8F4F5"></td> 
+                        </tr>
+                        <tr style="">
+                            <td>Feb 02 (W)</td>  <td> </td><td></td> 
+                            </tr>
+                        <tr style="border-bottom: 1px solid black;background-color: #F8F4F5">
+                        <td>Feb 04 (F)</td>  <td>  </td><td></td> 
+                    </tr>
+                    
+                    <tr><td rowspan=3 style="text-align: center;border-bottom: 1px solid black;">4</td>
+                    <td>Feb 07 (M)</td> <td></td><td></td> 
+                    </tr>
+                    <tr style="background-color: #F8F4F5">
+                        <td>Feb 09 (W)</td>  <td> </td><td></td> 
+                        </tr>
+                    <tr style="border-bottom: 1px solid black;">
+                    <td>Feb 11 (F)</td>  <td>  </td><td></td> 
+                    </tr>
+                    <tr><td rowspan=3 style="text-align: center;border-bottom: 1px solid black;">5</td>
+                        <td style="background-color: #F8F4F5">Feb 14 (M)</td> <td style="background-color: #F8F4F5"></td><td style="background-color: #F8F4F5"></td> 
+                        </tr>
+                        <tr style="">
+                            <td>Feb 16 (W)</td>  <td> </td><td></td> 
+                            </tr>
+                        <tr style="border-bottom: 1px solid black;background-color: #F8F4F5">
+                        <td>Feb 18 (F)</td>  <td>  </td><td></td> 
+                    </tr>
+                    
+
+                    <tr><td rowspan=3 style="text-align: center;border-bottom: 1px solid black;">6</td>
+                    <td>Feb 21 (M)</td> <td></td><td></td> 
+                    </tr>
+                    <tr style="background-color: #F8F4F5">
+                        <td>Feb 23 (W)</td>  <td> </td><td></td> 
+                        </tr>
+                    <tr style="border-bottom: 1px solid black;">
+                    <td>Feb 25 (F)</td>  <td>  </td><td></td> 
+                    </tr>
+                    <tr><td rowspan=3 style="text-align: center;border-bottom: 1px solid black;">7</td>
+                        <td style="background-color: #F8F4F5">Feb 28 (M)</td> <td style="background-color: #F8F4F5;"></td> </td><td style="background-color: #F8F4F5"></td> 
+                        </tr>
+                        <tr style="">
+                            <td>Mar 02 (W)</td>  <td  style="color:red"> Milestone 1 presentation </td><td></td> 
+                            </tr>
+                        <tr style="border-bottom: 1px solid black;background-color: #F8F4F5">
+                        <td>Mar 04 (F)</td>  <td  style="color:red"> Milestone 1 presentation </td><td></td> 
+                    </tr>
+
+                    <tr><td rowspan=3 style="text-align: center;border-bottom: 1px solid black;">8</td>
+                    <td>Mar 07 (M)</td> <td> <i>No class (Spring break) </i></td><td></td> 
+                    </tr>
+                    <tr style="background-color: #F8F4F5">
+                        <td>Mar 09 (W)</td>  <td><i> No class (Spring break)</i> </td><td></td> 
+                        </tr>
+                    <tr style="border-bottom: 1px solid black;">
+                    <td>Mar 11 (F)</td>  <td> <i> No class (Spring break) </i> </td><td></td> 
+                    </tr>
+                    <tr><td rowspan=3 style="text-align: center;border-bottom: 1px solid black;">9</td>
+                        <td style="background-color: #F8F4F5">Mar 14 (M)</td> <td style="background-color: #F8F4F5"></td><td style="background-color: #F8F4F5"></td> 
+                        </tr>
+                        <tr style="">
+                            <td>Mar 16 (W)</td>  <td> </td><td></td> 
+                            </tr>
+                        <tr style="border-bottom: 1px solid black;background-color: #F8F4F5">
+                        <td>Mar 18 (F)</td>  <td>  </td><td></td> 
+                    </tr>
+
+                    
+                    <tr><td rowspan=3 style="text-align: center;border-bottom: 1px solid black;">10</td>
+                    <td>Mar 21 (M)</td> <td></td><td></td> 
+                    </tr>
+                    <tr style="background-color: #F8F4F5">
+                        <td>Mar 23 (W)</td>  <td> </td><td></td> 
+                        </tr>
+                    <tr style="border-bottom: 1px solid black;">
+                    <td>Mar 25 (F)</td>  <td>  </td><td></td> 
+                    </tr>
+                    <tr><td rowspan=3 style="text-align: center;border-bottom: 1px solid black;">11</td>
+                        <td style="background-color: #F8F4F5">Mar 28 (M)</td> <td style="background-color: #F8F4F5"></td><td style="background-color: #F8F4F5"></td> 
+                        </tr>
+                        <tr style="">
+                            <td>Mar 30 (W)</td>  <td> </td><td></td> 
+                            </tr>
+                        <tr style="border-bottom: 1px solid black;background-color: #F8F4F5">
+                        <td>Apr 01 (F)</td>  <td>  </td><td></td> 
+                    </tr>
+
+                    <tr><td rowspan=3 style="text-align: center;border-bottom: 1px solid black;">12</td>
+                    <td>Apr 04 (M)</td> <td style="color:red">Milestone 2 presentation </td><td></td> 
+                    </tr>
+                    <tr style="background-color: #F8F4F5">
+                        <td>Apr 06 (W)</td>  <td style="color:red"> Milestone 2 presentation </td><td></td> 
+                        </tr>
+                    <tr style="border-bottom: 1px solid black;">
+                    <td>Apr 08 (F)</td>  <td>  </td><td></td> 
+                    </tr>
+                    <tr><td rowspan=3 style="text-align: center;border-bottom: 1px solid black;">13</td>
+                        <td style="background-color: #F8F4F5">Apr 11 (M)</td> <td style="background-color: #F8F4F5"></td><td style="background-color: #F8F4F5"></td> 
+                        </tr>
+                        <tr style="">
+                            <td>Apr 13 (W)</td>  <td> </td><td></td> 
+                            </tr>
+                        <tr style="border-bottom: 1px solid black;background-color: #F8F4F5">
+                        <td>Apr 15 (F)</td>  <td>  </td><td></td> 
+                    </tr>
+
+                    <tr><td rowspan=3 style="text-align: center;border-bottom: 1px solid black;">14</td>
+                    <td>Apr 18 (M)</td> <td></td><td></td> 
+                    </tr>
+                    <tr style="background-color: #F8F4F5">
+                        <td>Apr 20 (W)</td>  <td> </td><td></td> 
+                        </tr>
+                    <tr style="border-bottom: 1px solid black;">
+                    <td>Apr 22 (F)</td>  <td>  </td><td></td> 
+                    </tr>
+                    <tr><td rowspan=3 style="text-align: center;border-bottom: 1px solid black;">15</td>
+                        <td style="background-color: #F8F4F5">Apr 25 (M)</td> <td style="background-color: #F8F4F5"></td><td style="background-color: #F8F4F5"></td> 
+                        </tr>
+                        <tr style="">
+                            <td>Apr 27 (W)</td>  <td> </td><td></td> 
+                            </tr>
+                        <tr style="border-bottom: 1px solid black;background-color: #F8F4F5">
+                        <td>Apr 29 (F)</td>  <td>  </td><td></td> 
+                    </tr>
+
+                    <tr><td rowspan=3 style="text-align: center;border-bottom: 1px solid black;">16</td>
+                        <td>May 02 (M)</td> <td></td><td></td> 
+                        </tr>
+                        <tr style="background-color: #F8F4F5">
+                            <td>May 04 (W)</td>  <td style="color:red">Milestone 3 presentation </td><td></td> 
+                            </tr>
+                        <tr style="border-bottom: 1px solid black;">
+                        <td>May 06 (F)</td>  <td style="color:red"> Milestone 3 presentation </td><td></td> 
+                        </tr>
+                </table>
+            </div>
+        </section>
+
+       
+        <section id="reference" >
+            <div class="container">
+                <h3>Reference Materials</h3>
+                All materials required for this course will be research papers published in respected cybersecurity and crypto venues in recent years such as IEEE S&P, ACM CCS, USENIX Security, ISOC NDSS, PETS, CRYPTO, EUROCRYPT, ASIACRYPT, TCC.
+            </div>
+        </section>
+
+
+        <section id="covid">
+            <div class="container">
+                <h3>Covid-19 Statement </h3>
+                
+                Virginia Tech is committed to protecting the health and safety of all members of its community. By participating in this class, all students agree to abide by the Virginia Tech Wellness principles.  To uphold these principles, in this class the student must do the following when attending in-person meetings:
+
+
+
+
+
+
+
+
+                
+                <ul style="margin-left: 20px;">
+                    <li>Wear a face covering during class, including as you enter and exit the classroom</li>
+                    <li>Maintain the designated distancing guidelines of the classroom</li>
+                    <li>Enter and exit the classroom according to posted signage.</li>
+                    <li>Be respectful of the well-being of others by practicing appropriate personal hygiene and by providing appropriate physical distance when feasible.</li>
+                </ul>     
+
+                Masks may be reusable or homemade cloth masks, dust masks, or surgical masks and should fit close to the face to provide thorough filtration of breathed air. Face shields that are open around the sides do not satisfy this requirement and are currently not accepted as a viable alternative by the university (see <a href="https://ready.vt.edu/faq.html">https://ready.vt.edu/faq.html</a>).<br/><br/>
+                
+                If a student feels that they cannot wear a mask for health concerns and must use an alternative form of face covering such as a face shield, they should contact Services for Students with Disabilities to request an accommodation. No exceptions for masks will be provided unless there is an official accommodation notice provided by SSD to the instructor. <br/><br/>
+                
+                <b>These requirements will not be waived!</b> The instructor has the authority to terminate the class session early if the health and safety requirements are not maintained. Students who fail to follow the requirements will be reported to the Office of Student Conduct.<br/><br/>
+
+                If the student is exhibiting even the slightest sign of illness, they must not attend an in-person class. Notify the lecture by email and follow the instructions posted at <a href="https://vt.edu/ready/health.html#tips">https://vt.edu/ready/health.html#tips</a>. <br/><br/>
+
+                If a student will miss significant class activities because of the need to self-isolate, then the Dean of Students Office should be contacted for an official absence verification. Prolonged absences may be difficult to make-up. Students should consult with their advisor about possible options if too much course work is missed to feasibly make-up. As pandemic conditions continue to evolve through the semester, these requirements may need to change. The guidance posted by the university at VT Ready should represent the most up-to-date requirements of the university and should be checked periodically for changes.
+            </div>
+        </section>
+    </content>
+
+    <footer>
+        <div class="container">
+            
+        </div>
+    </footer>
+	</body>
+	
+	<!-- Google Analytics -->
+	<script>
+	  
+
+	</script>
+
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/classie.js"></script>
+    <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/cbpAnimatedHeader.js"></script>
+
+
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
+
+<script src="js/index.js"></script>
+
+
+</html>
