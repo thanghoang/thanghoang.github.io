@@ -1,338 +1,200 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>/publication-type/1/</loc>
     <lastmod>2022-08-10T21:28:55-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/authors/</loc>
     <lastmod>2022-08-10T21:28:55-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/author/elaine-shi/</loc>
     <lastmod>2022-08-10T21:28:55-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/author/jiaheng-zhang/</loc>
     <lastmod>2022-08-10T21:28:55-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/publication/22_usenixsec_pc/</loc>
     <lastmod>2022-08-10T21:28:55-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/publication_types/</loc>
     <lastmod>2022-08-10T21:28:55-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/publication/</loc>
     <lastmod>2022-08-10T21:28:55-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/author/thang-hoang/</loc>
     <lastmod>2022-08-10T21:28:55-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/</loc>
     <lastmod>2022-08-10T21:28:55-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/author/tiancheng-xie/</loc>
     <lastmod>2022-08-10T21:28:55-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/author/yupeng-zhang/</loc>
     <lastmod>2022-08-10T21:28:55-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/publication/22_ndss_titanium/</loc>
     <lastmod>2022-02-27T21:28:55-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/author/attila-a.-yavuz/</loc>
     <lastmod>2022-02-27T21:28:55-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/author/jorge-guajardo/</loc>
     <lastmod>2022-02-27T21:28:55-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/author/weikeng-chen/</loc>
     <lastmod>2022-02-27T21:28:55-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/author/efe-ulas-akay-seyitoglu/</loc>
     <lastmod>2021-04-16T21:28:55-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/publication/21_secrypt_pouw/</loc>
     <lastmod>2021-04-16T21:28:55-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/publication-type/2/</loc>
     <lastmod>2021-01-25T21:28:55-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/author/deokjai-choi/</loc>
     <lastmod>2021-01-25T21:28:55-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/author/hyunil-kim/</loc>
     <lastmod>2021-01-25T21:28:55-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/author/lam-tran/</loc>
     <lastmod>2021-01-25T21:28:55-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/publication/21_ieeeaccess_gait/</loc>
     <lastmod>2021-01-25T21:28:55-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/author/thuc-nguyen/</loc>
     <lastmod>2021-01-25T21:28:55-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/publication/20_codaspy_mose/</loc>
     <lastmod>2020-03-06T21:41:50-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/author/rouzbeh-behnia/</loc>
     <lastmod>2020-03-06T21:41:50-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/author/yeongjin-jang/</loc>
     <lastmod>2020-03-06T21:41:50-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/publication/20_ndss_macao/</loc>
     <lastmod>2020-02-06T21:41:54-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/publication/20_acmtops_s3oram_ext/</loc>
     <lastmod>2020-01-01T21:43:01-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/publication/19_pets_posup/</loc>
     <lastmod>2019-07-06T21:41:45-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/author/muslum-o.-ozmen/</loc>
     <lastmod>2019-07-06T21:41:45-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/publication/19_jcs_odse_ext/</loc>
     <lastmod>2019-01-06T21:42:55-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/author/f.-betul-durak/</loc>
     <lastmod>2019-01-06T21:42:55-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/publication/18_ieeetsc_imdsse/</loc>
     <lastmod>2018-12-06T21:42:47-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/author/ceyhun-d.-ozkaptan/</loc>
     <lastmod>2018-12-06T21:42:40-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/publication/18_ieeetcc_ods/</loc>
     <lastmod>2018-12-06T21:42:40-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/author/gabriel-hackebeil/</loc>
     <lastmod>2018-12-06T21:42:40-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/author/betul-f.-durak/</loc>
     <lastmod>2018-07-06T21:41:41-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/publication/18_dbsec_odse/</loc>
     <lastmod>2018-07-06T21:41:41-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/publication/18_icc_fsdsse/</loc>
     <lastmod>2018-05-06T21:41:37-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/publication/17_isc/</loc>
     <lastmod>2017-11-06T21:41:33-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/publication/17_ccs_s3oram/</loc>
     <lastmod>2017-10-06T21:41:20-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/author/tam-nguyen/</loc>
     <lastmod>2017-10-06T21:41:20-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/publication/16_acsac_doddsse/</loc>
     <lastmod>2016-12-01T21:41:15-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/publication/15_ijis/</loc>
     <lastmod>2015-11-06T21:42:28-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/publication/15_secrypt_gait/</loc>
     <lastmod>2015-07-06T21:41:02-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/publication/14_tswj_gait/</loc>
     <lastmod>2014-05-06T21:42:21-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/publication/13_ifipsec_gait/</loc>
     <lastmod>2013-07-06T21:40:53-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/author/anh-nguyen/</loc>
     <lastmod>2013-07-06T21:40:53-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/author/viet-vo/</loc>
     <lastmod>2013-07-06T21:40:53-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/publication/13_jips_gait/</loc>
     <lastmod>2013-06-06T21:42:17-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/author/chuyen-luong/</loc>
     <lastmod>2013-06-06T21:42:17-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/author/son-do/</loc>
     <lastmod>2013-06-06T21:42:17-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/author/thuc-d.-nguyen/</loc>
     <lastmod>2013-06-06T21:42:17-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/publication/13_ijdsn/</loc>
     <lastmod>2013-06-06T21:42:11-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/author/viet-q.-vo/</loc>
     <lastmod>2013-06-06T21:42:11-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/publication/12_isspit/</loc>
     <lastmod>2012-12-06T21:40:34-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/publication/12_iccais_gait/</loc>
     <lastmod>2012-11-01T21:28:55-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/news/data/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/services/data/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/teaching/data/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/news/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/recruitment/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/talk/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/services/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/teaching/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/author/thang-hoang/</loc>
   </url>
-  
 </urlset>
