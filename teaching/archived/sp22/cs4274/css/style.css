@@ -1,0 +1,431 @@
+
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5 {
+    font-family: 'Helvetica';
+    font-family: 'Roboto', sans-serif;
+    color: #61142D;
+
+    
+}
+
+
+/* my changes */
+/* Reponsive design */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (max-width : 768px) {
+/* Styles */
+
+    .container {width:100%;}
+	header .container {
+        padding-top: 80px;
+        
+        padding-bottom: 10px;
+        text-align:center;
+    }
+    section { font-size:24px; padding: 5px 0px 30px 0px;}
+    section h2 {font-size: 1.5em;padding-top:50px; padding-bottom: 10px;}
+
+    section h3 {font-size: 1.4em;padding-top:10px; padding-bottom: 15px;}
+    section h4 {font-size: 1.3em;padding-top:30px; padding-bottom: 5px;}
+    section h5 {font-size: 1.2em;padding-top:10px; padding-bottom: 5px;}
+    .navbar-default.navbar-shrink .navbar-brand {
+        font-size: .5em;
+    }
+	header 
+	{
+		width:100%;
+		margin:0;
+		padding-bottom:10px;
+	    
+	}
+	content 
+	{
+		width:100%;
+		margin:0;	
+	}
+    
+
+	ul li
+	{
+		padding:0px;
+		margin-left:0px;
+	}
+}
+/* Tablet (portrait and landscape) ----------- */
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 1024px) {
+/* Styles */
+    
+    section { font-size:32px; padding: 5px 0px 30px 0px;}
+    section h2 {font-size: 2.3em;padding-top:50px; padding-bottom: 30px;}
+
+    section h3 {font-size: 2.1em;padding-top:30px; padding-bottom: 15px;}
+    section h4 {font-size: 1.5em;padding-top:30px; padding-bottom: 5px;}
+    section h5 {font-size: 1.25em;padding-top:10px; padding-bottom: 5px;}
+    .navbar-default.navbar-shrink .navbar-brand {
+        font-size: 1.2em;
+    }
+    .container { width:100%;}
+	header { width:100%; margin:0;  padding-bottom:20px;}
+	content { width:100%; margin:0;	}
+	
+	header .container {
+        padding-top: 100px;
+        padding-bottom: 20px;
+    }
+
+	 
+}
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1024px) {
+/* Styles */
+	header { width:90%; margin:0;  padding-bottom:30px;}
+    section { font-size:32px; padding: 5px 0px 30px 0px;}
+    section h2 {font-size: 2.3em;padding-top:50px; padding-bottom: 30px;}
+
+    section h3 {font-size: 2.1em;padding-top:30px; padding-bottom: 15px;}
+    section h4 {font-size: 1.5em;padding-top:30px; padding-bottom: 5px;}
+    section h5 {font-size: 1.25em;padding-top:10px; padding-bottom: 5px;}
+    .navbar-default.navbar-shrink .navbar-brand {
+        font-size: 1.2em;
+    }
+	.container { width:90%; padding-top: 10px}
+	content { width:90%; margin:auto;}
+
+	header .container {
+        padding-top: 100px;
+        padding-bottom: 20px;
+    }
+   
+
+}
+
+
+
+
+
+
+
+
+/** COMMON STYLE **/
+section {
+    padding-bottom: 10px;
+}
+
+li
+{
+	padding-bottom:4px;
+}
+
+
+
+
+
+
+/*!
+ * Start Bootstrap - Agency Bootstrap Theme (https://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+ 
+ ul .just-padding {
+    padding-left: 15px;
+    list-style-type: none;
+  }
+  .bg-light-gray {
+    background-color: #fbfbfb;
+	
+	/*background-color: #0d0d0d;*/
+}
+.bg-darkest-gray {
+    background-color: #222;
+}
+
+
+
+
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: 0;
+}
+
+
+
+
+
+
+.navbar-default {
+        padding: 25px 0;
+        border: 0;
+        /*background-color: transparent;*/
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+}
+
+.navbar-default .navbar-brand {
+ /*       font-size: 2em; */
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+}
+
+.navbar-default .navbar-nav>.active>a {
+        border-radius: 3px;
+    }
+
+.navbar-default.navbar-shrink {
+        padding: 5px 0;
+        /*background-color: #222;*/
+		background-color: #61142D;
+		
+}
+
+
+
+
+
+
+/* navigation decoration */
+
+.navbar-default {
+    border-color: transparent;
+  /*  background-color: #222;*/
+     background-color: #61142D;
+
+}
+
+.navbar-default .navbar-brand {
+   
+    /*color: #1ee2e7;*/
+	color: #fff;
+    text-decoration:none;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+
+	/*font-size:3vw;*/
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand.active {
+    color: #E87722;
+    text-decoration:none;
+    /*font-size:3vw;*/
+    
+}
+
+.navbar-default .navbar-collapse {
+    border-color: rgba(255,255,255,.6);
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #E87722;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+    
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+   background-color: #E87722;
+}
+.navbar-default .nav li a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    color: #fff;
+    text-decoration: none;
+}
+.navbar-default .nav li a:hover {
+    color: #E87722;
+
+}
+.navbar-nav > li{
+    margin-left:15px;
+    margin-right:15px;
+  }
+
+
+
+
+
+
+footer {
+    padding: 50px 0;
+    text-align: center;
+}
+
+
+
+/* This to fix the default width of collapsable navigation of bootstrap */
+@media (max-width: 2200px) {
+  .navbar-header {
+      float: none;
+   
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+table
+{
+    vertical-align: middle;
+}
+
+#tableSchedule
+{
+    margin: 20px 20px 20px 20px;
+    
+}
+#tableSchedule td
+{
+    height: 100px;
+    padding-left: 15px;
+    padding-right:15px;
+}
+#tableSchedule th
+{
+    padding-left: 15px;
+    padding-right:15px;
+}
+
+#tableSchedule th
+{
+    border-bottom: 1px solid black;
+}
+
+.table-striped>tbody>tr:nth-of-type(even) {
+    background-color: #F8F4F5;
+    border-bottom: 1px solid black;
+}
+
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: white;
+}
+
+#sidebar ul li {
+    line-height: 120%;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#sidebar h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body
+{
+    background-color: #fff;
+    color:black;
+    font-family: 'Helvetica';
+
+    font-family: 'Source Serif Pro', serif;
+
+
+    font-size:30px;
+    line-height: 160%;
+}
+
+
+a {
+    color: #61142D;
+}
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+    color: #61142D;
+
+}
+
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus
+{
+    text-decoration: none;
+    outline: 0;
+    color: #E87722;
+}
+ 
+
+.navbar-default .navbar-nav>.active>a {
+    border-radius: 0;
+    color: #61142D;
+    background-color: #fbfbfb;
+  /*  background-color: #1ee2e7;*/
+}
+
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #61142D;
+    background-color: #fbfbfb;
+}
+
+a 
+{
+    color:#007bff;
+}
+
