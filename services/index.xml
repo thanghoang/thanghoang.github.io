@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Services | Thang Hoang</title>
-    <link>/services/</link>
-      <atom:link href="/services/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://thanghoang.github.io/services/</link>
+      <atom:link href="https://thanghoang.github.io/services/index.xml" rel="self" type="application/rss+xml" />
     <description>Services</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
     <image>
-      <url>/images/icon_hu90c008e4d96deb53d5ad25d414e3485e_13497_512x512_fill_lanczos_center_3.png</url>
+      <url>https://thanghoang.github.io/images/icon_hu90c008e4d96deb53d5ad25d414e3485e_13497_512x512_fill_lanczos_center_3.png</url>
       <title>Services</title>
-      <link>/services/</link>
+      <link>https://thanghoang.github.io/services/</link>
     </image>
     
     <item>
       <title></title>
-      <link>/services/data/</link>
+      <link>https://thanghoang.github.io/services/data/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/services/data/</guid>
+      <guid>https://thanghoang.github.io/services/data/</guid>
       <description></description>
     </item>
     

@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Muslum O. Ozmen | Thang Hoang</title>
-    <link>/author/muslum-o.-ozmen/</link>
-      <atom:link href="/author/muslum-o.-ozmen/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://thanghoang.github.io/author/muslum-o.-ozmen/</link>
+      <atom:link href="https://thanghoang.github.io/author/muslum-o.-ozmen/index.xml" rel="self" type="application/rss+xml" />
     <description>Muslum O. Ozmen</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 06 Jul 2019 21:41:45 -0700</lastBuildDate>
     <image>
-      <url>/images/icon_hu90c008e4d96deb53d5ad25d414e3485e_13497_512x512_fill_lanczos_center_3.png</url>
+      <url>https://thanghoang.github.io/images/icon_hu90c008e4d96deb53d5ad25d414e3485e_13497_512x512_fill_lanczos_center_3.png</url>
       <title>Muslum O. Ozmen</title>
-      <link>/author/muslum-o.-ozmen/</link>
+      <link>https://thanghoang.github.io/author/muslum-o.-ozmen/</link>
     </image>
     
     <item>
       <title>Hardware-Supported ORAM in Effect: Practical Oblivious Search and Update on Very Large Dataset</title>
-      <link>/publication/19_pets_posup/</link>
+      <link>https://thanghoang.github.io/publication/19_pets_posup/</link>
       <pubDate>Sat, 06 Jul 2019 21:41:45 -0700</pubDate>
-      <guid>/publication/19_pets_posup/</guid>
+      <guid>https://thanghoang.github.io/publication/19_pets_posup/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Forward-Private Dynamic Searchable Symmetric Encryption with Efficient Search</title>
-      <link>/publication/18_icc_fsdsse/</link>
+      <link>https://thanghoang.github.io/publication/18_icc_fsdsse/</link>
       <pubDate>Sun, 06 May 2018 21:41:37 -0700</pubDate>
-      <guid>/publication/18_icc_fsdsse/</guid>
+      <guid>https://thanghoang.github.io/publication/18_icc_fsdsse/</guid>
       <description></description>
     </item>
     
