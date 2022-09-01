@@ -23,6 +23,72 @@
 
     <link href="fa-6.1.1/css/all.css" rel="stylesheet"> <!--load all styles -->
 
+    <script>
+        var end = new Date('09/09/2022 05:00 PM');
+        
+            var _second = 1000;
+            var _minute = _second * 60;
+            var _hour = _minute * 60;
+            var _day = _hour * 24;
+            var timer;
+        
+            function showRemaining() {
+                var now = new Date();
+                var distance = end - now;
+                if (distance < 0) {
+        
+                    clearInterval(timer);
+                    document.getElementById('countdown').innerHTML = 'EXPIRED!';
+        
+                    return;
+                }
+                var days = Math.floor(distance / _day);
+                var hours = Math.floor((distance % _day) / _hour);
+                var minutes = Math.floor((distance % _hour) / _minute);
+                var seconds = Math.floor((distance % _minute) / _second);
+                document.getElementById('countdown').innerHTML = '(';
+                if (days > 0 )
+                {
+                    document.getElementById('countdown').innerHTML += days + ' days ';
+                    
+                }
+                else
+                {
+                    if (hours > 15)
+                    {
+                        if (hours<10)
+                        {
+                            document.getElementById('countdown').innerHTML +='0';
+                        }
+                        document.getElementById('countdown').innerHTML += hours + ' hrs ';
+                    }
+                    else
+                    {
+                        if (hours<10)
+                        {
+                            document.getElementById('countdown').innerHTML +='0';
+                        }
+                        document.getElementById('countdown').innerHTML += hours + ':';
+                        if (minutes > 0)
+                        {
+                            if (minutes<10)
+                            {
+                                document.getElementById('countdown').innerHTML +='0';
+                            }
+                            document.getElementById('countdown').innerHTML += minutes + ':';
+                        }
+                        if (seconds<10)
+                        {
+                            document.getElementById('countdown').innerHTML +='0';
+                        }
+                        document.getElementById('countdown').innerHTML += seconds + ' ';
+                    }
+                }
+                document.getElementById('countdown').innerHTML += 'left)';
+            }
+        
+            timer = setInterval(showRemaining, 1000);
+        </script>
 
 </head>
 
@@ -51,16 +117,18 @@
                     <li class="">
                         <a class="page-scroll" href="#announcement"><i class="fa fa-info-circle  mr-3"></i> Announcement</a>
                     </li>
-
+                    <li class="">
+                        <a class="page-scroll" href="#assignments"><i class="fas fa-chalkboard-teacher mr-3"></i>Assignments</a>
+                    </li>
+                    
 					<li class="">
                         <a class="page-scroll" href="#schedule"><i class="fas fa-chalkboard-teacher mr-3"></i> Schedule</a>
                     </li>
+                    
                     <li class="">
                         <a class="page-scroll" href="#resources"><i class="fas fa-book mr-3"></i> Resources</a>
                     </li>
-                    <li class="">
-                        <a class="page-scroll" href="#grading"><i class="fa fa-pencil" ></i> Grading</a>
-                    </li>
+
 
                 </ul>
             </div>
@@ -112,13 +180,23 @@
             <div class="container">
                 <h3 style="color:red">Announcement</h3>
                 <!-- -->
+                <div class ="newsDate newsHighlight" style="color:red;">Sep 01</div><div class="newsContent newsHighlight"><a class="page-scroll" href="#assignments">Homework 1</a> is up  (Due Sep 09 @ 5:00 PM) </div> 
                 
-                <div class ="newsDate newsHighlight" style="color:red;">Aug 29</div><div class="newsContent newsHighlight">LaTeX resource and homework samples uploaded. Check <a class="page-scroll" href="#resources">resources.</a></div> 
+                <div class ="newsDate" style="color:red;">Aug 29</div><div class="newsContent">LaTeX resource and homework samples uploaded. Check <a class="page-scroll" href="#resources">resources.</a></div> 
                 <!-- -->
-                <div class ="newsDate newsHighlight" style="color:red;">Aug 22</div><div class="newsContent newsHighlight">Office hours updated.</div> 
+                <div class ="newsDate " style="color:red;">Aug 22</div><div class="newsContent">Office hours updated.</div> 
                 <!-- -->
                 <div class ="newsDate">Aug 19</div><div class="newsContent">Course website is up!</div>
                   
+            </div>
+        </section>
+        <!-- Assignment Section -->
+        <section id="assignments" >
+            <div class="container">
+                <h3>Homework Assignment</h3>
+                <li>Homework 1(<a href="files/hw/hw1.pdf">PDF </a> | <a href="files/hw/hw1.tar">TeX</a>) - Due by <span style="color:red">Sep 09 (Fri) @ 5:00 PM </span> <span id="countdown"></span>
+                
+                </li>
             </div>
         </section>
         <!-- Schedule Section -->
