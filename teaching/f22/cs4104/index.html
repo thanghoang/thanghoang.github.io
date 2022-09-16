@@ -24,7 +24,7 @@
     <link href="fa-6.1.1/css/all.css" rel="stylesheet"> <!--load all styles -->
 
     <script>
-        var end = new Date('09/09/2022 05:00 PM');
+        var end = new Date('09/23/2022 05:00 PM');
         
             var _second = 1000;
             var _minute = _second * 60;
@@ -38,7 +38,7 @@
                 if (distance < 0) {
         
                     clearInterval(timer);
-                    document.getElementById('countdown').innerHTML = 'EXPIRED!';
+                    document.getElementById('countdown').innerHTML = '(expired)!';
         
                     return;
                 }
@@ -49,7 +49,7 @@
                 document.getElementById('countdown').innerHTML = '(';
                 if (days > 0 )
                 {
-                    document.getElementById('countdown').innerHTML += days + ' days ';
+                    document.getElementById('countdown').innerHTML += days + '+ days ';
                     
                 }
                 else
@@ -182,7 +182,10 @@
             <div class="container">
                 <h3 style="color:red">Announcement</h3>
                 <!-- -->
-                <div class ="newsDate newsHighlight" style="color:red;">Sep 01</div><div class="newsContent newsHighlight"><a class="page-scroll" href="#assignments">Homework 1</a> is up  (Due Sep 09 @ 5:00 PM) </div> 
+                <div class ="newsDate newsHighlight" style="color:red;">Sep 16</div><div class="newsContent newsHighlight"><a class="page-scroll" href="#assignments">Homework 2</a> is up  (Due Sep 23 @ 5:00 PM) </div> 
+                
+                <!-- -->
+                <div class ="newsDate">Sep 01</div><div class="newsContent"><a class="page-scroll" href="#assignments">Homework 1</a> is up  (Due Sep 09 @ 5:00 PM) </div> 
                 
                 <div class ="newsDate" >Aug 29</div><div class="newsContent">LaTeX resource and homework samples uploaded. Check <a class="page-scroll" href="#resources">resources.</a></div> 
                 <!-- -->
@@ -196,9 +199,11 @@
         <section id="assignments" >
             <div class="container">
                 <h3>Homework Assignment</h3>
-                <li>Homework 1(<a href="files/hw/hw1.pdf">PDF </a> | <a href="files/hw/hw1.tar">TeX</a>) - Due by <span style="color:red">Sep 09 (Fri) @ 5:00 PM </span> <span id="countdown"></span>
-                
+                <li>Homework 1 (<a href="files/hw/hw1.pdf">PDF </a> | <a href="files/hw/hw1.tar">TeX</a>)
                 </li>
+                <li>Homework 2 (<a href="files/hw/hw2.pdf">PDF </a> | <a href="files/hw/hw2.tar">TeX</a>) - Due by <span style="color:red">Sep 23 (Fri) @ 5:00 PM </span> <span id="countdown"></span>
+                </li>
+
             </div>
         </section>
         <!-- Schedule Section -->
