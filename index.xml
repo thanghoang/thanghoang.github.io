@@ -5,12 +5,20 @@
     <link>https://thanghoang.github.io/</link>
       <atom:link href="https://thanghoang.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Thang Hoang</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 10 Aug 2022 21:28:55 -0700</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 01 Feb 2023 00:00:00 -0700</lastBuildDate>
     <image>
       <url>https://thanghoang.github.io/images/icon_hu90c008e4d96deb53d5ad25d414e3485e_13497_512x512_fill_lanczos_center_3.png</url>
       <title>Thang Hoang</title>
       <link>https://thanghoang.github.io/</link>
     </image>
+    
+    <item>
+      <title>Efficient Dynamic Proof of Retrievability for Cold Storage</title>
+      <link>https://thanghoang.github.io/publication/23_ndss_por/</link>
+      <pubDate>Wed, 01 Feb 2023 00:00:00 -0700</pubDate>
+      <guid>https://thanghoang.github.io/publication/23_ndss_por/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Polynomial Commitment with a One-to-Many Prover and Applications</title>
