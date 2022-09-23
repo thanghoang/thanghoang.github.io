@@ -23,73 +23,8 @@
 
     <link href="fa-6.1.1/css/all.css" rel="stylesheet"> <!--load all styles -->
 
-    <script>
-        var end = new Date('09/23/2022 05:00 PM');
-        
-            var _second = 1000;
-            var _minute = _second * 60;
-            var _hour = _minute * 60;
-            var _day = _hour * 24;
-            var timer;
-        
-            function showRemaining() {
-                var now = new Date();
-                var distance = end - now;
-                if (distance < 0) {
-        
-                    clearInterval(timer);
-                    document.getElementById('countdown').innerHTML = '(expired)!';
-        
-                    return;
-                }
-                var days = Math.floor(distance / _day);
-                var hours = Math.floor((distance % _day) / _hour);
-                var minutes = Math.floor((distance % _hour) / _minute);
-                var seconds = Math.floor((distance % _minute) / _second);
-                document.getElementById('countdown').innerHTML = '(';
-                if (days > 0 )
-                {
-                    document.getElementById('countdown').innerHTML += days + '+ days ';
-                    
-                }
-                else
-                {
-                    if (hours > 15)
-                    {
-                        if (hours<10)
-                        {
-                            document.getElementById('countdown').innerHTML +='0';
-                        }
-                        document.getElementById('countdown').innerHTML += hours + ' hrs ';
-                    }
-                    else
-                    {
-                        if (hours<10)
-                        {
-                            document.getElementById('countdown').innerHTML +='0';
-                        }
-                        document.getElementById('countdown').innerHTML += hours + ':';
-                        if (minutes > 0)
-                        {
-                            if (minutes<10)
-                            {
-                                document.getElementById('countdown').innerHTML +='0';
-                            }
-                            document.getElementById('countdown').innerHTML += minutes + ':';
-                        }
-                        if (seconds<10)
-                        {
-                            document.getElementById('countdown').innerHTML +='0';
-                        }
-                        document.getElementById('countdown').innerHTML += seconds + ' ';
-                    }
-                }
-                document.getElementById('countdown').innerHTML += 'left)';
-            }
-        
-            timer = setInterval(showRemaining, 1000);
-        </script>
-
+   
+       
 </head>
 
 <body>
@@ -181,6 +116,11 @@
         <section id="announcement" class="bg-light-gray">
             <div class="container">
                 <h3 style="color:red">Announcement</h3>
+                
+                <!-- -->
+                <div class ="newsDate newsHighlight" style="color:red;">Sep 23</div><div class="newsContent newsHighlight"><a class="page-scroll" href="#assignments">Homework 3</a> is up  (Due Oct 14 @ 5:00 PM) </div> 
+                
+
                 <!-- -->
                 <div class ="newsDate newsHighlight" style="color:red;">Sep 16</div><div class="newsContent newsHighlight"><a class="page-scroll" href="#assignments">Homework 2</a> is up  (Due Sep 23 @ 5:00 PM) </div> 
                 
@@ -201,8 +141,11 @@
                 <h3>Homework Assignment</h3>
                 <li>Homework 1 (<a href="files/hw/hw1.pdf">PDF </a> | <a href="files/hw/hw1.tar">TeX</a>)
                 </li>
-                <li>Homework 2 (<a href="files/hw/hw2.pdf">PDF </a> | <a href="files/hw/hw2.tar">TeX</a>) - Due by <span style="color:red">Sep 23 (Fri) @ 5:00 PM </span> <span id="countdown"></span>
+                <li>Homework 2 (<a href="files/hw/hw2.pdf">PDF </a> | <a href="files/hw/hw2.tar">TeX</a>) - Due by <span style="color:red">Sep 23 (Fri) @ 5:00 PM </span> <span id="countdown1" class="slideNote"></span>
                 </li>
+                <li>Homework 3 (<a href="files/hw/hw3.pdf">PDF </a> | <a href="files/hw/hw3.tar">TeX</a>) - Due by <span style="color:red">Oct 14 (Fri) @ 5:00 PM </span> <span id="countdown2" class="slideNote"></span>
+                </li>
+                
 
             </div>
         </section>
@@ -360,9 +303,9 @@
                     <tr style="border-bottom: 1px solid black;">
                     <td>Sep 23 (F)</td>  
                     <td> 
-
+                        <a href="files/lecture notes/chapter14.pdf">Dynamic Programming</a> <span class="slideNote">(8-27)</span>
                     </td><td>
-
+                        CLRS Chapter 14
                     </td> 
                     </tr>
                     <tr><td rowspan=3 style="text-align: center;border-bottom: 1px solid black;">6</td>
@@ -738,5 +681,83 @@
 
 <script src="js/index.js"></script>
 
+
+<script>
+    var _second = 1000;
+    var _minute = _second * 60;
+    var _hour = _minute * 60;
+    var _day = _hour * 24;
+
+    function setTimer(enddate, elem)
+    {
+        //var now = new Date();
+        //var distance = end - now;
+        (function tick() 
+        {
+            var now = new Date().getTime();
+            var distance = enddate - now;
+            if (distance < 0) 
+            {
+                elem.innerHTML = '(expired)!';
+                return;
+            }
+            setTimeout(tick,1000);
+            var days = Math.floor(distance / _day);
+            var hours = Math.floor((distance % _day) / _hour);
+            var minutes = Math.floor((distance % _hour) / _minute);
+            var seconds = Math.floor((distance % _minute) / _second);
+            var str = "(";
+            if (days > 0 )
+            {
+                str += days;
+                str += "+ days " 
+            }
+            else
+            {
+                if (hours > 15)
+                {
+                    if (hours<10)
+                    {
+                        str+= '0';
+                        
+                    }
+                    str += hours + ' hrs ';
+                }
+                else
+                {
+                    if (hours<10)
+                    {
+                        str +='0';
+                    }
+                    str += hours + ':';
+                    if (minutes > 0)
+                    {
+                        if (minutes<10)
+                        {
+                            str +='0';
+                        }
+                        str += minutes + ':';
+                    }
+                    if (seconds<10)
+                    {
+                        str +='0';
+                    }
+                    str += seconds + ' ';
+                }
+            }
+            str += 'left)';
+            elem.innerHTML = str;
+        })()
+    }
+    setTimer(
+    new Date("09/23/2022 05:00 PM"),
+    document.getElementById("countdown1")
+    );
+    setTimer(
+    new Date("10/14/2022 05:00 PM"),
+    document.getElementById("countdown2")
+    );
+    
+</script>
 
 </html>
