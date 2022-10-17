@@ -118,11 +118,13 @@
                 <h3 style="color:red">Announcement</h3>
                 
                 <!-- -->
-                <div class ="newsDate newsHighlight" style="color:red;">Sep 23</div><div class="newsContent newsHighlight"><a class="page-scroll" href="#assignments">Homework 3</a> is up  (Due Oct 14 @ 5:00 PM) </div> 
+                <div class ="newsDate newsHighlight" style="color:red;">Oct 17</div><div class="newsContent newsHighlight"><a class="page-scroll" href="#assignments">Midterm Exam</a> is up  (Due Oct 21 @ 5:00 PM) </div> 
+
+                <div class ="newsDate " style="">Sep 23</div><div class="newsContent "><a class="page-scroll" href="#assignments">Homework 3</a> is up  (Due Oct 14 @ 5:00 PM) </div> 
                 
 
                 <!-- -->
-                <div class ="newsDate newsHighlight" style="color:red;">Sep 16</div><div class="newsContent newsHighlight"><a class="page-scroll" href="#assignments">Homework 2</a> is up  (Due Sep 23 @ 5:00 PM) </div> 
+                <div class ="newsDate" style="">Sep 16</div><div class="newsContent "><a class="page-scroll" href="#assignments">Homework 2</a> is up  (Due Sep 23 @ 5:00 PM) </div> 
                 
                 <!-- -->
                 <div class ="newsDate">Sep 01</div><div class="newsContent"><a class="page-scroll" href="#assignments">Homework 1</a> is up  (Due Sep 09 @ 5:00 PM) </div> 
@@ -138,12 +140,15 @@
         <!-- Assignment Section -->
         <section id="assignments" >
             <div class="container">
+                <h3>Exam</h3>
+                <li>Midterm Exam (<a href="files/exam/midterm.pdf">PDF </a> | <a href="files/exam/midterm.tar">TeX</a>) - Due by <span style="color:red">Oct 21 (Fri) @ 5:00 PM </span>  <span id="countdown1" class="slideNote"></span>
+                </li>
                 <h3>Homework Assignment</h3>
-                <li>Homework 1 (<a href="files/hw/hw1.pdf">PDF </a> | <a href="files/hw/hw1.tar">TeX</a>)
+                <li>Homework 1 (<a href="files/hw/hw1.pdf">PDF </a> | <a href="files/hw/hw1.tar">TeX</a>) 
                 </li>
-                <li>Homework 2 (<a href="files/hw/hw2.pdf">PDF </a> | <a href="files/hw/hw2.tar">TeX</a>) - Due by <span style="color:red">Sep 23 (Fri) @ 5:00 PM </span> <span id="countdown1" class="slideNote"></span>
+                <li>Homework 2 (<a href="files/hw/hw2.pdf">PDF </a> | <a href="files/hw/hw2.tar">TeX</a>) <!-- - Due by <span style="color:red">Sep 23 (Fri) @ 5:00 PM </span> (<span id="countdown2" class="slideNote"></span>) -->
                 </li>
-                <li>Homework 3 (<a href="files/hw/hw3.pdf">PDF </a> | <a href="files/hw/hw3.tar">TeX</a>) - Due by <span style="color:red">Oct 14 (Fri) @ 5:00 PM </span> <span id="countdown2" class="slideNote"></span>
+                <li>Homework 3 (<a href="files/hw/hw3.pdf">PDF </a> | <a href="files/hw/hw3.tar">TeX</a>) <!-- Due by <span style="color:red">Oct 14 (Fri) @ 5:00 PM </span> <span id="countdown3" class="slideNote"></span> -->
                 </li>
                 
 
@@ -394,7 +399,7 @@
                     <tr><td rowspan=3 style="text-align: center;border-bottom: 1px solid black;">9</td>
                     <td>Oct 17 (M)</td>
                      <td>
-                        <a href="files/lecture notes/chapter21.pdf">Minimum Spanning Tree (cont.)</a>
+                        <a href="files/lecture notes/chapter21.pdf">Minimum Spanning Tree (cont.)</a> <span class="slideNote">(12-24)</span>
                      </td><td>
                         CLRS Chapter 21
                      </td> 
@@ -402,8 +407,9 @@
                     <tr style="background-color: #F8F4F5">
                         <td>Oct 19 (W)</td> 
                          <td>
+                            <a href="files/lecture notes/chapter21.pdf">Minimum Spanning Tree (cont.)</a>
                         </td><td>
-
+                            CLRS Chapter 21
                         </td> 
                         </tr>
                     <tr style="border-bottom: 1px solid black;">
@@ -759,12 +765,8 @@
         })()
     }
     setTimer(
-    new Date("09/23/2022 05:00 PM"),
+    new Date("10/21/2022 05:00 PM"),
     document.getElementById("countdown1")
-    );
-    setTimer(
-    new Date("10/14/2022 05:00 PM"),
-    document.getElementById("countdown2")
     );
     
 </script>
