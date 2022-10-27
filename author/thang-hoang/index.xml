@@ -21,6 +21,22 @@
     </item>
     
     <item>
+      <title>Harpocrates: Privacy-Preserving and Immutable Audit Log for Sensitive Data Operations</title>
+      <link>https://thanghoang.github.io/publication/22_ieee-tps_hapocrates/</link>
+      <pubDate>Wed, 14 Dec 2022 00:00:00 -0700</pubDate>
+      <guid>https://thanghoang.github.io/publication/22_ieee-tps_hapocrates/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ZAC: Efficient Zero-Knowledge Dynamic Universal Accumulator and Application to Zero-Knowledge Elementary Database</title>
+      <link>https://thanghoang.github.io/publication/22_ieee-tps_zac/</link>
+      <pubDate>Wed, 14 Dec 2022 00:00:00 -0700</pubDate>
+      <guid>https://thanghoang.github.io/publication/22_ieee-tps_zac/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Polynomial Commitment with a One-to-Many Prover and Applications</title>
       <link>https://thanghoang.github.io/publication/22_usenixsec_pc/</link>
       <pubDate>Wed, 10 Aug 2022 21:28:55 -0700</pubDate>
