@@ -119,10 +119,13 @@
                 
                 <!-- -->
 
-                <div class ="newsDate newsHighlight" style="color:red;">Oct 21</div><div class="newsContent newsHighlight"><a class="page-scroll" href="#assignments">Homework 4</a> is up  (Due Oct 28 @ 5:00 PM) </div> 
+
+                <div class ="newsDate newsHighlight" style="color:red;">Oct 31</div><div class="newsContent newsHighlight"><a class="page-scroll" href="#assignments">Homework 5</a> is up  (Due Nov 11 @ 5:00 PM) </div> 
+
+                <div class ="newsDate">Oct 21</div><div class="newsContent"><a class="page-scroll" href="#assignments">Homework 4</a> is up  (Due Oct 28 @ 5:00 PM) </div> 
 
 
-                <div class ="newsDate newsHighlight" style="color:red;">Oct 17</div><div class="newsContent newsHighlight"><a class="page-scroll" href="#assignments">Midterm Exam</a> is up  (Due Oct 21 @ 5:00 PM) </div> 
+                <div class ="newsDate newsHighlight">Oct 17</div><div class="newsContent newsHighlight"><a class="page-scroll" href="#assignments">Midterm Exam</a> is up  (Due Oct 21 @ 5:00 PM) </div> 
 
                 <div class ="newsDate " style="">Sep 23</div><div class="newsContent "><a class="page-scroll" href="#assignments">Homework 3</a> is up  (Due Oct 14 @ 5:00 PM) </div> 
                 
@@ -145,10 +148,13 @@
         <section id="assignments" >
             <div class="container">
                 <h3>Exam</h3>
-                <li>Midterm Exam (<a href="files/exam/midterm.pdf">PDF </a> | <a href="files/exam/midterm.tar">TeX</a>) - Due by <span style="color:red">Oct 21 (Fri) @ 5:00 PM </span>  <span id="countdown1" class="slideNote"></span>
+                <li>Midterm Exam (<a href="files/exam/midterm.pdf">PDF </a> | <a href="files/exam/midterm.tar">TeX</a>) <!-- - Due by <span style="color:red">Oct 21 (Fri) @ 5:00 PM </span>  <span id="countdown1" class="slideNote"></span> -->
                 </li>
                 <h3>Homework Assignment</h3>
-                <li>Homework 4 (<a href="files/hw/hw4.pdf">PDF </a> | <a href="files/hw/hw4.tar">TeX</a>) - Due by <span style="color:red">Oct 28 (Fri) @ 5:00 PM </span> <span id="countdown2" class="slideNote"></span> 
+                <li>Homework 5 (<a href="files/hw/hw5.pdf">PDF </a> | <a href="files/hw/hw5.tar">TeX</a>) - Due by <span style="color:red">Nov 11 (Fri) @ 5:00 PM </span> <span id="countdown" class="slideNote"></span> 
+                </li>
+                
+                <li>Homework 4 (<a href="files/hw/hw4.pdf">PDF </a> | <a href="files/hw/hw4.tar">TeX</a>) <!-- - Due by <span style="color:red">Oct 28 (Fri) @ 5:00 PM </span> <span id="countdown2" class="slideNote"></span> --> 
                 </li>
                 <li>Homework 3 (<a href="files/hw/hw3.pdf">PDF </a> | <a href="files/hw/hw3.tar">TeX</a>) <!-- Due by <span style="color:red">Oct 14 (Fri) @ 5:00 PM </span> <span id="countdown3" class="slideNote"></span> -->
                 </li>
@@ -780,12 +786,8 @@
         })()
     }
     setTimer(
-    new Date("10/21/2022 05:00 PM"),
-    document.getElementById("countdown1")
-    );
-    setTimer(
-    new Date("10/28/2022 05:00 PM"),
-    document.getElementById("countdown2")
+    new Date("11/11/2022 05:00 PM"),
+    document.getElementById("countdown")
     );
     
 </script>
