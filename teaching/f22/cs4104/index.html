@@ -117,10 +117,10 @@
             <div class="container">
                 <h3 style="color:red">Announcement</h3>
                 
-                <!-- -->
-                <div class ="newsDate newsHighlight" style="color:red;">Nov 29</div><div class="newsContent newsHighlight"><a class="page-scroll" href="#assignments">Homework 6</a> is extended to Saturday (Dec 03 @ 5:00 PM) </div> 
+                <div class ="newsDate newsHighlight" style="color:red;">Dec 05</div><div class="newsContent newsHighlight"><a class="page-scroll" href="#assignments">Final exam </a>  is up (Due Dec 12, 2022 @ 5:00 PM) </div> 
+                <div class ="newsDate" >Nov 29</div><div class="newsContent"><a class="page-scroll" href="#assignments">Homework 6</a> is extended to Saturday (Dec 03 @ 5:00 PM) </div> 
 
-                <div class ="newsDate newsHighlight" style="color:red;">Nov 09</div><div class="newsContent newsHighlight"><a class="page-scroll" href="#assignments">Homework 6</a> is up  (Due Dec 02 @ 5:00 PM) </div> 
+                <div class ="newsDate">Nov 09</div><div class="newsContent"><a class="page-scroll" href="#assignments">Homework 6</a> is up  (Due Dec 02 @ 5:00 PM) </div> 
 
                 <div class ="newsDate">Oct 31</div><div class="newsContent"><a class="page-scroll" href="#assignments">Homework 5</a> is up  (Due Nov 11 @ 5:00 PM) </div> 
 
@@ -150,10 +150,13 @@
         <section id="assignments" >
             <div class="container">
                 <h3>Exam</h3>
+                <li>Final Exam (<a href="files/exam/final.pdf">PDF </a> | <a href="files/exam/final.tar">TeX</a>) - Due by <span style="color:red">Dec 12 (Mon) @ 5:00 PM </span>  <span id="countdown" class="slideNote"></span> 
+                
                 <li>Midterm Exam (<a href="files/exam/midterm.pdf">PDF </a> | <a href="files/exam/midterm.tar">TeX</a>) <!-- - Due by <span style="color:red">Oct 21 (Fri) @ 5:00 PM </span>  <span id="countdown1" class="slideNote"></span> -->
                 </li>
                 <h3>Homework Assignment</h3>
-                <li>Homework 6 (<a href="files/hw/hw6.pdf">PDF </a> | <a href="files/hw/hw6.tar">TeX</a>) - Due by <span style="color:red">Dec 3 (Sat) @ 5:00 PM </span> <span id="countdown2" class="slideNote"></span> 
+                <li>Homework 6 (<a href="files/hw/hw6.pdf">PDF </a> | <a href="files/hw/hw6.tar">TeX</a>) 
+                    <!-- - Due by <span style="color:red">Dec 3 (Sat) @ 5:00 PM </span> <span id="countdown2" class="slideNote"></span> --> 
                 </li>
                 
                 <li>Homework 5 (<a href="files/hw/hw5.pdf">PDF </a> | <a href="files/hw/hw5.tar">TeX</a>) - <!-- Due by <span style="color:red">Nov 11 (Fri) @ 5:00 PM </span> <span id="countdown" class="slideNote"></span>  -->
@@ -606,7 +609,7 @@
                                 Dec 05 (M)
                             </td> 
                             <td style="background-color: #F8F4F5">
-                                <a href="files/lecture notes/chapter30.pdf">Polynomial and the FFT (cont.)</a> <span class="slideNote">(20-)</span> 
+                                <a href="files/lecture notes/chapter30.pdf">Polynomial and the FFT (cont.)</a> <span class="slideNote">(20-33)</span> 
                             </td>
                             <td style="background-color: #F8F4F5">
                                 CLRS Chapter 30
@@ -615,9 +618,10 @@
                             <tr style="border-bottom: 1px solid black">
                                 <td>Dec 07 (W)</td>  
                                 <td>  
-                                    <a href="files/lecture notes/chapter30.pdf">Polynomial and the FFT (cont.)</a> <span class="slideNote"></span> 
+                                    <a href="files/lecture notes/chapter30.pdf">Polynomial and the FFT (cont.)</a> <span class="slideNote">(34-41)</span> <br/>
+                                    Final Q&A  
                                 </td><td>
-                                    CLRS Chapter 30
+                                    CLRS Chapter 30 <br/> &nbsp;
                                 </td> 
                                 </tr>
                         <tr style="border-bottom: 1px solid black;"><td  style="text-align: center;">17</td>
@@ -816,7 +820,7 @@
         })()
     }
     setTimer(
-    new Date("11/11/2022 05:00 PM"),
+    new Date("12/12/2022 05:00 PM"),
     document.getElementById("countdown")
     );
     setTimer(
