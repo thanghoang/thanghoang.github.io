@@ -27,7 +27,8 @@
   
     
   
-  <meta name="description" content="">
+  <meta name="description" content="Commodity encrypted storage platforms (e.g., IceDrive, pCloud) permit data store and sharing across multiple users while preserving data confidentiality. However, end-to-end encryption may not be sufficient since it only offers confidentiality when the data is at rest or in transit. Meanwhile, sensitive information can be leaked from metadata representing activities during data operations (e.g., query, processing). Recent encrypted search platforms such as DORY (OSDI’20) or DURASIFT (WPES’19) permit multi-user data query functionalities, while protecting metadata privacy. However, they either incur a high processing overhead or offer limited secu- rity/functionality, and require strong trust assumptions.\
+We propose MAPLE, a new metadata-hiding encrypted search platform that offers query functionalities (search, update) on the shared data across multiple users with complex policy controls. MAPLE protects metadata privacy all the time during query processing, while achieving significantly (asymptotically) lower processing overhead than state-of-the-art platforms. The core technique of MAPLE is the design of oblivious data structures for search index and access control coupled with secure computation techniques to enable efficient query processing with a minimal trust. We fully implemented MAPLE and evaluated its performance on commodity cloud (Amazon EC2) under real settings. Experimental results showed that MAPLE achieved a concrete performance comparable with its counterparts, while offering provably stronger security guarantees and more diverse functionalities.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://thanghoang.github.io/publication/23_pets_maple/">
@@ -274,7 +275,8 @@
   <meta property="og:site_name" content="Thang Hoang">
   <meta property="og:url" content="https://thanghoang.github.io/publication/23_pets_maple/">
   <meta property="og:title" content="MAPLE: A Metadata-Hiding Policy-Controllable Encrypted Search Platform with Minimal Trust | Thang Hoang">
-  <meta property="og:description" content=""><meta property="og:image" content="https://thanghoang.github.io/images/icon_hu90c008e4d96deb53d5ad25d414e3485e_13497_512x512_fill_lanczos_center_3.png">
+  <meta property="og:description" content="Commodity encrypted storage platforms (e.g., IceDrive, pCloud) permit data store and sharing across multiple users while preserving data confidentiality. However, end-to-end encryption may not be sufficient since it only offers confidentiality when the data is at rest or in transit. Meanwhile, sensitive information can be leaked from metadata representing activities during data operations (e.g., query, processing). Recent encrypted search platforms such as DORY (OSDI’20) or DURASIFT (WPES’19) permit multi-user data query functionalities, while protecting metadata privacy. However, they either incur a high processing overhead or offer limited secu- rity/functionality, and require strong trust assumptions.\
+We propose MAPLE, a new metadata-hiding encrypted search platform that offers query functionalities (search, update) on the shared data across multiple users with complex policy controls. MAPLE protects metadata privacy all the time during query processing, while achieving significantly (asymptotically) lower processing overhead than state-of-the-art platforms. The core technique of MAPLE is the design of oblivious data structures for search index and access control coupled with secure computation techniques to enable efficient query processing with a minimal trust. We fully implemented MAPLE and evaluated its performance on commodity cloud (Amazon EC2) under real settings. Experimental results showed that MAPLE achieved a concrete performance comparable with its counterparts, while offering provably stronger security guarantees and more diverse functionalities."><meta property="og:image" content="https://thanghoang.github.io/images/icon_hu90c008e4d96deb53d5ad25d414e3485e_13497_512x512_fill_lanczos_center_3.png">
   <meta property="twitter:image" content="https://thanghoang.github.io/images/icon_hu90c008e4d96deb53d5ad25d414e3485e_13497_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
   
     
@@ -322,7 +324,7 @@
       "url": "https://thanghoang.github.io/images/icon_hu90c008e4d96deb53d5ad25d414e3485e_13497_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": ""
+  "description": "Commodity encrypted storage platforms (e.g., IceDrive, pCloud) permit data store and sharing across multiple users while preserving data confidentiality. However, end-to-end encryption may not be sufficient since it only offers confidentiality when the data is at rest or in transit. Meanwhile, sensitive information can be leaked from metadata representing activities during data operations (e.g., query, processing). Recent encrypted search platforms such as DORY (OSDI’20) or DURASIFT (WPES’19) permit multi-user data query functionalities, while protecting metadata privacy. However, they either incur a high processing overhead or offer limited secu- rity/functionality, and require strong trust assumptions.\\\nWe propose MAPLE, a new metadata-hiding encrypted search platform that offers query functionalities (search, update) on the shared data across multiple users with complex policy controls. MAPLE protects metadata privacy all the time during query processing, while achieving significantly (asymptotically) lower processing overhead than state-of-the-art platforms. The core technique of MAPLE is the design of oblivious data structures for search index and access control coupled with secure computation techniques to enable efficient query processing with a minimal trust. We fully implemented MAPLE and evaluated its performance on commodity cloud (Amazon EC2) under real settings. Experimental results showed that MAPLE achieved a concrete performance comparable with its counterparts, while offering provably stronger security guarantees and more diverse functionalities."
 }
 </script>
 
@@ -735,6 +737,65 @@
 
 
 
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1" href="https://eprint.iacr.org/2023/1105.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/vt-asaplab/maple" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1" href="/slides/23_pets_maple.pptx" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1" href="https://doi.org/10.56553/popets-2023-0094" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+</div>
+
 
   
 </div>
@@ -743,6 +804,10 @@
 
   <div class="article-container">
   
+    
+    <h3>Abstract</h3>
+    <p class="pub-abstract">Commodity encrypted storage platforms (e.g., IceDrive, pCloud) permit data store and sharing across multiple users while preserving data confidentiality. However, end-to-end encryption may not be sufficient since it only offers confidentiality when the data is at rest or in transit. Meanwhile, sensitive information can be leaked from metadata representing activities during data operations (e.g., query, processing). Recent encrypted search platforms such as DORY (OSDI’20) or DURASIFT (WPES’19) permit multi-user data query functionalities, while protecting metadata privacy. However, they either incur a high processing overhead or offer limited secu- rity/functionality, and require strong trust assumptions.<br>
+We propose MAPLE, a new metadata-hiding encrypted search platform that offers query functionalities (search, update) on the shared data across multiple users with complex policy controls. MAPLE protects metadata privacy all the time during query processing, while achieving significantly (asymptotically) lower processing overhead than state-of-the-art platforms. The core technique of MAPLE is the design of oblivious data structures for search index and access control coupled with secure computation techniques to enable efficient query processing with a minimal trust. We fully implemented MAPLE and evaluated its performance on commodity cloud (Amazon EC2) under real settings. Experimental results showed that MAPLE achieved a concrete performance comparable with its counterparts, while offering provably stronger security guarantees and more diverse functionalities.</p>
     
 
     
