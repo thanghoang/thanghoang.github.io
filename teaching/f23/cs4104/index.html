@@ -114,9 +114,9 @@
             <div class="container">
                 <h3 style="color:red">Announcement</h3>
                 
-                <div class ="newsDate">Sep 01</div><div class="newsContent"><a class="page-scroll" href="#assignments">Homework 1</a> is up  (Due Sep 11 @ 5:00 PM) </div> 
+                <div class ="newsDate newsHighlight" style="color:red;">Sep 01</div><div class="newsContent newsHighlight"><a class="page-scroll" href="#assignments">Homework 1</a> is up  (Due Sep 11 @ 5:00 PM)  </div>  
 
-                <div class ="newsDate newsHighlight" style="color:red;">July 11</div><div class="newsContent newsHighlight">Course webpage is up</div> 
+                <div class ="newsDate" >July 11</div><div class="newsContent ">Course webpage is up</div> 
                 
             </div>
         </section>
@@ -125,9 +125,9 @@
             <div class="container">
                 <h3>Exam</h3>
                 <h3>Homework Assignment</h3>
-                <li>Homework 1 (<a href="files/hw/hw1.pdf">PDF </a> | <a href="files/hw/hw1.tar">TeX</a>) 
+                <li>Homework 1 (<a href="files/hw/hw1.pdf">PDF </a> | <a href="files/hw/hw1.tar">TeX</a>)  <span id="countdown" class="slideNote"></span> 
                 </li>
-                
+
             </div>
         </section>
         <!-- Schedule Section -->
@@ -812,7 +812,7 @@
         })()
     }
     setTimer(
-    new Date("12/12/2022 05:00 PM"),
+    new Date("09/11/2023 05:00 PM"),
     document.getElementById("countdown")
     );
 
