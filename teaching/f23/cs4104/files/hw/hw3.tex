@@ -1,0 +1,609 @@
+\documentclass[11pt,twoside]{article}
+\newcommand{\thang}[1]{{\color{blue}\small thang:#1}}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{latexsym}
+\usepackage{color}
+\usepackage{graphics}
+\usepackage{xspace}
+
+% Commands for special characters
+\newcommand{\mybackslash}{\char'134}
+\newcommand{\myleftbracket}{\char'173}
+\newcommand{\myrightbracket}{\char'175}
+\newcommand{\mypercent}{\char'045}
+\newcommand{\myunderscore}{\char'137}
+
+% The 'ifthen' package supports Boolean flags
+\usepackage{ifthen}
+% The 'solutions' flag determines whether this is the original handout
+%    or a solution
+\newboolean{solutions}
+\setboolean{solutions}{False}  % Default is original handout
+
+% Uncomment the next line before starting on the solutions
+% \setboolean{solutions}{True}
+
+\newcommand{\coursenumber}{CS 4104}
+\newcommand{\coursetitle}{Data and Algorithm Analysis}
+\newcommand{\docdate}{October 02, 2023}
+\newcommand{\duedate}{October 13, 2023}
+\newcommand{\homeworknumber}{3}
+
+% The document title depends on whether these are solutions
+\ifthenelse{\boolean{solutions}}{% Then
+\newcommand{\doctitle}{Solutions to Homework Assignment \homeworknumber}
+}{% Else
+\newcommand{\doctitle}{Homework Assignment \homeworknumber}
+}
+
+% The document date depends on whether these are solutions
+\ifthenelse{\boolean{solutions}}{% Then
+\renewcommand{\docdate}{\duedate}
+}{% Else
+}
+
+% If you are the author, so put your name here
+\renewcommand{\author}{Thang Hoang}
+
+\pagestyle{myheadings}
+\markboth{\hfill\doctitle\hfill\docdate}{\docdate\hfill\doctitle\hfill}
+
+\addtolength{\textwidth}{1.00in}
+\addtolength{\textheight}{1.00in}
+\addtolength{\evensidemargin}{-1.00in}
+\addtolength{\oddsidemargin}{-0.00in}
+\addtolength{\topmargin}{-.50in}
+\setlength{\footskip}{0pt}
+
+\newcommand{\polyreduce}{\leq_{\mathrm{P}}}
+
+\newcounter{problem}
+\setcounter{problem}{0}
+\newcommand{\problem}[1]{%
+\refstepcounter{problem}\noindent\textbf{[#1] \arabic{problem}.}}
+
+\newcommand{\solution}{\bigskip\hrule\bigskip}
+\newcommand{\problembreak}{\bigskip\hrule\bigskip}
+
+\renewcommand{\theenumi}{\textbf{\Alph{enumi}}}
+\renewcommand{\theenumii}{\textbf{\roman{enumii}}}
+
+\newcommand{\emptysequence}{\Lambda}
+\newcommand{\emptystring}{\lambda}
+
+% Pseudocode comment symbol
+\newcommand{\comment}{\textbf{//}\ \ }
+
+% Pseudocode line numbering
+\newcounter{pseudocode}
+\newcommand{\firstline}{\setcounter{pseudocode}{0}\linenumber}
+\newcommand{\linenumber}{\refstepcounter{pseudocode}\thepseudocode}
+\newcommand{\pseudoindent}{\hspace*{26pt}}
+
+\newcommand{\nil}{\mbox{\textsc{nil}}}
+
+% Mathematical symbols
+\newcommand{\grid}{\mathcal{G}}  % Grid graph
+\newcommand{\integers}{\mathbb{Z}}  % Integers
+\newcommand{\naturals}{\mathbb{N}}  % Natural numbers
+\newcommand{\reals}{\mathbb{R}}  % Real numbers
+
+% Probability
+\newcommand{\expect}[1]{\mathbf{E}\left[#1\right]}
+\newcommand{\prob}[1]{\mathrm{Pr}\left[#1\right]}
+\newcommand{\var}[1]{\mathrm{Var}\left[#1\right]}
+
+% Logic
+\newcommand{\NOT}[1]{\neg #1}
+\newcommand{\AND}{\wedge}
+\newcommand{\OR}{\vee}
+\newcommand{\clause}[1]{\left(#1\right)}
+
+\newlength{\problemoffset}
+\setlength{\problemoffset}{0.5in}
+
+% Decision problem macro
+% A command for formatting decision problems a la Garey and Johnson
+\newcommand{\decision}[3]{%     \decision{NAME}{INSTANCE}{QUESTION}
+\begin{list}{}{
+\setlength{\leftmargin}{\problemoffset}
+\setlength{\rightmargin}{\problemoffset}
+\setlength{\parsep}{0pt}
+\setlength{\itemsep}{2pt}
+\setlength{\topsep}{\itemsep}
+\setlength{\partopsep}{\itemsep}
+}
+\item
+{\textsc{#1}}
+\item
+{INSTANCE: #2}
+\item
+{QUESTION: #3}
+\end{list}
+}
+
+% Optimization problem macro
+\newcommand{\optimization}[3]{%  \optimization{NAME}{INSTANCE}{SOLUTION}
+\begin{list}{}{
+\setlength{\leftmargin}{\problemoffset}
+\setlength{\rightmargin}{\problemoffset}
+\setlength{\parsep}{0pt}
+\setlength{\itemsep}{2pt}
+\setlength{\topsep}{\itemsep}
+\setlength{\partopsep}{\itemsep}
+}
+\item
+{\rule{0pt}{14pt}\textsc{#1}}
+\item
+{INSTANCE: #2}
+\item
+{SOLUTION: #3}
+\end{list}
+}
+
+\newcommand{\reaches}{\leadsto}
+
+% Table layout
+\newcommand{\toprule}{\rule[11pt]{0pt}{2pt}}
+\newcommand{\bottomrule}{\rule[-6pt]{0pt}{0pt}}
+\newenvironment{raggedpars}[1][2.0in]{%
+\begin{minipage}[t]{#1}\raggedright\toprule}%
+{\bottomrule\end{minipage}}
+
+% Dynamic programming macros
+\newlength{\arrowwidth}
+\setbox3=\hbox{$\nwarrow$}
+\setlength{\arrowwidth}{\wd3}
+\newcommand{\optnwarrow}[1]{\if1#1\nwarrow%
+\else\rule{\arrowwidth}{0pt}\fi}
+\newcommand{\optuparrow}[1]{\if1#1\uparrow%
+\else\rule{\arrowwidth}{0pt}\fi}
+\newcommand{\optleftarrow}[1]{\if1#1\leftarrow%
+\else\rule{\arrowwidth}{0pt}\fi}
+% Use \tablebox to specify any combination of arrows, plus the value
+\newcommand{\tablebox}[4]{%
+\setlength{\arraycolsep}{0.0pt}%
+\begin{array}{cc}%
+\optnwarrow{#1} & \optuparrow{#2} \\%
+\optleftarrow{#3} & #4%
+\end{array}%
+}
+% Use \tableboxred to specify any combination of arrows, plus the value
+% The value will be red; arrows are made red if 2 used instead of 1
+\newcommand{\optnwarrowred}[1]{\if1#1\nwarrow%
+\else\if2#1\textcolor{red}{\nwarrow}\else\rule{\arrowwidth}{0pt}\fi\fi}
+\newcommand{\optuparrowred}[1]{\if1#1\uparrow%
+\else\if2#1\textcolor{red}{\uparrow}\else\rule{\arrowwidth}{0pt}\fi\fi}
+\newcommand{\optleftarrowred}[1]{\if1#1\leftarrow%
+\else\if2#1\textcolor{red}{\leftarrow}\else\rule{\arrowwidth}{0pt}\fi\fi}
+\newcommand{\tableboxred}[4]{%
+\setlength{\arraycolsep}{0.0pt}%
+\begin{array}{cc}%
+\optnwarrowred{#1} &%
+\optuparrowred{#2} \\%
+\optleftarrowred{#3} &%
+\textcolor{red}{#4}%
+\end{array}%
+}
+
+% Allow really sloppy paragraphs that do not generate overfull or
+%    underfull hbox's
+\newenvironment{SLOPPY}{\begin{sloppypar}\hbadness=10000}{\end{sloppypar}}
+
+% Definitions for this homework
+\newcommand{\extent}[1]{\mathrm{extent}(#1)}
+\newcommand{\opt}[2]{\mbox{\textsc{opt}}(#1,#2)}
+\newcommand{\gap}{\mbox{\texttt{-}}}
+\newcommand{\rewriterule}[2]{#1\to #2}
+\newcommand{\rewrites}[2][]{\mathop{\Longrightarrow}\limits_{#1}^{#2}}
+\newcommand{\reduces}{\leq}
+\newcommand{\polyreduces}{\leq_P}
+\newcommand{\mathsc}[1]{\mbox{\normalfont\textsc{#1}}}
+\newcommand{\NP}{\mathcal{NP}}
+\renewcommand{\P}{\mathcal{P}}
+\newcommand{\describes}{\vdash}
+
+\begin{document}
+
+\thispagestyle{empty}
+
+\begin{center}
+\begin{tabular}{lcr}
+\multicolumn{3}{c}{\Large\textbf{\coursenumber}}
+\\[0.04in]
+\multicolumn{3}{c}{\Large\textbf{\doctitle}}
+% If these are solutions, then include the author's (student's) name
+\ifthenelse{\boolean{solutions}}{% Then
+\\[0.04in]\multicolumn{3}{c}{\large\textbf{\author}}
+}{} % Else omit
+% If these are solutions, then the date is the due date
+\ifthenelse{\boolean{solutions}}{% Then
+\\[0.10in]\multicolumn{3}{c}{\duedate}
+}{% Else, put given and due dates
+\\[0.10in]
+\textbf{Given:} \docdate
+& \hspace*{1.0in} &
+\textbf{Due:} \duedate
+}
+\end{tabular}
+\end{center}
+
+% If these are solutions, then we do not include the directions
+\ifthenelse{\boolean{solutions}}{} % No directions
+{
+% Original document includes directions
+\begingroup % This allows an argument that contains multiple paragraphs
+\paragraph{General directions.}
+The point value of each problem is shown in [ ].
+Each solution must include all details and
+an explanation of why the given solution is correct.
+\textbf{\textcolor{red}{In particular,
+write complete sentences.
+A correct answer without an explanation is worth no credit.}}
+The completed assignment must be submitted on Canvas as a PDF by 5:00 PM
+on \duedate.
+\textbf{No late homework will be accepted.}
+
+\paragraph{Digital preparation of your solutions is mandatory.
+This includes digital preparation of any drawings.}
+Use of \LaTeX\ is required.
+Also,
+\textbf{please include your name.}
+
+\paragraph{Use of \LaTeX\ (required).}
+\begin{itemize}
+\item Retrieve this \LaTeX\ source file,
+named
+\texttt{homework\homeworknumber.tex},
+from the course web site.
+\item Rename the file
+\textit{$<$Your VT PID$>$}\texttt{{\myunderscore}solvehw\homeworknumber.tex},
+For example,
+for the instructor,
+the file name would be
+\texttt{hoang{\myunderscore}solvehw\homeworknumber.tex}.
+
+\item
+Use a \textbf{text editor}
+(such as \texttt{vi}, \texttt{emacs}, or \texttt{pico})
+to accomplish the next three steps.
+Alternately,
+use Overleaf as your \LaTeX\ platform.
+
+\item
+Uncomment the line
+
+\texttt{{\mypercent} 
+{\mybackslash}setboolean{\myleftbracket}solutions{\myrightbracket}%
+{\myleftbracket}True{\myrightbracket}}
+
+in the document preamble by deleting the \texttt{\mypercent}.
+
+\item
+Find the line
+
+\texttt{{\mybackslash}renewcommand%
+{\myleftbracket}{\mybackslash}author{\myrightbracket}%
+{\myleftbracket}Thang Hoang{\myrightbracket}}
+
+and replace the instructor's name with your name.
+
+\item
+Enter your solutions where you find
+the \LaTeX\ comments
+
+\texttt{{\mypercent} PUT YOUR SOLUTION HERE}
+
+\item
+Generate a PDF and turn it in on Canvas by 5:00 PM on \duedate.
+\end{itemize}
+\endgroup
+
+\problembreak
+
+\newpage
+
+}
+
+\problem{30}
+Here, we generalize the Longest Common Subsequence (LCS) problem
+discussed in class
+to a new problem that can also be solved by dynamic programming.
+
+Let $\Sigma$ be any finite alphabet containing at least two symbols.
+A \textit{balloon} in $\Sigma$ is a subset of $\Sigma$
+containing exactly two symbols.
+For example,
+if $\Sigma=\{a,c,g,t\}$,
+then $\{c,t\}$ and $\{a,t\}$ are balloons in $\Sigma$,
+while $\emptyset$, $\{a,c,g\}$, and $\{t\}$ are not.
+Note that there are $\binom{|\Sigma|}{2}$ balloons in any $\Sigma$.
+
+A \textit{party} over $\Sigma$ is a sequence of balloons in $\Sigma$;
+the empty party is denoted $\emptysequence$.
+For example,
+if $\Sigma=\{a,c,g,t\}$,
+\begin{displaymath}
+\{c,t\},\{a,t\},\{a,g\}
+\end{displaymath}
+is a party over $\Sigma$ of length 3.
+A party $B=B_1,B_2,\ldots,B_n$ over $\Sigma$ of length $n$
+\textit{describes} a string $A=\alpha_1,\alpha_2,\ldots,\alpha_n$
+over $\Sigma$ of length $n$
+if $\alpha_i\in B_i$, for $1\leq i\leq n$.
+This is written $B\describes A$.
+For example,
+\begin{eqnarray*}
+\{c,t\},\{a,t\},\{a,g\} & \describes & tta
+\end{eqnarray*}
+and
+\begin{eqnarray*}
+\{c,t\},\{a,t\},\{a,g\} & \describes & ctg.
+\end{eqnarray*}
+
+The optimization problem to be solved is:
+\optimization{Balloon Longest Common Subsequence (BLCS)}%
+{Parties $X=X_1,X_2,\cdots,X_m$
+and $Y=Y_1,Y_2,\cdots,Y_n$
+over an alphabet $\Sigma$.}%
+{Strings $A=\alpha_1\alpha_2\cdots\alpha_m$ and $B=\beta_1\beta_2\cdots\beta_n$
+such that $X\describes A$, $Y\describes B$,
+and the length of an LCS of $A$ and $B$ is maximum.}
+
+In the subsequent steps,
+you are to develop a dynamic programming solution to the problem
+and illustrate your solution with a particular example.
+
+{\bfseries
+\begin{enumerate}
+
+\item
+For an instance consisting of two parties $X$ and $Y$,
+explain carefully what subinstances
+you identify for solution
+and argue that the problem possesses optimal substructure.
+
+\item
+Develop a recurrence for the optimal values $c(i,j)$
+for all the subinstances identified.
+Explain your recurrence.
+
+\item
+Let $\Sigma=\{a,c,g,t\}$.
+Write a small program in your favorite programming language
+to generate a random party over $\Sigma$ of length $n$.
+Include the code for your program in your solution.
+Generate an example random party $X=X_1,X_2,X_3,X_4,X_5,X_6,X_7$
+of length 7
+and an example random party $Y=Y_1,Y_2,Y_3,Y_4,Y_5$
+of length 5.
+
+\item
+Figure~\ref{figure:emptyBLCS}
+gives the template for the table
+to contain the results of dynamic programming
+on the BLCS instance $(X,Y)$ from Item C.
+Fill in the table with the $c(i,j)$ values
+obtained from your recurrence.
+Include the arrows\footnote{%
+If you use \LaTeX,
+then the \texttt{{\char'134}tablebox} macro in this document
+is capable of inserting the arrows.
+},
+as was done in the example of LCS in class.
+What is the optimal objective value for the instance $(X,Y)$?
+
+\item
+Use backtracing to obtain $A$ and $B$
+such that $X\describes A$, $Y\describes B$,
+and $A$ and $B$ have a longest possible LCS.
+Especially show the arrows\footnote{%
+If you use \LaTeX,
+then the \texttt{{\char'134}tableboxred} macro in this document is
+capable of typesetting the relevant values and arrows
+in \textcolor{red}{red}.
+}
+in the table that are
+part of finding $A$ and $B$.
+What are the $A$ and $B$ you obtain?
+
+\end{enumerate}
+}
+
+\solution
+
+% PUT YOUR SOLUTION HERE
+
+\problembreak
+\begin{figure}[tp]
+\begin{displaymath}
+\begin{array}{rc|c|c|c|c|c|c|c|}
+\multicolumn{2}{c}{} &
+\multicolumn{6}{c}{j}
+\\[6pt]
+& c(i,j) &
+\begin{array}{c}\\ 0 \end{array} &
+\begin{array}{c}Y_1\\ 1 \end{array} &
+\begin{array}{c}Y_2\\ 2 \end{array} &
+\begin{array}{c}Y_3\\ 3 \end{array} &
+\begin{array}{c}Y_4\\ 4 \end{array} &
+\begin{array}{c}Y_5\\ 5 \end{array}\\ \cline{2-8}
+& \hfill 0 &
+\tablebox{0}{0}{0}{} &
+\tablebox{0}{0}{0}{} &
+\tablebox{0}{0}{0}{} &
+\tablebox{0}{0}{0}{} &
+\tablebox{0}{0}{0}{} &
+\tablebox{0}{0}{0}{} \\ \cline{2-8}
+& X_1\hfill 1 &
+\tablebox{0}{0}{0}{} &
+\tablebox{0}{0}{0}{} &
+\tablebox{0}{0}{0}{} &
+\tablebox{0}{0}{0}{} &
+\tablebox{0}{0}{0}{} &
+\tablebox{0}{0}{0}{} \\ \cline{2-8}
+& X_2\hfill 2 &
+\tablebox{0}{0}{0}{} &
+\tablebox{0}{0}{0}{} &
+\tablebox{0}{0}{0}{} &
+\tablebox{0}{0}{0}{} &
+\tablebox{0}{0}{0}{} &
+\tablebox{0}{0}{0}{} \\ \cline{2-8}
+& X_3\hfill 3 &
+\tablebox{0}{0}{0}{} &
+\tablebox{0}{0}{0}{} &
+\tablebox{0}{0}{0}{} &
+\tablebox{0}{0}{0}{} &
+\tablebox{0}{0}{0}{} &
+\tablebox{0}{0}{0}{} \\ \cline{2-8}
+i \hspace*{8pt} & X_4\hfill 4 &
+\tablebox{0}{0}{0}{} &
+\tablebox{0}{0}{0}{} &
+\tablebox{0}{0}{0}{} &
+\tablebox{0}{0}{0}{} &
+\tablebox{0}{0}{0}{} &
+\tablebox{0}{0}{0}{} \\ \cline{2-8}
+& X_5\hfill 5 &
+\tablebox{0}{0}{0}{} &
+\tablebox{0}{0}{0}{} &
+\tablebox{0}{0}{0}{} &
+\tablebox{0}{0}{0}{} &
+\tablebox{0}{0}{0}{} &
+\tablebox{0}{0}{0}{} \\ \cline{2-8}
+& X_6\hfill 6 &
+\tablebox{0}{0}{0}{} &
+\tablebox{0}{0}{0}{} &
+\tablebox{0}{0}{0}{} &
+\tablebox{0}{0}{0}{} &
+\tablebox{0}{0}{0}{} &
+\tablebox{0}{0}{0}{} \\ \cline{2-8}
+& X_7\hfill 7 &
+\tablebox{0}{0}{0}{} &
+\tablebox{0}{0}{0}{} &
+\tablebox{0}{0}{0}{} &
+\tablebox{0}{0}{0}{} &
+\tablebox{0}{0}{0}{} &
+\tablebox{0}{0}{0}{} \\ \cline{2-8}
+\end{array}
+\end{displaymath}
+\caption{Table template for dynamic programming solution
+of BLCS instance}
+\label{figure:emptyBLCS}
+\end{figure}
+
+\clearpage
+
+
+
+
+\problem{30}
+Assume that you are working at an animal shelter.
+%
+Suppose that there are $n$ puppies in the shelter and each of them has a specific hunger level $h_i$. 
+%
+Today you are given  $m$ biscuits, each of them has a size $b_j$.
+%
+Your job  today is to feed and satisfy as many hungry puppies as you can according to the biscuits that you have.
+%
+If a puppy has hunger level $h_i$, it can only be satisfied by feeding a biscuit of size $b_j \ge h_i$. 
+%
+That is, the biscuit size should be greater than or equal to the hunger level of the puppy to satisfy it.
+%
+Of course you cannot give the same biscuit to two puppies and each puppy can only get one biscuit.
+
+%
+
+{\bfseries
+	\begin{enumerate}
+		
+		\begin{SLOPPY}
+			
+			\item
+			State the {\normalfont{\textsc{Puppy Feeding}}} problem
+			in the formal instance/solution format
+			that we use in class.
+			
+		\end{SLOPPY}
+		
+		\item
+		Design an efficient algorithm
+		to solve the {\normalfont{\textsc{Puppy Feeding}}} problem
+		and give the corresponding pseudocode.
+		Argue that your algorithm returns an optimal solution.
+		
+		\item
+		Give the $\Theta$ asymptotic worst-case time complexity
+		for your algorithm.
+		
+	\end{enumerate}
+}
+
+
+\solution
+
+% PUT YOUR SOLUTION HERE
+
+
+\problembreak
+
+
+\clearpage
+
+\problem{20}
+Let $G=(V,E)$ be an undirected (not necessarily connected) graph
+with each edge colored either blue or red.
+We are interested in whether the vertices in $V$
+can be assigned to two categories: $C_1$ and $C_2$.
+We take a blue edge $(u,v)$ to mean
+that $u$ and $v$ should be in the same category,
+while we take a red edge $(u,v)$ to mean
+that $u$ and $v$ should be in different categories.
+$G$ is \textit{assignable}
+if there is an assignment of vertices to $C_1$ and $C_2$
+such that the meaning of the edges is correct;
+$G$ is \textit{unassignable} otherwise.
+
+{\bfseries
+\begin{enumerate}
+
+\item
+Draw an example of a graph $G$ with six vertices, four blue edges,
+and four red edges
+that is assignable.
+Give an assignment of the vertices to $C_1$ and $C_2$
+that demonstrates that $G$ is assignable.
+
+\item
+Draw an example of a graph $G$ with six vertices, four blue edges,
+and four red edges
+that is unassignable.
+Explain why $G$ is not assignable.
+
+\item
+Formally state the problem {\normalfont{\textsc{Assignability}}}
+that answers whether an edge-colored graph is assignable.
+
+\item
+Using BFS or DFS,
+design an algorithm {\normalfont{\textsc{Assignable}}}
+to solve {\normalfont{\textsc{Assignability}}}.
+Write {\normalfont{\textsc{Assignable}}} in pseudocode.
+Explain the major changes
+required to either BFS or DFS
+to achieve your {\normalfont{\textsc{Assignable}}} algorithm.
+
+\item
+Analyze the worst-case time complexity of {\normalfont{\textsc{Assignable}}}.
+
+\end{enumerate}
+}
+
+\solution
+
+% PUT YOUR SOLUTION HERE
+
+\problembreak
+
+\end{document}
