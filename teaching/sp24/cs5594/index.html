@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CS 5594: Blockchain Technologies (Spring 2024)</title>
+    <link rel='stylesheet prefetch' href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  
+    
+    <link rel="stylesheet" href="css/style.css">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" /> <! responsive design>
+
+            <link rel="icon" href="images/icon.png">
+
+
+    <link href="fa-6.1.1/css/all.css" rel="stylesheet"> <!--load all styles -->
+
+   
+       
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll navbar-right" href="#page-top">CS 5594: Blockchain Technologies</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden active">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#announcement"><i class="fa fa-info-circle  mr-3"></i> Announcement</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#assignments"><i class="fas fa-edit mr-3"></i>Assignments</a>
+                    </li>
+                    
+					<li class="">
+                        <a class="page-scroll" href="#schedule"><i class="fas fa-chalkboard-teacher mr-3"></i> Schedule</a>
+                    </li>
+                    
+                    <li class="">
+                        <a class="page-scroll" href="#resources"><i class="fas fa-book mr-3"></i> Resources</a>
+                    </li>
+                    <!--
+                    <li><a class="page-scroll" href="#grading"><i class="fa fa-pencil" ></i> Grading</a>
+                    </li>
+                    -->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header id="page-top" >
+    </header>
+    <content>
+        <section id="general">
+                <div class="container">
+                    
+                    <div style="text-align: center">  <h2 class="mb-4">CS 5594: Blockchain Technologies (Spring 2024)</h2>
+                        <h4>|<a href="files/CS5594_sp2024_BlockchainTechnologies_syllabus.pdf">Syllabus</a>|</h3>
+                    </div>
+                
+
+                    <p> <b>Time and Location</b>: T & R (11:00 AM - 12:15 PM) @  TORG 1030 (Blacksburg campus) & online (only for NVC campus) </p> 
+                    <p><b>Instructor</b>: <a href="mailto:thanghoang@vt.edu">Dr. Thang Hoang (@thanghoang)</a></p>
+                    <ul>
+                        <li><u>Office Hours:</u> Tues @ 12:30 PM - 2:00 PM </li>
+                        <li><u>Location:</u> Zoom (link to be announced on Canvas)</li>
+                    </ul>
+                    
+                    <p><b>Teaching Assistant</b>: TBD
+                        <!--
+                        <a href="mailto:">TBD (@TBD)</a>
+                        <table width="1024px">
+                            <tr  style="border-top: 1px solid #000;">
+                                <td width="10%"> Office Hours </td><td width="15%" style="padding-right:10px">Weds @ 10:00 AM - 12:00 PM </td> <td width="15%" style="padding-right:10px">Weds @ 1:00 PM - 3:00 PM </td> 
+                            </tr>
+                            <tr>
+                                <td>Modality</td> <td>Zoom only</td> <td>In-person & Zoom</td> 
+                            </tr>
+                            
+                            <tr>
+                                <td>Physical Location</td> <td> N/A </td> <td>McBryde 122</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #000;">
+                                <td>Zoom link</td> <td colspan="2" style="text-align: center;"> (announced on Canvas) </td> 
+                            </tr>
+                        </table>
+                        -->
+					</div>
+                </div>
+                
+            </section>
+        <section id="announcement" class="bg-light-gray">
+            <div class="container">
+                <h3 style="color:red">Announcement</h3>
+                
+                
+                <div class ="newsDate newsHighlight" style="color:red">Jan 04</div><div class="newsContent newsHighlight">Course website is up </div> 
+                
+                  
+            </div>
+        </section>
+
+        
+        <!-- Assignment Section -->
+        <section id="assignments" >
+            <div class="container">
+                <h3>Assignment</h3>
+                TBD
+            </div>
+        </section>
+
+        
+        <!-- Schedule Section -->
+        <section id="schedule" >
+            <div class="container">
+                <h3>Course Schedule</h3>
+                The schedule may be subject to change as the course proceeds.<br/>
+                <table width="100%" class="table-striped" id="tableSchedule">
+                    <thead>
+                    <tr>
+                        <th width="1%" style="text-align: center;">#</th> 
+                        <th width="15%"><b>Date</b></th> 
+                        <th width="45%"><b>Topic</b></th>
+                        <th wdith="35%"><b>Notes</b></th>
+                    </tr>
+                    </thead>
+                    <tr>
+                        <td rowspan=2 style="text-align: center;border-bottom: 1px solid black;">1</td>
+                        <td>Jan 16 (T)</td> 
+                        <td>
+                            <a href="">Getting Started</a>
+                            <span class="slideNote"></span>
+                        </td>
+                    <td></td>
+                    </tr>
+                    
+                    <tr>
+                    <td>Jan 18 (R)</td> 
+                    <td> 
+                        
+                    </td>
+                    <td>
+
+                    </td>
+                    </tr>
+
+                    <tr><td rowspan=2 style="text-align: center;border-bottom: 1px solid black;">2</td>
+                        <td>Jan 23 (T)</td> 
+                        <td>
+                            
+                        </td>
+                        <td></td> 
+                    </tr>
+                    
+                    <tr>
+                    <td>Jan 25 (R)</td>  
+                    <td>     
+                        
+                    </td>
+                    <td></td>
+                    </tr>
+                    
+                    <tr><td rowspan=2 style="text-align: center;border-bottom: 1px solid black;">3</td>
+                        <td>Jan 30 (T)</td>  
+                        <td> 
+                        
+                        </td>
+                        
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Feb 01 (R)</td>
+                        <td>
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr><td rowspan=2 style="text-align: center;border-bottom: 1px solid black;">4</td>
+                        <td>Feb 06 (T)</td>
+                        <td> 
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Feb 08 (R)</td>  
+                        <td>
+                            
+                        </td>
+                        <td></td> 
+                    </tr>
+
+                    
+                    <tr><td rowspan=2 style="text-align: center;border-bottom: 1px solid black;">5</td>
+                        <td>Feb 13 (T)</td>  
+                        <td>
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Feb 15 (R)</td>  
+                        <td>
+                           
+                        </td>
+                        <td></td> 
+                    </tr>
+                    
+
+                    <tr><td rowspan=2 style="text-align: center;border-bottom: 1px solid black;">6</td>
+                        <td>Feb 20 (T)</td>  
+                        <td>
+                        
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Feb 22 (R)</td>  
+                        <td>
+                        
+                        </td>
+                        <td></td>
+                    </tr>
+
+                
+
+                    <tr><td rowspan=2 style="text-align: center;border-bottom: 1px solid black;">7</td>
+                        <td>Feb 27 (T)</td>  
+                        <td> 
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Feb 29 (R)</td>  
+                        <td> 
+                           
+                        </td>
+                        <td></td>
+                    </tr>
+
+
+                    <tr><td rowspan=2 style="text-align: center;border-bottom: 1px solid black;">8</td>
+                        <td>Mar 05 (T)</td>  
+                        <td style="color:green"> 
+                            Spring break (no class)
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Mar 07 (R)</td>  
+                        <td style="color:green"> 
+                            Spring break (no class)
+                        </td>
+                        <td></td> 
+                                               
+                    </tr>
+
+                    <tr><td rowspan=2 style="text-align: center;border-bottom: 1px solid black;">9</td>
+                        <td>Mar 12 (T)</td>
+                        <td>
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Mar 14 (R)</td> 
+                        <td>
+                            
+                        </td>
+                        <td></td> 
+                    </tr>
+
+                    <tr><td rowspan=2 style="text-align: center;border-bottom: 1px solid black;">10</td>
+                        <td>Mar 19 (T)</td>  
+                        <td> 
+                            
+                        </td>
+                        <td></td> 
+                    </tr>
+                    <tr>
+                        <td>Mar 21 (R)</td>  
+                        <td>
+                           
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+
+                    <tr><td rowspan=2 style="text-align: center;border-bottom: 1px solid black;">11</td>
+                        <td>Mar 26 (T)</td>  
+                        <td> 
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Mar 28 (R)</td>  
+                        <td> 
+                            
+                        </td>
+
+                        <td>
+                           
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan=2 style="text-align: center;border-bottom: 1px solid black;">12</td>
+                        <td>Apr 02 (T)</td>  
+                        <td>
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Apr 04 (R)</td>  
+                        <td>
+                            
+                        <td></td> 
+                    </tr>
+
+                    <tr><td rowspan=2 style="text-align: center;border-bottom: 1px solid black;">13</td>
+                        <td>Apr 09 (T)</td>  
+                        <td>
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Apr 11 (R)</td>  
+                        <td>
+                            
+                        </td>
+                        <td></td> 
+
+                    </tr>
+
+                    <tr><td rowspan=2 style="text-align: center;border-bottom: 1px solid black;">14</td>
+                        <td>Apr 16 (T)</td>  
+                        <td>
+                            
+                        </td>
+                        <td></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Apr 18 (R)</td>  
+                        <td>
+                             
+                        </td>
+                        <td>
+                            
+                        </td>
+                            
+                    </tr>
+
+                    <tr><td rowspan=2 style="text-align: center;border-bottom: 1px solid black;">15</td>
+                        <td>Apr 23 (T)</td>  
+                        <td>
+                            
+                        </td>
+                        <td></td> 
+                    </tr>
+                    <tr>
+                        <td>Apr 25 (R)</td>  
+                        <td>
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+
+                    <tr><td rowspan=2 style="text-align: center;border-bottom: 1px solid black;">16</td>
+                        <td>Apr 30 (T)</td>  
+                        <td>
+
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>May 02 (R)</td>  
+                        <td>
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+
+                </table> 
+            </div>
+        </section>
+
+       
+        <section id="resources" >
+            <div class="container">
+                <h3>Resources</h3>
+                The best source for this course is research articles that can be found on <a href="https://www.google.com">Google</a> or public repositories such as <a href="https://eprint.iacr.org">iacr</a> or <a href="https://arxiv.org">arxiv</a>. Some preferred books for cryptography and blockchain are as follows. <br/><br/>
+                   <b>Blockchain Textbook</b>
+                    <ul>
+                        <li><a href="https://bitcoinbook.cs.princeton.edu">Bitcoin and Cryptocurrency Technologies</a>. Arvind Narayanan, Joseph Bonneau, Edward Felten, Andrew Miller and Steven Goldfeder. Princeton University Press, 2016. (draft version <a href="https://www.lopp.net/pdf/princeton_bitcoin_book.pdf">here</a>) </li>
+                        <li>
+                            <a href="http://elaineshi.com/docs/blockchain-book.pdf">Foundations of Distributed Consensus and Blockchains (free)</a>. Elaine Shi. Book manuscript, 2020.
+                        </li>
+                    </ul>
+                    <b>Crypto Textbook</b>
+                    <ul>
+                        <li><a href="http://www.cs.umd.edu/~jkatz/imc.html">Introduction to Modern Cryptography (3rd edition)</a>. Jonathan Katz and Yehuda Lindell. Chapman and Hall/CRC, 2020.</li>
+                        <li><a href="http://toc.cryptobook.us/book.pdf">A Graduate Course in 
+                            Applied Cryptography (free)</a>. Dan Boneh and Victor Shoup. Book manuscript, 2020</li>
+                    </ul>    
+                    <!--
+                        <b>LaTeX Resources</b>
+                    <ul>
+                        <i>User Manual</i>
+                        <li><a href="http://14.99.188.242:8080/jspui/bitstream/123456789/12240/1/LaTeX%20in%2024%20Hours.pdf">LaTeX in 24 hours: a practical guide for scientific writing</a>. Dilip Datta, Springer, 2017.</a></li>
+                        <li>
+                            <a href="https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.432.3039&rep=rep1&type=pdf">The Not So Short Introduction to LATEX2ε (v. 5.03)</a>. Tobias Oetiker Hubert Partl, Irene Hyna, and Elisabeth Schlegl, 2021.
+                        </li>
+                        <li>
+                            <a href="https://en.wikibooks.org/wiki/LaTeX/Importing_Graphics">How to Insert Graphics into LaTex Document</a>
+                        </li>
+                        <i>Software</i>
+                        <li><a href="https://www.overleaf.com/">Overleaf</a> is a cloud-based LaTeX editor used for writing, editing and publishing scientific documents. Premium is free through University (required VT email).</li>
+                        <li><a href="https://miktex.org">MiKTeX</a> is a free cross-platform TeX distribution for Windows, Linux and macOS.</li>
+                        <li><a href="https://www.tug.org/mactex/">MacTeX</a> is a free redistribution of <a href="https://tug.org/texlive/">TeX Live</a> for specific Mac users.</li>
+                        <li><a href="https://texstudio.org">TeXstudio</a> is a free cross-platform IDE to prepare LaTeX document on local machine (Windows, Linux, macOS).</li>
+                    </ul>
+                    -->
+                </ul>
+
+            </div>
+        </section>
+
+
+        <section id="grading" >
+            <div class="container">
+        <h3>Grading Policy</h3>
+                                        
+        <table>
+            <tr>
+            <td style="text-align:right">Homework Assignments</td> <td style="padding-left: 25px; text-align:right">50%</td>
+            </tr>
+            <tr>
+            <td style="text-align:right">Group Presentation</td> <td style="padding-left: 25px; text-align:right">20%</td>
+            </tr>
+            <td style="text-align:right">Final Project</td> <td style="padding-left: 25px; text-align:right">30%</td>
+            </tr>
+            <tr  style="border-top:  1px solid #000;">
+            <td style="text-align:right"> Total</td> <td style="padding-left: 25px; text-align:right" >100%</td>
+            </tr>
+        </table>
+        
+
+        <h4>Grading Scale </h4>
+        <p> A(93+) &nbsp; A-(90-92) &nbsp; B+(87-89) &nbsp; B(83-86) &nbsp; B-(80-82) &nbsp; C+(77-79) &nbsp; C(73-76) &nbsp; C-(70-72) &nbsp;  D+(67-69) &nbsp;  D(63-66) &nbsp;  D-(60-62) &nbsp; F(59-) </p>
+        
+        <b>Grading will not be curved!</b> <br/>
+
+        <b>Late submission </b> is <u>NOT</u> allowed unless emergency situation (require doctor's note or police report).
+
+
+        <h4>Code of Conduct</h4>
+        <p>  This course strictly follows the <a href="https://www.honorsystem.vt.edu/">VT code of conduct</a>. </p>
+        
+        </div>
+        </section>
+
+
+    </content>
+
+    <footer>
+        <div class="container">
+            
+        </div>
+    </footer>
+	</body>
+	
+	<!-- Google Analytics -->
+	<script>
+	  
+
+	</script>
+
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/classie.js"></script>
+    <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/cbpAnimatedHeader.js"></script>
+
+
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
+
+<script src="js/index.js"></script>
+
+
+<script>
+    var _second = 1000;
+    var _minute = _second * 60;
+    var _hour = _minute * 60;
+    var _day = _hour * 24;
+
+    function setTimer(enddate, elem)
+    {
+        //var now = new Date();
+        //var distance = end - now;
+        (function tick() 
+        {
+            var now = new Date().getTime();
+            var distance = enddate - now;
+            if (distance < 0) 
+            {
+                elem.innerHTML = '(expired)!';
+                return;
+            }
+            setTimeout(tick,1000);
+            var days = Math.floor(distance / _day);
+            var hours = Math.floor((distance % _day) / _hour);
+            var minutes = Math.floor((distance % _hour) / _minute);
+            var seconds = Math.floor((distance % _minute) / _second);
+            var str = "(";
+            if (days > 0 )
+            {
+                str += days;
+                str += "+ days " 
+            }
+            else
+            {
+                if (hours > 15)
+                {
+                    if (hours<10)
+                    {
+                        str+= '0';
+                        
+                    }
+                    str += hours + ' hrs ';
+                }
+                else
+                {
+                    if (hours<10)
+                    {
+                        str +='0';
+                    }
+                    str += hours + ':';
+                    if (minutes > 0)
+                    {
+                        if (minutes<10)
+                        {
+                            str +='0';
+                        }
+                        str += minutes + ':';
+                    }
+                    if (seconds<10)
+                    {
+                        str +='0';
+                    }
+                    str += seconds + ' ';
+                }
+            }
+            str += 'left)';
+            elem.innerHTML = str;
+        })()
+    }
+    setTimer(
+    new Date("04/20/2024 11:59:59 PM"),
+    document.getElementById("countdown")
+    );
+    
+    
+</script>
+
+</html>
