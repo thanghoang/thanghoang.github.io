@@ -122,13 +122,16 @@
                 <h3 style="color:red">Announcement</h3>
                 
                 
-                <div class ="newsDate newsHighlight" style="color:red">Jan 04</div><div class="newsContent newsHighlight">Course website is up </div> 
+                <div class ="newsDate newsHighlight">Feb 09</div><div class="newsContent newsHighlight"><a class="page-scroll" href="#assignments">Homework 1</a> released (Due Feb 22 @ 11:59 PM) </div> 
+                
+
+                <div class ="newsDate" style="color:red">Jan 04</div><div class="newsContent ">Course website is up </div> 
                 
                   
             </div>
         </section>
 
-        <!-- Assignment Section -->
+        <!-- Group Section -->
               <section id="group" >
                 <div class="container">
                     <h3>Registered Groups</h3>
@@ -140,7 +143,8 @@
         <section id="assignments" >
             <div class="container">
                 <h3>Assignment</h3>
-                TBD
+                
+                <li>Homework 1 (<a href="files/hw/hw1/hw1.pdf">PDF </a> | <a href="files/hw/hw1/hw1.tex">TeX</a>) - Due <span>Feb 22 (Thu) @ 11:59 PM </span> <span id="countdown1" class="slideNote"></span>
             </div>
         </section>
 
@@ -203,7 +207,7 @@
                         <td>Jan 30 (T)</td>  
                         <td> 
                             <a href="files/lecture notes/4_crypto.pdf">Cryptographic Primitives</a>
-                        <span class="slideNote">(1-)</span>
+                        <span class="slideNote">(1-11)</span>
                         </td>
                         
                         <td></td>
@@ -211,7 +215,8 @@
                     <tr>
                         <td>Feb 01 (R)</td>
                         <td>
-                            
+                            <a href="files/lecture notes/4_crypto.pdf">Cryptographic Primitives</a>
+                        <span class="slideNote">(12-38)</span>
                         </td>
                         <td></td>
                     </tr>
@@ -219,14 +224,19 @@
                     <tr><td rowspan=2 style="text-align: center;border-bottom: 1px solid black;">4</td>
                         <td>Feb 06 (T)</td>
                         <td> 
-                            
+                            <a href="files/lecture notes/4_crypto.pdf">Cryptographic Primitives</a>
+                        <span class="slideNote">(39-58)</span>
                         </td>
                         <td></td>
                     </tr>
                     <tr>
                         <td>Feb 08 (R)</td>  
                         <td>
-                            
+                            <a href="files/lecture notes/4_crypto.pdf">Cryptographic Primitives</a>
+                        <span class="slideNote">(58-end)</span>
+                        <br/>
+                        <a href="files/lecture notes/5_bitcoin.pdf">Bitcoin</a>
+                        <span class="slideNote">(1-)</span>
                         </td>
                         <td></td> 
                     </tr>
@@ -613,8 +623,8 @@
         })()
     }
     setTimer(
-    new Date("04/20/2024 11:59:59 PM"),
-    document.getElementById("countdown")
+    new Date("02/22/2024 11:59:59 PM"),
+    document.getElementById("countdown1")
     );
     
     
