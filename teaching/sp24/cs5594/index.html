@@ -122,7 +122,11 @@
                 <h3 style="color:red">Announcement</h3>
                 
                 
-                <div class ="newsDate newsHighlight" style="color:red">Feb 09</div><div class="newsContent newsHighlight"><a class="page-scroll" href="#assignments">Homework 1</a> released (Due Feb 22 @ 11:59 PM) </div> 
+
+                <div class ="newsDate newsHighlight" style="color:red">Feb 29</div><div class="newsContent newsHighlight"><a class="page-scroll" href="#assignments">Homework 2</a> released (Due Mar 21 @ 11:59 PM) </div> 
+                
+
+                <div class ="newsDate">Feb 09</div><div class="newsContent"><a class="page-scroll" href="#assignments">Homework 1</a> released (Due Feb 22 @ 11:59 PM) </div> 
                 
 
                 <div class ="newsDate">Jan 04</div><div class="newsContent ">Course website is up </div> 
@@ -143,7 +147,7 @@
         <section id="assignments" >
             <div class="container">
                 <h3>Assignment</h3>
-                
+                <li>Homework 1 (<a href="files/hw/hw2/hw2.pdf">PDF </a> | <a href="files/hw/hw2/skeleton.tar">Code Skeleton</a>) - Due <span>Mar 21 (Thu) @ 11:59 PM </span> <span id="countdown2" class="slideNote"></span>
                 <li>Homework 1 (<a href="files/hw/hw1/hw1.pdf">PDF </a> | <a href="files/hw/hw1/hw1.tex">TeX</a>) - Due <span>Feb 22 (Thu) @ 11:59 PM </span> <span id="countdown1" class="slideNote"></span>
             </div>
         </section>
@@ -341,7 +345,7 @@
                            
                         </td>
                         <td>
-                            
+                            <span style="color: red;">Homework 2 due!</span>
                         </td>
                     </tr>
 
@@ -636,6 +640,11 @@
             elem.innerHTML = str;
         })()
     }
+
+    setTimer(
+    new Date("03/21/2024 11:59:59 PM"),
+    document.getElementById("countdown2")
+    );
     setTimer(
     new Date("02/22/2024 11:59:59 PM"),
     document.getElementById("countdown1")
