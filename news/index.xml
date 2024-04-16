@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>News | Thang Hoang</title>
+    <link>https://thanghoang.github.io/news/</link>
+      <atom:link href="https://thanghoang.github.io/news/index.xml" rel="self" type="application/rss+xml" />
+    <description>News</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <image>
+      <url>https://thanghoang.github.io/images/icon_hu90c008e4d96deb53d5ad25d414e3485e_13497_512x512_fill_lanczos_center_3.png</url>
+      <title>News</title>
+      <link>https://thanghoang.github.io/news/</link>
+    </image>
+    
+    <item>
+      <title></title>
+      <link>https://thanghoang.github.io/news/data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://thanghoang.github.io/news/data/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
