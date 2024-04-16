@@ -17,7 +17,326 @@
       <link>https://thanghoang.github.io/services/data/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://thanghoang.github.io/services/data/</guid>
-      <description></description>
+      <description>&lt;!-- service_type: 1 Editor, 2 Chair, 3 PC, 4 Journal Reviewer, 5 Conf External Reviewer
+&lt;!-- pub_type: 1 : conference, 2: journal,  --&gt;
+&lt;hr&gt;
+&lt;p&gt;services:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2024
+venue: &amp;ldquo;
+&lt;a href=&#34;https://www.ieee-security.org/TC/SP2024/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IEEE S&amp;amp;P&lt;/a&gt; (Student Travel Grant Chair)&amp;rdquo;
+service_type: 2&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2024
+venue: &amp;ldquo;
+&lt;a href=&#34;https://acsac.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ACSAC&lt;/a&gt;&amp;rdquo;
+service_type: 3&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2024
+venue: &amp;ldquo;
+&lt;a href=&#34;https://petsymposium.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PETS&lt;/a&gt;&amp;rdquo;
+service_type: 3&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2023
+venue: &amp;ldquo;
+&lt;a href=&#34;https://inscrypt2023.github.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Inscrypt&lt;/a&gt;&amp;rdquo;
+service_type: 3&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2023
+venue: &amp;ldquo;
+&lt;a href=&#34;https://cis.temple.edu/ieeemass2023/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IEEE MASS&lt;/a&gt; (S&amp;amp;P track)&amp;rdquo;
+service_type: 3&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2023
+venue: &amp;ldquo;
+&lt;a href=&#34;https://www.acsac.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ACSAC&lt;/a&gt;&amp;rdquo;
+service_type: 3&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2023
+venue: &amp;ldquo;
+&lt;a href=&#34;https://www.ieee-security.org/TC/SP2023/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IEEE S&amp;amp;P&lt;/a&gt; (Short-Talks Chair)&amp;rdquo;
+service_type: 2&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2022
+venue: &amp;ldquo;
+&lt;a href=&#34;https://viasm.edu.vn/hdkh/cbc2022&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vietnam CBC&lt;/a&gt; (Program Chair)&amp;rdquo;
+service_type: 2&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2023
+venue: &amp;ldquo;
+&lt;a href=&#34;https://petsymposium.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PETS&lt;/a&gt;&amp;rdquo;
+service_type: 3&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2022
+venue: &amp;ldquo;
+&lt;a href=&#34;https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=4629386&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IEEE TSC&lt;/a&gt;&amp;rdquo;
+service_type: 4&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2022
+venue: &amp;ldquo;
+&lt;a href=&#34;https://dl.acm.org/journal/tops&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ACM TOPS&lt;/a&gt;&amp;rdquo;
+service_type: 4&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2022
+venue: &amp;ldquo;
+&lt;a href=&#34;https://sites.google.com/view/ieee-mass-2022&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IEEE MASS (S&amp;amp;P track)&lt;/a&gt;&amp;rdquo;
+service_type: 3&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2022
+venue: &amp;ldquo;
+&lt;a href=&#34;https://www.acsac.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ACSAC&lt;/a&gt;&amp;rdquo;
+service_type: 3&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2022
+venue: &amp;ldquo;
+&lt;a href=&#34;https://www.ieee-security.org/TC/SP2022/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IEEE S&amp;amp;P&lt;/a&gt;  (Short-Talks Chair)&amp;rdquo;
+service_type: 2&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2022
+venue: &amp;ldquo;
+&lt;a href=&#34;https://www2022.thewebconf.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;WWW&lt;/a&gt;&amp;rdquo;
+service_type: 3&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2021
+venue: &amp;ldquo;
+&lt;a href=&#34;https://www.computer.org/csdl/journal/tq&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IEEE TDSC&lt;/a&gt;&amp;rdquo;
+service_type: 4&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2021
+venue: &amp;ldquo;
+&lt;a href=&#34;https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=10206&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IEEE TIFS&lt;/a&gt;&amp;rdquo;
+service_type: 4&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2021
+venue: &amp;ldquo;
+&lt;a href=&#34;https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6245519&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IEEE TCC&lt;/a&gt;&amp;rdquo;
+service_type: 4&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2021
+venue: &amp;ldquo;
+&lt;a href=&#34;https://dl.acm.org/journal/dtrap&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ACM DTRAP&lt;/a&gt;&amp;rdquo;
+service_type: 4&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2021
+venue: &amp;ldquo;
+&lt;a href=&#34;https://www.sigsac.org/ccs/CCS2021/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CCS&lt;/a&gt;&amp;rdquo;
+service_type: 5&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2021
+venue: &amp;ldquo;
+&lt;a href=&#34;http://www.acsac.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ACSAC&lt;/a&gt;&amp;rdquo;
+service_type: 3&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2021
+venue: &amp;ldquo;
+&lt;a href=&#34;http://www.icccn.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IEEE ICCCN (security track)&lt;/a&gt;&amp;rdquo;
+service_type: 3&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2020
+venue: &amp;ldquo;
+&lt;a href=&#34;https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=10206&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IEEE TIFS&lt;/a&gt;&amp;rdquo;
+service_type: 4&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2019
+venue: &amp;ldquo;
+&lt;a href=&#34;https://www2021.thewebconf.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;WWW&lt;/a&gt;&amp;rdquo;
+service_type: 5&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2020
+venue: &amp;ldquo;
+&lt;a href=&#34;https://wisec2020.ins.jku.at/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;WiSec&lt;/a&gt;&amp;rdquo;
+service_type: 5&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2021
+venue: &amp;ldquo;
+&lt;a href=&#34;https://petsymposium.org/cfp21.php&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;WWW&lt;/a&gt;&amp;rdquo;
+service_type: 5&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2021
+venue: &amp;ldquo;
+&lt;a href=&#34;https://petsymposium.org/cfp21.php&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PETS&lt;/a&gt;&amp;rdquo;
+service_type: 5&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2020
+venue: &amp;ldquo;
+&lt;a href=&#34;https://petsymposium.org/cfp20.php&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PETS&lt;/a&gt;&amp;rdquo;
+service_type: 5&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2019
+venue: &amp;ldquo;
+&lt;a href=&#34;https://dbsec2019.cse.sc.edu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DBSec&lt;/a&gt;&amp;rdquo;
+service_type: 5&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2018
+venue: &amp;ldquo;
+&lt;a href=&#34;https://dbsec18.unibg.it/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DBSec&lt;/a&gt;&amp;rdquo;
+service_type: 5&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2021
+venue: &amp;ldquo;
+&lt;a href=&#34;https://www.ieee-security.org/TC/SP2021/cfpapers.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IEEE S&amp;amp;P&lt;/a&gt;&amp;rdquo;
+service_type: 5&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2019
+venue: &amp;ldquo;
+&lt;a href=&#34;https://cns2019.ieee-cns.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IEEE CNS&lt;/a&gt;&amp;rdquo;
+service_type: 5&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2021
+venue: &amp;ldquo;
+&lt;a href=&#34;https://www.ieee-security.org/TC/CSF2021/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IEEE CSF&lt;/a&gt;&amp;rdquo;
+service_type: 5&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2018
+venue: &amp;ldquo;
+&lt;a href=&#34;https://eurocrypt.iacr.org/2018/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Eurocrypt&lt;/a&gt;&amp;rdquo;
+service_type: 5&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2018
+venue: &amp;ldquo;
+&lt;a href=&#34;https://asiacrypt.iacr.org/2018/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Asiacrypt&lt;/a&gt;&amp;rdquo;
+service_type: 5&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2017
+venue: &amp;ldquo;
+&lt;a href=&#34;https://www.acsac.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ACSAC&lt;/a&gt;&amp;rdquo;
+service_type: 5&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2018
+venue: &amp;ldquo;
+&lt;a href=&#34;https://www.acsac.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ACSAC&lt;/a&gt;&amp;rdquo;
+service_type: 5&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2019
+venue: &amp;ldquo;
+&lt;a href=&#34;https://www.acsac.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ACSAC&lt;/a&gt;&amp;rdquo;
+service_type: 5&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2019
+venue: &amp;ldquo;
+&lt;a href=&#34;https://www.journals.elsevier.com/journal-of-information-security-and-applications&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Elsevier JISA&lt;/a&gt;&amp;rdquo;
+service_type: 4&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2020
+venue: &amp;ldquo;
+&lt;a href=&#34;https://www.journals.elsevier.com/computers-and-security&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Elsevier CoSe&lt;/a&gt;&amp;rdquo;
+service_type: 4&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2019
+venue: &amp;ldquo;
+&lt;a href=&#34;https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221036&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IEEE TCC&lt;/a&gt;&amp;rdquo;
+service_type: 4&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2018
+venue: &amp;ldquo;
+&lt;a href=&#34;https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221036&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IEEE Trans. Cybernetics&lt;/a&gt;&amp;rdquo;
+service_type: 4&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2018
+venue: &amp;ldquo;
+&lt;a href=&#34;https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=10206&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IEEE TIFS&lt;/a&gt;&amp;rdquo;
+service_type: 4&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2020
+venue: &amp;ldquo;
+&lt;a href=&#34;https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8858&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IEEE TDSC&lt;/a&gt;&amp;rdquo;
+service_type: 4&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2018
+venue: &amp;ldquo;
+&lt;a href=&#34;https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8858&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IEEE TDSC&lt;/a&gt;&amp;rdquo;
+service_type: 4&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2017
+venue: &amp;ldquo;
+&lt;a href=&#34;https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8858&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IEEE TDSC&lt;/a&gt;&amp;rdquo;
+service_type: 4&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2020
+venue: &amp;ldquo;
+&lt;a href=&#34;https://dl.acm.org/journal/tops&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ACM TOPS&lt;/a&gt;&amp;rdquo;
+service_type: 4&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2017
+venue: &amp;ldquo;
+&lt;a href=&#34;https://dl.acm.org/journal/tops&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ACM TOPS&lt;/a&gt;&amp;rdquo;
+service_type: 4&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2020
+venue: &amp;ldquo;
+&lt;a href=&#34;https://dl.acm.org/journal/dtrap&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ACM DTRAP&lt;/a&gt;&amp;rdquo;
+service_type: 4&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2020
+venue: &amp;ldquo;
+&lt;a href=&#34;https://cosdeo.aalto.fi/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CosDEO Workshop&lt;/a&gt;&amp;rdquo;
+service_type: 3&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2018
+venue: &amp;ldquo;
+&lt;a href=&#34;https://cosdeo.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CosDEO Workshop&lt;/a&gt;&amp;rdquo;
+service_type: 3&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;year: 2017
+venue: &amp;ldquo;
+&lt;a href=&#34;https://www.journals.elsevier.com/information-sciences&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Elsevier Information Sciences&lt;/a&gt;&amp;rdquo;
+service_type: 4&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+</description>
     </item>
     
   </channel>
