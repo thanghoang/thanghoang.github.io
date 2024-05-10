@@ -27,11 +27,11 @@
   
     
   
-  <meta name="description" content="Commodity encrypted storage platforms (e.g., IceDrive, pCloud) permit data store and sharing across multiple users while preserving data confidentiality. However, end-to-end encryption may not be sufficient since it only offers confidentiality when the data is at rest or in transit. Meanwhile, sensitive information can be leaked from metadata representing activities during data operations (e.g., query, processing). Recent encrypted search platforms such as DORY (OSDI’20) or DURASIFT (WPES’19) permit multi-user data query functionalities, while protecting metadata privacy. However, they either incur a high processing overhead or offer limited secu- rity/functionality, and require strong trust assumptions.\
-We propose MAPLE, a new metadata-hiding encrypted search platform that offers query functionalities (search, update) on the shared data across multiple users with complex policy controls. MAPLE protects metadata privacy all the time during query processing, while achieving significantly (asymptotically) lower processing overhead than state-of-the-art platforms. The core technique of MAPLE is the design of oblivious data structures for search index and access control coupled with secure computation techniques to enable efficient query processing with a minimal trust. We fully implemented MAPLE and evaluated its performance on commodity cloud (Amazon EC2) under real settings. Experimental results showed that MAPLE achieved a concrete performance comparable with its counterparts, while offering provably stronger security guarantees and more diverse functionalities.">
+  <meta name="description" content="Searchable encrypted systems enable privacy-preserving key- word search on encrypted data. Symmetric systems achieve high efficiency (e.g., sublinear search), but they mostly sup- port single-user search. Although systems based on public- key or hybrid models support multi-user search, they incur inherent security weaknesses (e.g., keyword-guessing vulner- abilities) and scalability limitations due to costly public-key operations (e.g., pairing). More importantly, most encrypted search designs leak statistical information (e.g., search, re- sult, and volume patterns) and thus are vulnerable to devas- tating leakage-abuse attacks. Some pattern-hiding schemes were proposed. However, they incur significant user band- width/computation costs, and thus are not desirable for large- scale outsourced databases with resource-constrained users.\
+In this paper, we propose MUSES, a new multi-writer en- crypted search platform that addresses the functionality, se- curity, and performance limitations in the existing encrypted search designs. Specifically, MUSES permits single-reader, multi-writer functionalities with permission revocation and hides all statistical information (including search, result, and volume patterns) while featuring minimal user overhead. In MUSES, we demonstrate a unique incorporation of various emerging distributed cryptographic protocols including Dis- tributed Point Function, Distributed PRF, and Oblivious Lin- ear Group Action. We also introduce novel distributed proto- cols for oblivious counting and shuffling on arithmetic shares for the general multi-party setting with a dishonest majority, which can be found useful in other applications. Our experi- mental results showed that the keyword search by MUSES is two orders of magnitude faster with up to 97× lower user bandwidth cost than the state-of-the-art.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://thanghoang.github.io/publication/23_pets_maple/">
+  <link rel="alternate" hreflang="en-us" href="https://thanghoang.github.io/publication/24_usenixsec_muses/">
 
   
 
@@ -257,7 +257,7 @@ We propose MAPLE, a new metadata-hiding encrypted search platform that offers qu
   <link rel="icon" type="image/png" href="/images/icon_hu90c008e4d96deb53d5ad25d414e3485e_13497_32x32_fill_lanczos_center_3.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu90c008e4d96deb53d5ad25d414e3485e_13497_192x192_fill_lanczos_center_3.png">
 
-  <link rel="canonical" href="https://thanghoang.github.io/publication/23_pets_maple/">
+  <link rel="canonical" href="https://thanghoang.github.io/publication/24_usenixsec_muses/">
 
   
   
@@ -273,16 +273,16 @@ We propose MAPLE, a new metadata-hiding encrypted search platform that offers qu
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Thang Hoang">
-  <meta property="og:url" content="https://thanghoang.github.io/publication/23_pets_maple/">
-  <meta property="og:title" content="MAPLE: A Metadata-Hiding Policy-Controllable Encrypted Search Platform with Minimal Trust | Thang Hoang">
-  <meta property="og:description" content="Commodity encrypted storage platforms (e.g., IceDrive, pCloud) permit data store and sharing across multiple users while preserving data confidentiality. However, end-to-end encryption may not be sufficient since it only offers confidentiality when the data is at rest or in transit. Meanwhile, sensitive information can be leaked from metadata representing activities during data operations (e.g., query, processing). Recent encrypted search platforms such as DORY (OSDI’20) or DURASIFT (WPES’19) permit multi-user data query functionalities, while protecting metadata privacy. However, they either incur a high processing overhead or offer limited secu- rity/functionality, and require strong trust assumptions.\
-We propose MAPLE, a new metadata-hiding encrypted search platform that offers query functionalities (search, update) on the shared data across multiple users with complex policy controls. MAPLE protects metadata privacy all the time during query processing, while achieving significantly (asymptotically) lower processing overhead than state-of-the-art platforms. The core technique of MAPLE is the design of oblivious data structures for search index and access control coupled with secure computation techniques to enable efficient query processing with a minimal trust. We fully implemented MAPLE and evaluated its performance on commodity cloud (Amazon EC2) under real settings. Experimental results showed that MAPLE achieved a concrete performance comparable with its counterparts, while offering provably stronger security guarantees and more diverse functionalities."><meta property="og:image" content="https://thanghoang.github.io/images/icon_hu90c008e4d96deb53d5ad25d414e3485e_13497_512x512_fill_lanczos_center_3.png">
+  <meta property="og:url" content="https://thanghoang.github.io/publication/24_usenixsec_muses/">
+  <meta property="og:title" content="MUSES: Efficient Multi-User Searchable Encrypted Database | Thang Hoang">
+  <meta property="og:description" content="Searchable encrypted systems enable privacy-preserving key- word search on encrypted data. Symmetric systems achieve high efficiency (e.g., sublinear search), but they mostly sup- port single-user search. Although systems based on public- key or hybrid models support multi-user search, they incur inherent security weaknesses (e.g., keyword-guessing vulner- abilities) and scalability limitations due to costly public-key operations (e.g., pairing). More importantly, most encrypted search designs leak statistical information (e.g., search, re- sult, and volume patterns) and thus are vulnerable to devas- tating leakage-abuse attacks. Some pattern-hiding schemes were proposed. However, they incur significant user band- width/computation costs, and thus are not desirable for large- scale outsourced databases with resource-constrained users.\
+In this paper, we propose MUSES, a new multi-writer en- crypted search platform that addresses the functionality, se- curity, and performance limitations in the existing encrypted search designs. Specifically, MUSES permits single-reader, multi-writer functionalities with permission revocation and hides all statistical information (including search, result, and volume patterns) while featuring minimal user overhead. In MUSES, we demonstrate a unique incorporation of various emerging distributed cryptographic protocols including Dis- tributed Point Function, Distributed PRF, and Oblivious Lin- ear Group Action. We also introduce novel distributed proto- cols for oblivious counting and shuffling on arithmetic shares for the general multi-party setting with a dishonest majority, which can be found useful in other applications. Our experi- mental results showed that the keyword search by MUSES is two orders of magnitude faster with up to 97× lower user bandwidth cost than the state-of-the-art."><meta property="og:image" content="https://thanghoang.github.io/images/icon_hu90c008e4d96deb53d5ad25d414e3485e_13497_512x512_fill_lanczos_center_3.png">
   <meta property="twitter:image" content="https://thanghoang.github.io/images/icon_hu90c008e4d96deb53d5ad25d414e3485e_13497_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2023-05-03T00:00:00-07:00">
+      <meta property="article:published_time" content="2024-05-06T00:00:00-07:00">
     
-    <meta property="article:modified_time" content="2023-07-11T00:00:00-07:00">
+    <meta property="article:modified_time" content="2024-08-12T00:00:00-07:00">
   
 
   
@@ -304,12 +304,12 @@ We propose MAPLE, a new metadata-hiding encrypted search platform that offers qu
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://thanghoang.github.io/publication/23_pets_maple/"
+    "@id": "https://thanghoang.github.io/publication/24_usenixsec_muses/"
   },
-  "headline": "MAPLE: A Metadata-Hiding Policy-Controllable Encrypted Search Platform with Minimal Trust",
+  "headline": "MUSES: Efficient Multi-User Searchable Encrypted Database",
   
-  "datePublished": "2023-05-03T00:00:00-07:00",
-  "dateModified": "2023-07-11T00:00:00-07:00",
+  "datePublished": "2024-05-06T00:00:00-07:00",
+  "dateModified": "2024-08-12T00:00:00-07:00",
   
   "author": {
     "@type": "Person",
@@ -324,7 +324,7 @@ We propose MAPLE, a new metadata-hiding encrypted search platform that offers qu
       "url": "https://thanghoang.github.io/images/icon_hu90c008e4d96deb53d5ad25d414e3485e_13497_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "Commodity encrypted storage platforms (e.g., IceDrive, pCloud) permit data store and sharing across multiple users while preserving data confidentiality. However, end-to-end encryption may not be sufficient since it only offers confidentiality when the data is at rest or in transit. Meanwhile, sensitive information can be leaked from metadata representing activities during data operations (e.g., query, processing). Recent encrypted search platforms such as DORY (OSDI’20) or DURASIFT (WPES’19) permit multi-user data query functionalities, while protecting metadata privacy. However, they either incur a high processing overhead or offer limited secu- rity/functionality, and require strong trust assumptions.\\\nWe propose MAPLE, a new metadata-hiding encrypted search platform that offers query functionalities (search, update) on the shared data across multiple users with complex policy controls. MAPLE protects metadata privacy all the time during query processing, while achieving significantly (asymptotically) lower processing overhead than state-of-the-art platforms. The core technique of MAPLE is the design of oblivious data structures for search index and access control coupled with secure computation techniques to enable efficient query processing with a minimal trust. We fully implemented MAPLE and evaluated its performance on commodity cloud (Amazon EC2) under real settings. Experimental results showed that MAPLE achieved a concrete performance comparable with its counterparts, while offering provably stronger security guarantees and more diverse functionalities."
+  "description": "Searchable encrypted systems enable privacy-preserving key- word search on encrypted data. Symmetric systems achieve high efficiency (e.g., sublinear search), but they mostly sup- port single-user search. Although systems based on public- key or hybrid models support multi-user search, they incur inherent security weaknesses (e.g., keyword-guessing vulner- abilities) and scalability limitations due to costly public-key operations (e.g., pairing). More importantly, most encrypted search designs leak statistical information (e.g., search, re- sult, and volume patterns) and thus are vulnerable to devas- tating leakage-abuse attacks. Some pattern-hiding schemes were proposed. However, they incur significant user band- width/computation costs, and thus are not desirable for large- scale outsourced databases with resource-constrained users.\\\nIn this paper, we propose MUSES, a new multi-writer en- crypted search platform that addresses the functionality, se- curity, and performance limitations in the existing encrypted search designs. Specifically, MUSES permits single-reader, multi-writer functionalities with permission revocation and hides all statistical information (including search, result, and volume patterns) while featuring minimal user overhead. In MUSES, we demonstrate a unique incorporation of various emerging distributed cryptographic protocols including Dis- tributed Point Function, Distributed PRF, and Oblivious Lin- ear Group Action. We also introduce novel distributed proto- cols for oblivious counting and shuffling on arithmetic shares for the general multi-party setting with a dishonest majority, which can be found useful in other applications. Our experi- mental results showed that the keyword search by MUSES is two orders of magnitude faster with up to 97× lower user bandwidth cost than the state-of-the-art."
 }
 </script>
 
@@ -342,7 +342,7 @@ We propose MAPLE, a new metadata-hiding encrypted search platform that offers qu
 
 
 
-  <title>MAPLE: A Metadata-Hiding Policy-Controllable Encrypted Search Platform with Minimal Trust | Thang Hoang</title>
+  <title>MUSES: Efficient Multi-User Searchable Encrypted Database | Thang Hoang</title>
 
 </head>
 
@@ -675,7 +675,7 @@ We propose MAPLE, a new metadata-hiding encrypted search platform that offers qu
   
   
 <div class="article-container pt-3">
-  <h1>MAPLE: A Metadata-Hiding Policy-Controllable Encrypted Search Platform with Minimal Trust</h1>
+  <h1>MUSES: Efficient Multi-User Searchable Encrypted Database</h1>
 
   
 
@@ -695,6 +695,8 @@ We propose MAPLE, a new metadata-hiding encrypted search platform that offers qu
   
   <span> 
           <u>Tung Le</u></span>, <span>
+          Rouzbeh Behnia</span>, <span>
+          Jorge Guajardo</span>, <span>
           <b>Thang Hoang</b></a></span>
   </div>
   
@@ -706,7 +708,7 @@ We propose MAPLE, a new metadata-hiding encrypted search platform that offers qu
     
       
     
-    July 2023
+    August 2024
   </span>
   
 
@@ -754,20 +756,13 @@ We propose MAPLE, a new metadata-hiding encrypted search platform that offers qu
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1" href="https://eprint.iacr.org/2023/1105.pdf" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary my-1 mr-1" href="https://eprint.iacr.org/2023/720.pdf" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
 
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/vt-asaplab/maple" target="_blank" rel="noopener">
-  Code
-</a>
 
 
 
@@ -776,21 +771,8 @@ We propose MAPLE, a new metadata-hiding encrypted search platform that offers qu
 
 
 
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1" href="/slides/23_pets_maple.pptx" target="_blank" rel="noopener">
-  Slides
-</a>
 
 
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1" href="https://doi.org/10.56553/popets-2023-0094" target="_blank" rel="noopener">
-  DOI
-</a>
 
 
 
@@ -806,8 +788,8 @@ We propose MAPLE, a new metadata-hiding encrypted search platform that offers qu
   
     
     <h3>Abstract</h3>
-    <p class="pub-abstract">Commodity encrypted storage platforms (e.g., IceDrive, pCloud) permit data store and sharing across multiple users while preserving data confidentiality. However, end-to-end encryption may not be sufficient since it only offers confidentiality when the data is at rest or in transit. Meanwhile, sensitive information can be leaked from metadata representing activities during data operations (e.g., query, processing). Recent encrypted search platforms such as DORY (OSDI’20) or DURASIFT (WPES’19) permit multi-user data query functionalities, while protecting metadata privacy. However, they either incur a high processing overhead or offer limited secu- rity/functionality, and require strong trust assumptions.<br>
-We propose MAPLE, a new metadata-hiding encrypted search platform that offers query functionalities (search, update) on the shared data across multiple users with complex policy controls. MAPLE protects metadata privacy all the time during query processing, while achieving significantly (asymptotically) lower processing overhead than state-of-the-art platforms. The core technique of MAPLE is the design of oblivious data structures for search index and access control coupled with secure computation techniques to enable efficient query processing with a minimal trust. We fully implemented MAPLE and evaluated its performance on commodity cloud (Amazon EC2) under real settings. Experimental results showed that MAPLE achieved a concrete performance comparable with its counterparts, while offering provably stronger security guarantees and more diverse functionalities.</p>
+    <p class="pub-abstract">Searchable encrypted systems enable privacy-preserving key- word search on encrypted data. Symmetric systems achieve high efficiency (e.g., sublinear search), but they mostly sup- port single-user search. Although systems based on public- key or hybrid models support multi-user search, they incur inherent security weaknesses (e.g., keyword-guessing vulner- abilities) and scalability limitations due to costly public-key operations (e.g., pairing). More importantly, most encrypted search designs leak statistical information (e.g., search, re- sult, and volume patterns) and thus are vulnerable to devas- tating leakage-abuse attacks. Some pattern-hiding schemes were proposed. However, they incur significant user band- width/computation costs, and thus are not desirable for large- scale outsourced databases with resource-constrained users.<br>
+In this paper, we propose MUSES, a new multi-writer en- crypted search platform that addresses the functionality, se- curity, and performance limitations in the existing encrypted search designs. Specifically, MUSES permits single-reader, multi-writer functionalities with permission revocation and hides all statistical information (including search, result, and volume patterns) while featuring minimal user overhead. In MUSES, we demonstrate a unique incorporation of various emerging distributed cryptographic protocols including Dis- tributed Point Function, Distributed PRF, and Oblivious Lin- ear Group Action. We also introduce novel distributed proto- cols for oblivious counting and shuffling on arithmetic shares for the general multi-party setting with a dishonest majority, which can be found useful in other applications. Our experi- mental results showed that the keyword search by MUSES is two orders of magnitude faster with up to 97× lower user bandwidth cost than the state-of-the-art.</p>
     
 
     
@@ -837,9 +819,9 @@ We propose MAPLE, a new metadata-hiding encrypted search platform that offers qu
       <div class="col-md-10">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">Privacy Enhancing Technologies Symposium
+          <div class="col-12 col-md-9">USENIX Security Symposium
             
-              (PETS)
+              (USENIX Security)
             
           </div>
         </div>
@@ -872,7 +854,7 @@ We propose MAPLE, a new metadata-hiding encrypted search platform that offers qu
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://thanghoang.github.io/publication/23_pets_maple/&amp;text=MAPLE:%20A%20Metadata-Hiding%20Policy-Controllable%20Encrypted%20Search%20Platform%20with%20Minimal%20Trust" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://thanghoang.github.io/publication/24_usenixsec_muses/&amp;text=MUSES:%20Efficient%20Multi-User%20Searchable%20Encrypted%20Database" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -885,7 +867,7 @@ We propose MAPLE, a new metadata-hiding encrypted search platform that offers qu
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://thanghoang.github.io/publication/23_pets_maple/&amp;t=MAPLE:%20A%20Metadata-Hiding%20Policy-Controllable%20Encrypted%20Search%20Platform%20with%20Minimal%20Trust" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://thanghoang.github.io/publication/24_usenixsec_muses/&amp;t=MUSES:%20Efficient%20Multi-User%20Searchable%20Encrypted%20Database" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -898,7 +880,7 @@ We propose MAPLE, a new metadata-hiding encrypted search platform that offers qu
       
       
       <li>
-        <a href="mailto:?subject=MAPLE:%20A%20Metadata-Hiding%20Policy-Controllable%20Encrypted%20Search%20Platform%20with%20Minimal%20Trust&amp;body=https://thanghoang.github.io/publication/23_pets_maple/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=MUSES:%20Efficient%20Multi-User%20Searchable%20Encrypted%20Database&amp;body=https://thanghoang.github.io/publication/24_usenixsec_muses/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -911,7 +893,7 @@ We propose MAPLE, a new metadata-hiding encrypted search platform that offers qu
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://thanghoang.github.io/publication/23_pets_maple/&amp;title=MAPLE:%20A%20Metadata-Hiding%20Policy-Controllable%20Encrypted%20Search%20Platform%20with%20Minimal%20Trust" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://thanghoang.github.io/publication/24_usenixsec_muses/&amp;title=MUSES:%20Efficient%20Multi-User%20Searchable%20Encrypted%20Database" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -924,7 +906,7 @@ We propose MAPLE, a new metadata-hiding encrypted search platform that offers qu
       
       
       <li>
-        <a href="whatsapp://send?text=MAPLE:%20A%20Metadata-Hiding%20Policy-Controllable%20Encrypted%20Search%20Platform%20with%20Minimal%20Trust%20https://thanghoang.github.io/publication/23_pets_maple/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=MUSES:%20Efficient%20Multi-User%20Searchable%20Encrypted%20Database%20https://thanghoang.github.io/publication/24_usenixsec_muses/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -937,7 +919,7 @@ We propose MAPLE, a new metadata-hiding encrypted search platform that offers qu
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://thanghoang.github.io/publication/23_pets_maple/&amp;title=MAPLE:%20A%20Metadata-Hiding%20Policy-Controllable%20Encrypted%20Search%20Platform%20with%20Minimal%20Trust" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://thanghoang.github.io/publication/24_usenixsec_muses/&amp;title=MUSES:%20Efficient%20Multi-User%20Searchable%20Encrypted%20Database" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -979,6 +961,28 @@ We propose MAPLE, a new metadata-hiding encrypted search platform that offers qu
 
 
   
+    
+    
+
+
+
+
+
+  
+
+
+  
+    
+    
+
+
+
+
+
+  
+
+
+  
 
 
 
@@ -994,15 +998,8 @@ We propose MAPLE, a new metadata-hiding encrypted search platform that offers qu
   
   
   <div class="post-nav-item">
-    <div class="meta-nav">Next</div>
-    <a href="/publication/23_icccn_vtbc/" rel="next">VTBC: Privatizing the Volume and Timing of Transactions for Blockchain Applications</a>
-  </div>
-  
-  
-  
-  <div class="post-nav-item">
     <div class="meta-nav">Previous</div>
-    <a href="/publication/23_pets_ezdps/" rel="prev">ezDPS: An Efficient and Zero-Knowledge Machine Learning Inference Pipeline</a>
+    <a href="/publication/24_pets_stamp/" rel="prev">Efficient Privacy-Preserving Machine Learning with Lightweight Trusted Hardware</a>
   </div>
   
 </div>
@@ -1017,15 +1014,15 @@ We propose MAPLE, a new metadata-hiding encrypted search platform that offers qu
     <h3>Related</h3>
     <ul>
       
-      <li><a href="/publication/24_usenixsec_muses/">MUSES: Efficient Multi-User Searchable Encrypted Database</a></li>
+      <li><a href="/publication/23_pets_maple/">MAPLE: A Metadata-Hiding Policy-Controllable Encrypted Search Platform with Minimal Trust</a></li>
       
       <li><a href="/publication/23_ndss_por/">Efficient Dynamic Proof of Retrievability for Cold Storage</a></li>
       
-      <li><a href="/publication/24_pets_stamp/">Efficient Privacy-Preserving Machine Learning with Lightweight Trusted Hardware</a></li>
+      <li><a href="/publication/22_ndss_titanium/">A Metadata-Hiding File-Sharing System with Malicious Security</a></li>
       
-      <li><a href="/publication/24_codaspy_seattacks/">Exploiting Update Leakage in Searchable Symmetric Encryption</a></li>
+      <li><a href="/publication/20_codaspy_mose/">MOSE: Practical Multi-User Oblivious Storage via Secure Enclaves</a></li>
       
-      <li><a href="/publication/23_icccn_vtbc/">VTBC: Privatizing the Volume and Timing of Transactions for Blockchain Applications</a></li>
+      <li><a href="/publication/20_ndss_macao/">MACAO: A Maliciously-Secure and Client-Efficient Active ORAM Framework</a></li>
       
     </ul>
   </div>

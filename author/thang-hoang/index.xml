@@ -5,12 +5,20 @@
     <link>https://thanghoang.github.io/author/thang-hoang/</link>
       <atom:link href="https://thanghoang.github.io/author/thang-hoang/index.xml" rel="self" type="application/rss+xml" />
     <description>Thang Hoang</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 15 Jul 2024 00:00:00 -0700</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 12 Aug 2024 00:00:00 -0700</lastBuildDate>
     <image>
       <url>https://thanghoang.github.io/images/icon_hu90c008e4d96deb53d5ad25d414e3485e_13497_512x512_fill_lanczos_center_3.png</url>
       <title>Thang Hoang</title>
       <link>https://thanghoang.github.io/author/thang-hoang/</link>
     </image>
+    
+    <item>
+      <title>MUSES: Efficient Multi-User Searchable Encrypted Database</title>
+      <link>https://thanghoang.github.io/publication/24_usenixsec_muses/</link>
+      <pubDate>Mon, 12 Aug 2024 00:00:00 -0700</pubDate>
+      <guid>https://thanghoang.github.io/publication/24_usenixsec_muses/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Efficient Privacy-Preserving Machine Learning with Lightweight Trusted Hardware</title>
