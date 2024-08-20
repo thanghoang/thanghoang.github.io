@@ -5,12 +5,44 @@
     <link>https://thanghoang.github.io/author/thang-hoang/</link>
       <atom:link href="https://thanghoang.github.io/author/thang-hoang/index.xml" rel="self" type="application/rss+xml" />
     <description>Thang Hoang</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 12 Aug 2024 00:00:00 -0700</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 09 Dec 2024 00:00:00 -0700</lastBuildDate>
     <image>
       <url>https://thanghoang.github.io/images/icon_hu90c008e4d96deb53d5ad25d414e3485e_13497_512x512_fill_lanczos_center_3.png</url>
       <title>Thang Hoang</title>
       <link>https://thanghoang.github.io/author/thang-hoang/</link>
     </image>
+    
+    <item>
+      <title>Efficient Secure Aggregation for Privacy-Preserving Federated Machine Learning</title>
+      <link>https://thanghoang.github.io/publication/24_acsac_eseafl/</link>
+      <pubDate>Mon, 09 Dec 2024 00:00:00 -0700</pubDate>
+      <guid>https://thanghoang.github.io/publication/24_acsac_eseafl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Privacy-Preserving Verifiable Neural Network Inference Service</title>
+      <link>https://thanghoang.github.io/publication/24_acsac_vpin/</link>
+      <pubDate>Mon, 09 Dec 2024 00:00:00 -0700</pubDate>
+      <guid>https://thanghoang.github.io/publication/24_acsac_vpin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Breaking Privacy in Model-Heterogeneous Federated Learning</title>
+      <link>https://thanghoang.github.io/publication/24_raid_heterofl/</link>
+      <pubDate>Mon, 30 Sep 2024 00:00:00 -0700</pubDate>
+      <guid>https://thanghoang.github.io/publication/24_raid_heterofl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An Efficient and Zero-Knowledge Classical Machine Learning Inference Pipeline</title>
+      <link>https://thanghoang.github.io/publication/24_tdsc_ezdps/</link>
+      <pubDate>Sun, 18 Aug 2024 00:00:00 -0700</pubDate>
+      <guid>https://thanghoang.github.io/publication/24_tdsc_ezdps/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>MUSES: Efficient Multi-User Searchable Encrypted Database</title>
