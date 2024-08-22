@@ -29,6 +29,21 @@
     </item>
     
     <item>
+      <title>Thang Hoang</title>
+      <link>https://thanghoang.github.io/author/thang-hoang/</link>
+      <pubDate>Mon, 09 Dec 2024 00:00:00 -0700</pubDate>
+      <guid>https://thanghoang.github.io/author/thang-hoang/</guid>
+      <description>&lt;p&gt;I am an Assistant Professor in the department of &lt;a href=&#34;https://cs.vt.edu/&#34;&gt;Computer Science&lt;/a&gt; @ &lt;a href=&#34;https://vt.edu&#34;&gt;Virginia Tech&lt;/a&gt; and a &lt;a href=&#34;https://cyberinitiative.org&#34;&gt;CCI Researcher&lt;/a&gt;. Prior to joining VT,
+I was a Postdoctoral Fellow @ 
+&lt;a href=&#34;https://www.cs.cmu.edu&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Carnegie Mellon University&lt;/a&gt; (CMU) hosted by Prof. 
+&lt;a href=&#34;http://elaineshi.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Elaine Shi&lt;/a&gt; and a Research Associate @ 
+&lt;a href=&#34;https://www.usf.edu&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;University of South Florida&lt;/a&gt; (USF) hosted by Prof. 
+&lt;a href=&#34;http://www.csee.usf.edu/~attilaayavuz/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Attila A. Yavuz&lt;/a&gt;. I received my PhD degree from USF in August 2020.&lt;/p&gt;
+&lt;p&gt;My research spans the domains of cybersecurity and applied cryptography. I am interested in privacy, secure and verifiable computation, zero-knowledge proof, fuzzy cryptography, and trustworthy machine learning.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Breaking Privacy in Model-Heterogeneous Federated Learning</title>
       <link>https://thanghoang.github.io/publication/24_raid_heterofl/</link>
       <pubDate>Mon, 30 Sep 2024 00:00:00 -0700</pubDate>
