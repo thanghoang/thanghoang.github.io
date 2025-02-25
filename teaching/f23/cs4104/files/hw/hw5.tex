@@ -1,0 +1,376 @@
+\documentclass[11pt,twoside]{article}
+\newcommand{\thang}[1]{{\color{blue}\small thang:#1}}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{latexsym}
+\usepackage{color}
+\usepackage{graphics}
+\usepackage{xspace}
+
+% Commands for special characters
+\newcommand{\mybackslash}{\char'134}
+\newcommand{\myleftbracket}{\char'173}
+\newcommand{\myrightbracket}{\char'175}
+\newcommand{\mypercent}{\char'045}
+\newcommand{\myunderscore}{\char'137}
+
+% The 'ifthen' package supports Boolean flags
+\usepackage{ifthen}
+% The 'solutions' flag determines whether this is the original handout
+%    or a solution
+\newboolean{solutions}
+\setboolean{solutions}{False}  % Default is original handout
+
+% Uncomment the next line before starting on the solutions
+% \setboolean{solutions}{True}
+
+\newcommand{\coursenumber}{CS 4104}
+\newcommand{\coursetitle}{Data and Algorithm Analysis}
+\newcommand{\docdate}{November 08, 2023}
+\newcommand{\duedate}{November 17, 2023}
+\newcommand{\homeworknumber}{5}
+
+% The document title depends on whether these are solutions
+\ifthenelse{\boolean{solutions}}{% Then
+\newcommand{\doctitle}{Solutions to Homework Assignment \homeworknumber}
+}{% Else
+\newcommand{\doctitle}{Homework Assignment \homeworknumber}
+}
+
+% The document date depends on whether these are solutions
+\ifthenelse{\boolean{solutions}}{% Then
+\renewcommand{\docdate}{\duedate}
+}{% Else
+}
+
+% If you are the author, so put your name here
+\renewcommand{\author}{Thang Hoang}
+
+\pagestyle{myheadings}
+\markboth{\hfill\doctitle\hfill\docdate}{\docdate\hfill\doctitle\hfill}
+
+\addtolength{\textwidth}{1.00in}
+\addtolength{\textheight}{1.00in}
+\addtolength{\evensidemargin}{-1.00in}
+\addtolength{\oddsidemargin}{-0.00in}
+\addtolength{\topmargin}{-.50in}
+\setlength{\footskip}{0pt}
+
+\newcommand{\polyreduce}{\leq_{\mathrm{P}}}
+
+\newcounter{problem}
+\setcounter{problem}{0}
+\newcommand{\problem}[1]{%
+\refstepcounter{problem}\noindent\textbf{[#1] \arabic{problem}.}}
+
+\newcommand{\solution}{\bigskip\hrule\bigskip}
+\newcommand{\problembreak}{\bigskip\hrule\bigskip}
+
+\renewcommand{\theenumi}{\textbf{\Alph{enumi}}}
+\renewcommand{\theenumii}{\textbf{\roman{enumii}}}
+
+\newcommand{\emptysequence}{\Lambda}
+\newcommand{\emptystring}{\lambda}
+
+% Pseudocode comment symbol
+\newcommand{\comment}{\textbf{//}\ \ }
+
+% Pseudocode line numbering
+\newcounter{pseudocode}
+\newcommand{\firstline}{\setcounter{pseudocode}{0}\linenumber}
+\newcommand{\linenumber}{\refstepcounter{pseudocode}\thepseudocode}
+\newcommand{\pseudoindent}{\hspace*{26pt}}
+
+\newcommand{\nil}{\mbox{\textsc{nil}}}
+
+% Mathematical symbols
+\newcommand{\grid}{\mathcal{G}}  % Grid graph
+\newcommand{\integers}{\mathbb{Z}}  % Integers
+\newcommand{\naturals}{\mathbb{N}}  % Natural numbers
+\newcommand{\reals}{\mathbb{R}}  % Real numbers
+
+% Probability
+\newcommand{\expect}[1]{\mathbf{E}\left[#1\right]}
+\newcommand{\prob}[1]{\mathrm{Pr}\left[#1\right]}
+\newcommand{\var}[1]{\mathrm{Var}\left[#1\right]}
+
+% Logic
+\newcommand{\NOT}[1]{\neg #1}
+\newcommand{\AND}{\wedge}
+\newcommand{\OR}{\vee}
+\newcommand{\clause}[1]{\left(#1\right)}
+
+\newlength{\problemoffset}
+\setlength{\problemoffset}{0.5in}
+
+% Decision problem macro
+% A command for formatting decision problems a la Garey and Johnson
+\newcommand{\decision}[3]{%     \decision{NAME}{INSTANCE}{QUESTION}
+\begin{list}{}{
+\setlength{\leftmargin}{\problemoffset}
+\setlength{\rightmargin}{\problemoffset}
+\setlength{\parsep}{0pt}
+\setlength{\itemsep}{2pt}
+\setlength{\topsep}{\itemsep}
+\setlength{\partopsep}{\itemsep}
+}
+\item
+{\textsc{#1}}
+\item
+{INSTANCE: #2}
+\item
+{QUESTION: #3}
+\end{list}
+}
+
+% Optimization problem macro
+\newcommand{\optimization}[3]{%  \optimization{NAME}{INSTANCE}{SOLUTION}
+\begin{list}{}{
+\setlength{\leftmargin}{\problemoffset}
+\setlength{\rightmargin}{\problemoffset}
+\setlength{\parsep}{0pt}
+\setlength{\itemsep}{2pt}
+\setlength{\topsep}{\itemsep}
+\setlength{\partopsep}{\itemsep}
+}
+\item
+{\rule{0pt}{14pt}\textsc{#1}}
+\item
+{INSTANCE: #2}
+\item
+{SOLUTION: #3}
+\end{list}
+}
+
+\newcommand{\reaches}{\leadsto}
+
+% Table layout
+\newcommand{\toprule}{\rule[11pt]{0pt}{2pt}}
+\newcommand{\bottomrule}{\rule[-6pt]{0pt}{0pt}}
+\newenvironment{raggedpars}[1][2.0in]{%
+\begin{minipage}[t]{#1}\raggedright\toprule}%
+{\bottomrule\end{minipage}}
+
+% Dynamic programming macros
+\newlength{\arrowwidth}
+\setbox3=\hbox{$\nwarrow$}
+\setlength{\arrowwidth}{\wd3}
+\newcommand{\optnwarrow}[1]{\if1#1\nwarrow%
+\else\rule{\arrowwidth}{0pt}\fi}
+\newcommand{\optuparrow}[1]{\if1#1\uparrow%
+\else\rule{\arrowwidth}{0pt}\fi}
+\newcommand{\optleftarrow}[1]{\if1#1\leftarrow%
+\else\rule{\arrowwidth}{0pt}\fi}
+% Use \tablebox to specify any combination of arrows, plus the value
+\newcommand{\tablebox}[4]{%
+\setlength{\arraycolsep}{0.0pt}%
+\begin{array}{cc}%
+\optnwarrow{#1} & \optuparrow{#2} \\%
+\optleftarrow{#3} & #4%
+\end{array}%
+}
+% Use \tableboxred to specify any combination of arrows, plus the value
+% The value will be red; arrows are made red if 2 used instead of 1
+\newcommand{\optnwarrowred}[1]{\if1#1\nwarrow%
+\else\if2#1\textcolor{red}{\nwarrow}\else\rule{\arrowwidth}{0pt}\fi\fi}
+\newcommand{\optuparrowred}[1]{\if1#1\uparrow%
+\else\if2#1\textcolor{red}{\uparrow}\else\rule{\arrowwidth}{0pt}\fi\fi}
+\newcommand{\optleftarrowred}[1]{\if1#1\leftarrow%
+\else\if2#1\textcolor{red}{\leftarrow}\else\rule{\arrowwidth}{0pt}\fi\fi}
+\newcommand{\tableboxred}[4]{%
+\setlength{\arraycolsep}{0.0pt}%
+\begin{array}{cc}%
+\optnwarrowred{#1} &%
+\optuparrowred{#2} \\%
+\optleftarrowred{#3} &%
+\textcolor{red}{#4}%
+\end{array}%
+}
+
+% Allow really sloppy paragraphs that do not generate overfull or
+%    underfull hbox's
+\newenvironment{SLOPPY}{\begin{sloppypar}\hbadness=10000}{\end{sloppypar}}
+
+% Definitions for this homework
+\newcommand{\extent}[1]{\mathrm{extent}(#1)}
+\newcommand{\opt}[2]{\mbox{\textsc{opt}}(#1,#2)}
+\newcommand{\gap}{\mbox{\texttt{-}}}
+\newcommand{\rewriterule}[2]{#1\to #2}
+\newcommand{\rewrites}[2][]{\mathop{\Longrightarrow}\limits_{#1}^{#2}}
+\newcommand{\reduces}{\leq}
+\newcommand{\polyreduces}{\leq_P}
+\newcommand{\mathsc}[1]{\mbox{\normalfont\textsc{#1}}}
+\newcommand{\NP}{\mathcal{NP}}
+\renewcommand{\P}{\mathcal{P}}
+\newcommand{\describes}{\vdash}
+
+\begin{document}
+
+\thispagestyle{empty}
+
+\begin{center}
+\begin{tabular}{lcr}
+\multicolumn{3}{c}{\Large\textbf{\coursenumber}}
+\\[0.04in]
+\multicolumn{3}{c}{\Large\textbf{\doctitle}}
+% If these are solutions, then include the author's (student's) name
+\ifthenelse{\boolean{solutions}}{% Then
+\\[0.04in]\multicolumn{3}{c}{\large\textbf{\author}}
+}{} % Else omit
+% If these are solutions, then the date is the due date
+\ifthenelse{\boolean{solutions}}{% Then
+\\[0.10in]\multicolumn{3}{c}{\duedate}
+}{% Else, put given and due dates
+\\[0.10in]
+\textbf{Given:} \docdate
+& \hspace*{1.0in} &
+\textbf{Due:} \duedate
+}
+\end{tabular}
+\end{center}
+
+% If these are solutions, then we do not include the directions
+\ifthenelse{\boolean{solutions}}{} % No directions
+{
+% Original document includes directions
+\begingroup % This allows an argument that contains multiple paragraphs
+\paragraph{General directions.}
+The point value of each problem is shown in [ ].
+Each solution must include all details and
+an explanation of why the given solution is correct.
+\textbf{\textcolor{red}{In particular,
+write complete sentences.
+A correct answer without an explanation is worth no credit.}}
+The completed assignment must be submitted on Canvas as a PDF by 5:00 PM
+on \duedate.
+\textbf{No late homework will be accepted.}
+
+\paragraph{Digital preparation of your solutions is mandatory.
+This includes digital preparation of any drawings.}
+Use of \LaTeX\ is required.
+Also,
+\textbf{please include your name.}
+
+\paragraph{Use of \LaTeX\ (required).}
+\begin{itemize}
+\item Retrieve this \LaTeX\ source file,
+named
+\texttt{hw\homeworknumber.tex},
+from the course web site.
+\item Rename the file
+\textit{$<$Your VT PID$>$}\texttt{{\myunderscore}solvehw\homeworknumber.tex},
+For example,
+for the instructor,
+the file name would be
+\texttt{hoang{\myunderscore}solvehw\homeworknumber.tex}.
+
+\item
+Use a \textbf{text editor}
+(such as \texttt{vi}, \texttt{emacs}, or \texttt{pico})
+to accomplish the next three steps.
+Alternately,
+use Overleaf as your \LaTeX\ platform.
+
+\item
+Uncomment the line
+
+\texttt{{\mypercent} 
+{\mybackslash}setboolean{\myleftbracket}solutions{\myrightbracket}%
+{\myleftbracket}True{\myrightbracket}}
+
+in the document preamble by deleting the \texttt{\mypercent}.
+
+\item
+Find the line
+
+\texttt{{\mybackslash}renewcommand%
+{\myleftbracket}{\mybackslash}author{\myrightbracket}%
+{\myleftbracket}Thang Hoang{\myrightbracket}}
+
+and replace the instructor's name with your name.
+
+\item
+Enter your solutions where you find
+the \LaTeX\ comments
+
+\texttt{{\mypercent} PUT YOUR SOLUTION HERE}
+
+\item
+Generate a PDF and turn it in on Canvas by 5:00 PM on \duedate.
+\end{itemize}
+\endgroup
+
+\problembreak
+
+\newpage
+
+}
+
+
+\problem{40}
+Let $A$ and $B$ are boolean $n\times n$ matrices. The boolean (or and-or) product of $A$ and $B$ is an $n\times n$ matrix $C$ such that
+
+\begin{equation}
+	C[i,j]  = \bigvee_k (A[i,k] \wedge B[k,j])
+\end{equation}
+
+{\bfseries
+\begin{enumerate}
+	\item  Reduce boolean matrix multiplication to standard matrix multiplication. 
+	Specifically, given a \textsc{SMatMult} subroutine that computes the standard (add-multiply) product of two $n\times n$ matrices in $T(n)$ time, describe and analyze an algorithm \textsc{BMatMult} that multiplies two boolean matrices in $O(T(n))$ time.
+	
+	\item Let $G=(V,E)$ be an $n$-vertex directed graph. The transitive closure of $G=(V,E)$ is an $n\times n$ matrix $T$ such that for all $(u,v)\in E$
+	\begin{equation}
+		T[u,v] = \begin{cases}
+			1 & \text{if $v$ is reachable from $u$}\\
+			0 & \text{otherwise}
+		\end{cases}
+	\end{equation}
+	Describe an algorithm that uses the algorithm \textsc{BoolMatMult} in \textbf{1.A} as the subroutine to compute the transitive closure of $G$ in $O(n^\alpha \log n)$ time, where  $2\le \alpha <3$.
+	
+\end{enumerate}
+}
+
+\solution
+
+% PUT YOUR SOLUTION HERE
+
+\problembreak
+
+
+\problem{40}
+You are given a flow network (i.e., a directed graph $G= (V,E)$, a source $s$, a sink $t$, and a positive integral capacity function $c:V\times V\to\naturals$)
+along with a flow $f$ in the flow network.
+A flow is \textit{acyclic} if the subgraph of directed edges with positive flow contains no directed cycles.
+
+{\bfseries
+\begin{enumerate}
+    \item  Prove that,
+    for any flow $f$,
+    there is an acyclic flow with the same value as $f$. (In particular, this implies that some maximum flow is acyclic.)
+    
+    \item A path flow assigns positive values only to the edges of one simple directed path from $s$ to $t$.
+    Prove that every acyclic flow can be written as the sum of $O(E)$ path flows.
+    (See flow augmentation on page 678 of CLRS.
+    By sum, we mean starting with the zero flow and building up the target flow
+    by repeated augmentations.
+    Be sure to try some examples of doing this before completing this problem part!)
+
+
+\item Describe a flow in a directed graph that cannot be written as the sum of path flows.
+
+\item A cycle flow assigns positive values only to the edges of one simple directed cycle. Prove that every flow can be written as the sum of $O(E)$ path flows and cycle flows.
+
+
+\end{enumerate}
+}
+
+\solution
+
+% PUT YOUR SOLUTION HERE
+
+
+\problembreak
+
+\end{document}

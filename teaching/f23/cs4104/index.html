@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CS 4104: Data and Algorithm Analysis (Fall 2023)</title>
+    <link rel='stylesheet prefetch' href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  
+    
+    <link rel="stylesheet" href="css/style.css">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" /> <! responsive design>
+
+            <link rel="icon" href="images/icon.png">
+
+
+    <link href="fa-6.1.1/css/all.css" rel="stylesheet"> <!--load all styles -->
+
+   
+       
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll navbar-right" href="#page-top">CS 4104: Data and Algorithm Analysis</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden active">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#announcement"><i class="fa fa-info-circle  mr-3"></i> Announcement</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#assignments"><i class="fas fa-edit mr-3"></i>Assignments</a>
+                    </li>
+                    
+					<li class="">
+                        <a class="page-scroll" href="#schedule"><i class="fas fa-chalkboard-teacher mr-3"></i> Schedule</a>
+                    </li>
+                    
+                    <li class="">
+                        <a class="page-scroll" href="#resources"><i class="fas fa-book mr-3"></i> Resources</a>
+                    </li>
+                    <!--
+                    <li><a class="page-scroll" href="#grading"><i class="fa fa-pencil" ></i> Grading</a>
+                    </li>
+                    -->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header id="page-top" >
+    </header>
+    <content>
+        <section id="general">
+                <div class="container">
+                    
+                    <div style="text-align: center">  <h2 class="mb-4">CS 4104: Data and Algorithm Analysis (Fall 2023)</h2>
+                        <h4>|<a href="files/CS4104_fall23_syllabus.pdf">Syllabus</a>|</h3>
+                    </div>
+                
+
+                    <p> <b>Time and Location</b>: M W F (10:10 AM - 11:00 AM) @  SAUND 409 </p> 
+                    <p><b>Instructor</b>: <a href="mailto:thanghoang@vt.edu">Dr. Thang Hoang (@thanghoang)</a></p>
+                    <ul>
+                        <li><u>Office Hours:</u> Mon @ 12:00 PM - 2:00 PM </li>
+                        <li><u>Location:</u> Gilbert Place 4304</li>
+                    </ul>
+                    
+                    <p><b>Teaching Assistants</b>: 
+                        <table width="90%">
+                            <tr  style="border-bottom: 1px solid #000;">
+                                <td width="20%"></td> <td style="padding-right:10px"><a href="mailto:changqi@vt.edu"> Changqi Sun (@changqi)</a></td> <td style="padding-right:10px"><a href="mailto:akashm@vt.edu"> Akash Mittal (@akashm)</a></td> 
+                            </tr>
+                            <tr>
+                                <td> Office Hours </td><td style="padding-right:10px"> Tue @ 12:30 PM - 4:30 PM </td> <td style="padding-right:10px"> Thu @ 3:00 PM - 5:00 PM </td> 
+                            </tr>
+                            <tr>
+                                <td>Location</td> <td> MCB 106 </td><td> MCB 106 </td>
+                            </tr>
+                        </table>
+                    
+					</div>
+                </div>
+                
+            </section>
+        <section id="announcement" class="bg-light-gray">
+            <div class="container">
+                <h3 style="color:red">Announcement</h3>
+                
+                <div class ="newsDate newsHighlight" style="color:red;">Dec 8</div><div class="newsContent newsHighlight"><a class="page-scroll" href="#assignments">Final Exam  </a> is available  (Due Dec 11 @ 5:00 PM)  </div>  
+
+
+                <div class ="newsDate" style="">Nov 17</div><div class="newsContent"><a class="page-scroll" href="#assignments">Homework 6 </a> is up  (Due Dec 01 @ 5:00 PM)  </div>  
+
+
+                <div class ="newsDate" >Nov 08</div><div class="newsContent"><a class="page-scroll" href="#assignments">Homework 5 </a> is up  (Due Nov 17 @ 5:00 PM)  </div>  
+
+
+                <div class ="newsDate">Oct 26</div><div class="newsContent"><a class="page-scroll" href="#assignments">Homework 4 </a> is up  (Due Nov 03 @ 5:00 PM)  </div>  
+
+
+                <div class ="newsDate">Oct 02</div><div class="newsContent"><a class="page-scroll" href="#assignments">Midterm Exam</a> is up  (Due Oct 23 @ 5:00 PM)  </div>  
+
+                <div class ="newsDate" style="">Oct 02</div><div class="newsContent"><a class="page-scroll" href="#assignments">Homework 3</a> is up  (Due Oct  13 @ 5:00 PM)  </div>  
+
+
+                <div class ="newsDate">Sep 18</div><div class="newsContent"><a class="page-scroll" href="#assignments">Homework 2</a> is up  (Due Sep 29 @ 5:00 PM)  </div>  
+
+
+                <div class ="newsDate" style="">Sep 01</div><div class="newsContent"><a class="page-scroll" href="#assignments">Homework 1</a> is up  (Due Sep 11 @ 5:00 PM)  </div>  
+
+                <div class ="newsDate" >July 11</div><div class="newsContent ">Course webpage is up</div> 
+                
+            </div>
+        </section>
+        <!-- Assignment Section -->
+        <section id="assignments" >
+            <div class="container">
+                <h3>Exam</h3>
+                <li>Final Exam (<a href="files/exam/final.pdf">PDF </a> | <a href="files/exam/final.tar">TeX</a>)  <span id="countdown" class="slideNote"></span> 
+                
+                <li>Midterm (<a href="files/exam/midterm.pdf">PDF </a> | <a href="files/exam/midterm.tar">TeX</a>)  <span id="" class="slideNote">(expired!)</span> 
+                
+                <h3>Homework Assignment</h3>
+                
+                <li>Homework 6 (<a href="files/hw/hw6.pdf">PDF </a> | <a href="files/hw/hw6.tar">TeX</a>)  <span id="" class="slideNote"></span> 
+                
+                <li>Homework 5 (<a href="files/hw/hw5.pdf">PDF </a> | <a href="files/hw/hw5.tar">TeX</a>)  <span id="" class="slideNote"></span> 
+                
+                <li>Homework 4 (<a href="files/hw/hw4.pdf">PDF </a> | <a href="files/hw/hw4.tar">TeX</a>)  <span id="" class="slideNote">(expired!)</span> 
+                
+                <li>Homework 3 (<a href="files/hw/hw3.pdf">PDF </a> | <a href="files/hw/hw3.tar">TeX</a>)  <span id="" class="slideNote">(expired!)</span> 
+                
+                <li>Homework 2 (<a href="files/hw/hw2.pdf">PDF </a> | <a href="files/hw/hw2.tar">TeX</a>)  <span class="slideNote">(expired!)</span> 
+                </li>
+                <li>Homework 1 (<a href="files/hw/hw1.pdf">PDF </a> | <a href="files/hw/hw1.tar">TeX</a>)  <span class="slideNote">(expired!)</span> 
+                </li>
+
+            </div>
+        </section>
+        <!-- Schedule Section -->
+        <section id="schedule" >
+            <div class="container">
+                <h3>Course Schedule</h3>
+                The schedule may be subject to change as the course proceeds.<br/>
+                <table width="100%"  id="tableSchedule">
+                    <thead>
+                    <tr>
+                    <th width="1%" style="text-align: center;">#</th> 
+                    <th width="15%"><b>Date</b></th> 
+                    <th width="45%"><b>Topic</b></th>
+                    <th wdith="35%"><b>Notes</b></th>
+                    </tr>
+                    </thead>
+
+                    <tr><td rowspan=3 style="text-align: center;border-bottom: 1px solid black;">1</td>
+                    <td>Aug 21 (M)</td>
+                     <td> 
+                            <a href="files/lecture notes/chapter2.pdf">Getting Started - Algorithms Solve Problems</a>
+                            <span class="slideNote">(1-17)</span>  
+                     </td>
+                     <td>
+                            CLRS Chapter 2
+                     </td> 
+                    </tr>
+                    <tr style="background-color: #F8F4F5">
+                        <td>Aug 23 (W)</td>
+                        <td> 
+                            <a href="files/lecture notes/chapter2.pdf">Algorithms Solve Problems (cont.) </a>
+                            <span class="slideNote">(18-34)</span>
+                            
+                        </td>
+                        <td>
+                            CLRS Chapter 2
+                        </td> 
+                        </tr>
+                    <tr style="border-bottom: 1px solid black;">
+                    <td>Aug 25 (F)</td>  
+                    <td> 
+                        <a href="files/lecture notes/chapter2.pdf">Algorithms Solve Problems (cont.) </a>
+                            <span class="slideNote">(35-end)</span>
+                            <br/>
+                            <a href="files/lecture notes/chapter3.pdf">Asymptotic Notation </a>
+                            <span class="slideNote">(1-17)</span>
+                            
+                    </td>
+                        <td>
+                            CLRS Chapter 2
+                            <br/>
+                            CLRS Chapter 3 
+                            
+                        </td> 
+                    </tr>
+                
+                    <tr><td rowspan=3 style="text-align: center;border-bottom: 1px solid black;">2</td>
+                        <td style="background-color: #F8F4F5">
+                            Aug 28 (M)
+                        </td> 
+                            <td style="background-color: #F8F4F5">
+                                <a href="files/lecture notes/chapter3.pdf">Asymptotic Notation (cont.) </a>
+                                <span class="slideNote">(18-end)</span>
+                                <br/>
+                                <a href="files/lecture notes/chapter4.pdf">Divide and Conquer</a>
+                                <span class="slideNote">(1-13)</span>
+
+                            </td><td style="background-color: #F8F4F5">
+                                
+                                CLRS Chapter 3 
+                                <br/>
+                                CLRS Chapter 4 
+                                
+                            </td> 
+                    </tr>
+                    <tr style="">
+                        <td>Aug 30  (W)</td> 
+                        <td>  
+                            <a href="files/lecture notes/chapter4.pdf">Divide and Conquer (cont.)</a>
+                            <span class="slideNote">(13-end)</span>
+                        </td>
+                            <td>
+                                CLRS Chapter 4 
+                            </td> 
+                        </tr>
+                    <tr style="border-bottom: 1px solid black;background-color: #F8F4F5">
+                        <td>Sep 01 (F)</td>  
+                        <td>  
+                            <a href="files/lecture notes/chapter5.pdf">Randomized Algorithm</a>
+                            <span class="slideNote">(1-18)</span>
+                        </td>
+                        <td>
+                            CLRS Chapter 5 <br/>
+                            CLRS Appendix C.2 - C.4 
+                        </td> 
+                    </tr>
+                    
+                    <tr><td rowspan=3 style="text-align: center;border-bottom: 1px solid black;">3</td>
+                        <td>Sep 04 (M)</td> 
+                        <td style="color:green"> 
+                            Labor Day (no class)
+                        </td><td>
+
+                        </td> 
+                    </tr>
+                    <tr style="background-color: #F8F4F5">
+                        <td>Sep 06 (W)</td>  
+                        <td>  
+                            <a href="files/lecture notes/chapter5.pdf">Randomized Algorithm (cont.)</a>
+                            <span class="slideNote">(18-end)</span>
+                            
+                        </td>
+                        <td>
+                            CLRS Chapter 5
+                            
+                        </td> 
+                    </tr>
+                    <tr style="border-bottom: 1px solid black;">
+                        <td>Sep 08 (F)</td>  
+                        <td>  
+                            <a href="files/lecture notes/chapter7.pdf">Quicksort</a>
+                            <span class="slideNote">(1-23)</span>
+                        </td>
+                        <td>
+                            CLRS Chapter 7
+                        </td> 
+                    </tr>
+                
+                    <tr><td rowspan=3 style="text-align: center;border-bottom: 1px solid black;">4</td>
+                        <td style="background-color: #F8F4F5">
+                            Sep 11 (M)</td> 
+                        <td style="background-color: #F8F4F5">
+                            <a href="files/lecture notes/chapter7.pdf">Quicksort (cont.)</a>
+                            <span class="slideNote">(24-end)</span>
+                            <br/>
+                            <a href="files/lecture notes/chapter11.pdf">Hash Tables</a>
+                            <span class="slideNote">(1-13)</span>
+                            
+                        </td>
+                        <td style="background-color: #F8F4F5">
+                            CLRS Chapter 7
+                            <br/>
+                            CLRS Chapter 11
+                            
+                        </td> 
+                        </tr>
+                    <tr style="">
+                        <td>Sep 13 (W)</td>
+                        <td> 
+                            <a href="files/lecture notes/chapter11.pdf">Hash Tables (cont.)</a>
+                            <span class="slideNote">(14-21)</span>
+                        </td>
+                        <td> 
+                            CLRS Chapter 11
+                        </td> 
+                    </tr>
+                    <tr style="border-bottom: 1px solid black;background-color: #F8F4F5">
+                        <td>Sep 15 (F)</td>  
+                        <td> 
+                            <a href="files/lecture notes/chapter11.pdf">Hash Tables (cont.)</a>
+                            <span class="slideNote">(22-36)</span>
+                        </td>
+                        <td>
+                            CLRS Chapter 11
+                        </td> 
+                    </tr>
+                    
+                    <tr><td rowspan=3 style="text-align: center;border-bottom: 1px solid black;">5</td>
+                        <td>Sep 18 (M)</td> 
+                        <td style="color:green">
+                                Professor got sick  (no class)
+                        </td>
+                        <td>
+                            
+                        </td> 
+                    </tr>
+                    <tr style="background-color: #F8F4F5">
+                        <td>Sep 20 (W)</td> 
+                        <td>
+                            <a href="files/lecture notes/chapter11.pdf">Hash Tables (cont.)
+                            </a>
+                            <span class="slideNote">(37-end)</span>
+                            <br/>
+                            <a href="files/lecture notes/chapter14.pdf">Dynamic Programming
+                            </a>
+                            <span class="slideNote">(1-12)</span>
+                            
+                        </td>
+                        <td>
+                            CLRS Chapter 11 <br/>
+                            CLRS Chapter 14
+                        </td> 
+                    </tr>
+                    <tr style="border-bottom: 1px solid black;">
+                        <td>Sep 22 (F)</td>  
+                        <td> 
+                            <a href="files/lecture notes/chapter14.pdf">Dynamic Programming (cont.)
+                            </a>
+                            <span class="slideNote">(13-29)</span>
+                        </td>
+                        <td>
+                            CLRS Chapter 14
+                        </td> 
+                    </tr>
+                    
+                    <tr><td rowspan=3 style="text-align: center;border-bottom: 1px solid black;">6</td>
+                        <td style="background-color: #F8F4F5">
+                            Sep 25 (M)</td> 
+                        <td style="background-color: #F8F4F5;"> 
+                            <a href="files/lecture notes/chapter14.pdf">Dynamic Programming (cont.)
+                            </a>
+                            <span class="slideNote">(30-end)</span>
+                        </td>
+                        <td style="background-color: #F8F4F5">
+                            CLRS Chapter 14
+                        </td> 
+                    </tr>
+                    <tr style="">
+                        <td>Sep 27 (W)</td>  
+                        <td > 
+                            <a href="files/lecture notes/chapter15.pdf">Greedy Algorithms 
+                            </a>
+                            <span class="slideNote">(1-23)</span>
+                        </td>
+                        <td>
+                            CLRS Chapter 15
+                        </td> 
+                    </tr>
+                    <tr style="border-bottom: 1px solid black;background-color: #F8F4F5">
+                        <td>Sep 29 (F)</td>  
+                        <td>  
+                            <a href="files/lecture notes/chapter15.pdf">Greedy Algorithms  (cont.)
+                            </a>
+                            <span class="slideNote">(24-end)</span>
+                        </td>
+                        <td>
+                            CLRS Chapter 15
+                        </td> 
+                    </tr>
+
+                    <tr>
+                        <td rowspan=3 style="text-align: center;border-bottom: 1px solid black;">7</td>
+                        <td>Oct 02 (M)</td> 
+                        <td> 
+                            <a href="files/lecture notes/chapter20.pdf">Elementary Graph Algorithms
+                            </a>
+                            <span class="slideNote">(1-14)</span>
+                        </td>
+                        <td>
+                            CLRS Chapter 20
+                        </td> 
+                    </tr>
+                    <tr style="background-color: #F8F4F5">
+                        <td>Oct 04 (W)</td>  
+                        <td>
+                            <a href="files/lecture notes/chapter20.pdf">Elementary Graph Algorithms (cont.)
+                            </a>
+                            <span class="slideNote">(15-end)</span>
+                        </td>
+                        <td>
+                            CLRS Chapter 20
+                        </td> 
+                    </tr>
+                    <tr style="border-bottom: 1px solid black;">
+                        <td>Oct 06 (F)</td>  
+                        <td style="color:green"> 
+                            Fall break (no class)
+                        </td>
+                        <td>
+                            
+                        </td> 
+                    </tr>
+                    
+                    <tr>
+                        <td rowspan=3 style="text-align: center;border-bottom: 1px solid black;">8</td>
+                        <td style="background-color: #F8F4F5">
+                            Oct 09 (M)
+                        </td> 
+                        <td style="background-color: #F8F4F5">
+                            <a href="files/lecture notes/chapter21.pdf">Minimum Spanning Trees
+                            </a>
+                            <span class="slideNote">(1-15)</span>
+                        </td>
+                        <td style="background-color: #F8F4F5">
+                            CLRS Chapter 21
+                        </td> 
+                    </tr>
+                    <tr style="">
+                        <td>Oct 11 (W)</td>  
+                        <td> 
+                            <a href="files/lecture notes/chapter21.pdf">Minimum Spanning Trees
+                            (cont.)</a>
+                            <span class="slideNote">(16-25)</span>
+                        </td>
+                        <td> 
+                        
+                        </td> 
+                    </tr>
+                    <tr style="border-bottom: 1px solid black;background-color: #F8F4F5">
+                        <td>Oct 13 (F)</td>  
+                        <td style="background-color: #F8F4F5;color:green"> 
+                            <a href="files/lecture notes/chapter21.pdf">Minimum Spanning Trees
+                            (cont.)</a>
+                            <span class="slideNote">(26-end)</span>
+                            <br/>
+                            <a href="files/lecture notes/chapter22.pdf">Single-Source Shortest Paths
+                            </a>
+                            <span class="slideNote">(1-9)</span>
+                        </td>
+                        <td>
+                            CLRS Chapter 21 <br/>
+                            CLRS Chapter 22 <br/>
+                        </td> 
+                    </tr>
+
+                    <tr><td rowspan=3 style="text-align: center;border-bottom: 1px solid black;">9</td>
+                        <td>Oct 16 (M)</td>
+                        <td>
+                            <a href="files/lecture notes/chapter22.pdf">Single-Source Shortest Paths
+                            (cont.) </a>
+                            <span class="slideNote">(10-13)</span>
+                        </td>
+                        <td>
+                            CLRS Chapter 22
+                        </td> 
+                    </tr>
+                    <tr style="background-color: #F8F4F5">
+                        <td>Oct 18 (W)</td> 
+                        <td>
+                            <a href="files/lecture notes/chapter22.pdf">Single-Source Shortest Paths
+                                (cont.) </a>
+                                <span class="slideNote">(14-end)</span>
+                        </td>
+                        <td>
+                            CLRS Chapter 22
+                        </td> 
+                    </tr>
+                    <tr style="border-bottom: 1px solid black;">
+                        <td>Oct 20 (F)</td> 
+                        <td>  
+                            <a href="files/lecture notes/chapter23.pdf">All-Pairs Shortest Path
+                                 </a>
+                                <span class="slideNote">(1-13)</span>
+                        </td>
+                        <td>
+                            CLRS Chapter 23
+                        </td> 
+                    </tr>
+                    
+                    <tr>
+                        <td rowspan=3 style="text-align: center;border-bottom: 1px solid black;">10</td>
+                        <td style="background-color: #F8F4F5">
+                            Oct 23 (M)
+                        </td> 
+                        <td style="background-color: #F8F4F5;color:green">
+                            Midterm (no class) <br/>
+                            <span style="color:red">Midterm due @ 5:00PM!</span>
+                        </td><td style="background-color: #F8F4F5">
+            
+                        </td> 
+                    </tr>
+                    <tr style="">
+                        <td>Oct 25 (W)</td> 
+                        <td> 
+                            <a href="files/lecture notes/chapter23.pdf">All-Pairs Shortest Path
+                            (cont.) </a>
+                           <span class="slideNote">(14-21)</span>
+                        </td>
+                        <td>
+                            CLRS Chapter 23
+                        </td> 
+                    </tr>
+                    <tr style="border-bottom: 1px solid black;background-color: #F8F4F5">
+                        <td>Oct 27 (F)</td>  
+                        <td> 
+                            <a href="files/lecture notes/chapter23.pdf">All-Pairs Shortest Path
+                                (cont.) </a>
+                               <span class="slideNote">(22-end)</span>
+                               <br/>
+                               <a href="files/lecture notes/chapter24.pdf">Maximum Flow </a>
+                               <span class="slideNote">(1-8)</span>
+                            
+                        </td>
+                        <td>
+                            CLRS Chapter 23
+                            <br/>
+                            CLRS Chapter 24
+                        </td> 
+                    </tr>
+
+                    <tr><td rowspan=3 style="text-align: center;border-bottom: 1px solid black;">11</td>
+                        <td>Oct 30 (M)</td> 
+                        <td style="color:green">
+                            Professor got sick (no class)
+                        </td>
+                        <td>
+                            CLRS Chapter 24
+                        </td> 
+                    </tr>
+                    <tr style="background-color: #F8F4F5">
+                        <td>Nov 01 (W)</td>  
+                        <td> 
+                            <a href="files/lecture notes/chapter24.pdf">Maximum Flow (cont.)</a>
+                               <span class="slideNote">(9-16)</span>
+                            
+                        </td>
+                        <td>
+                            CLRS Chapter 24
+                        </td> 
+                    </tr>
+                    <tr style="border-bottom: 1px solid black;">
+                        <td>Nov 03 (F)</td>  
+                        <td>
+                            <a href="files/lecture notes/chapter24.pdf">Maximum Flow (cont.)</a>
+                            <span class="slideNote">(17-25)</span>
+                         
+                        </td>
+                        <td>
+                            CLRS Chapter 24
+                        </td> 
+                    </tr>
+
+                    <tr><td rowspan=3 style="text-align: center;border-bottom: 1px solid black;">12</td>
+                        <td style="background-color: #F8F4F5">
+                            Nov 06 (M)
+                        </td> 
+                        <td style="background-color: #F8F4F5"> 
+                            <a href="files/lecture notes/chapter24.pdf">Maximum Flow (cont.)</a>
+                            <span class="slideNote">(16-end)</span>
+                         
+                        </td> 
+                        <td style="background-color: #F8F4F5">
+                            CLRS Chapter 24
+                        </td> 
+                    </tr>
+                    <tr style="">
+                        <td>Nov 08 (W)</td>  
+                        <td>
+                            <a href="files/lecture notes/chapter34.pdf">NP-Completeness</a>
+                            <span class="slideNote">(1-15)</span>
+                         
+                        </td>
+                        <td>
+                            CLRS Chapter 34
+                        </td> 
+                    </tr>
+                    <tr style="border-bottom: 1px solid black;background-color: #F8F4F5">
+                        <td>Nov 10 (F)</td>  
+                        <td> 
+                            <a href="files/lecture notes/chapter34.pdf">NP-Completeness (cont.)</a>
+                            <span class="slideNote">(16-27)</span>
+                        </td>
+                        <td>
+                            CLRS Chapter 34
+                        </td> 
+                    </tr>
+
+                    <tr><td rowspan=3 style="text-align: center;border-bottom: 1px solid black;">13</td>
+                        <td>Nov 13 (M)</td> 
+                        <td>
+                            <a href="files/lecture notes/chapter34.pdf">NP-Completeness (cont.)</a>
+                            <span class="slideNote">(28-38)</span>
+                        </td>
+                        <td>
+                            CLRS Chapter 34
+                        </td> 
+                    </tr>
+                    <tr style="background-color: #F8F4F5">
+                        <td>Nov 15 (W)</td>  
+                        <td> 
+                             <a href="files/lecture notes/chapter34.pdf">NP-Completeness (cont.)</a>
+                            <span class="slideNote">(39-53)</span> 
+                        </td>
+                        <td>
+                            CLRS Chapter 34
+                        </td> 
+                    </tr>
+                    <tr style="border-bottom: 1px solid black;">
+                        <td>Nov 17 (F)</td>
+                        <td>
+                            <a href="files/lecture notes/chapter34.pdf">NP-Completeness (cont.)</a>
+                                <span class="slideNote">(54-63)</span>
+                        </td>
+                        <td>
+                            CLRS Chapter 34 
+                        </td> 
+                    </tr>
+
+                    <tr><td rowspan=3 style="text-align: center;border-bottom: 1px solid black;">14</td>
+                        <td style="background-color: #F8F4F5">
+                            Nov 20 (M)
+                        </td> 
+                        <td style="background-color: #F8F4F5;color:green">
+                            Thanksgiving (no class)
+                        </td>
+                        <td style="background-color: #F8F4F5;color:green">
+           
+                        </td> 
+                    </tr>
+                    <tr style="">
+                        <td>Nov 22 (W)</td>  
+                        <td style="color:green">  
+                            Thanksgiving (no class)
+                        </td>
+                        <td>
+
+                        </td> 
+                    </tr>
+                    <tr style="border-bottom: 1px solid black;background-color: #F8F4F5;">
+                        <td>Nov 24 (F)</td>  
+                        <td style="color:green"> 
+                            Thanksgiving (no class)
+                        </td>
+                        <td>
+
+                        </td> 
+                    </tr>
+
+                    <tr><td rowspan=3 style="text-align: center;border-bottom: 1px solid black;">15</td>
+                        <td>Nov 27 (M)</td> 
+                        <td>  
+                         <a href="files/lecture notes/chapter34.pdf">NP-Completeness (cont.)</a>
+                                <span class="slideNote">(80-84)</span> 
+                        </td>
+                        <td>
+                         CLRS Chapter 34
+                        </td> 
+                    </tr>
+                    <tr style="background-color: #F8F4F5">
+                        <td>Nov 29 (W)</td>  
+                        <td>  
+                         <a href="files/lecture notes/chapter34.pdf">NP-Completeness (cont.)</a>
+                                <span class="slideNote">(64-69)</span> 
+                        </td>
+                        <td>
+                         CLRS Chapter 34 
+                        </td> 
+                    </tr>
+                    <tr style="border-bottom: 1px solid black;">
+                        <td>Dec 01 (F)</td>  
+                        <td>
+                         <a href="files/lecture notes/chapter34.pdf">NP-Completeness (cont.)</a>
+                                <span class="slideNote">(70-73)</span>
+                        </td>
+                        <td>
+                         CLRS Chapter 34 
+                        </td> 
+                    </tr>
+
+                    <tr><td rowspan=2 style="text-align: center;border-bottom: 1px solid black;">16</td>
+                        <td style="background-color: #F8F4F5">
+                            Dec 04 (M)
+                        </td> 
+                        <td style="background-color: #F8F4F5">
+                             <a href="files/lecture notes/chapter30.pdf">Polynomial and the FFT</a>
+                                <span class="slideNote">(1-)</span> 
+                        </td>
+                        <td style="background-color: #F8F4F5">
+                         CLRS Chapter 30 
+                        </td> 
+                    </tr>
+                    <tr style="border-bottom: 1px solid black">
+                        <td>Dec 06 (W)</td>
+                        <td>  
+                            <a href="files/lecture notes/chapter30.pdf">Polynomial and the FFT (cont.) </a>
+                            <br/>
+                            Q&A
+                            <span class="slideNote">(1-)</span> 
+                        </td>
+                        <td>
+                            CLRS Chapter 30 
+                        </td> 
+                    </tr>
+                    <tr style="border-bottom: 1px solid black;"><td  style="text-align: center;">17</td>
+                        <td style="background-color: #F8F4F5; text-align: left;"> Dec 11 (M)</td> 
+                        <td style="background-color: #F8F4F5;color:red"> 
+                            Final exam due @ 5:00PM!
+                        </td>
+                        <td style="background-color: #F8F4F5">
+                        
+                        </td> 
+
+                    </tr>                                   
+                </table>
+            </div>
+        </section>
+
+       
+        <section id="resources" >
+            <div class="container">
+                <h3>Resources</h3>
+               <ul>
+                   <li> <b>Main textbook</b>
+                    </li>
+                    <ul>
+                        <li><a href="https://mitpress.mit.edu/books/introduction-algorithms-fourth-edition">Introduction to Algorithms (4th edition)</a>, Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein, MIT Press, 2022.</li>
+                    </ul>
+                    <li> <b>Permutation Generation</b></li>
+                    <ul>
+                        <li><a href="https://watermark.silverchair.com/6-3-293.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAAukwggLlBgkqhkiG9w0BBwagggLWMIIC0gIBADCCAssGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMdjIslRBTDRksB_x8AgEQgIICnNg32ehh92MIfSUkXsTWiXG_uL_vgHi-AQfzxmk39sSVbyl9Ox2aKuA9wZD6gZjRkX_oP1Ve65rztQ0_4PRi4grB79ykteyz9NFvPjzhsGcCUMDiFMA8wbggZUcpytYstwjpAPsyQWfxdmw7ghND63ljGG6LNNjSzICGtoIgIkDtcWbq4qXmcQsxh52E9iUTF3uorneYvZcezKxtZBMyxKUhiOx1aI7rvwSRH2TbHZfnE2cktvi1drxzGHSQrkKRlZ5RpXlS77HIX6NICUN4j8jNo_YWbHV_T2n4A156wg__00D3IB53h76lUM9uqjdrBzZa5FbN860OfJTVsBvu13nEbitQW8qOyfRjivLW01YL00LUGdFZKnikqJLUP_VEv-UU7pxQhy64UdNWkWRc1kHG6qTRbCiHapdCoNpTTSz1ybQRXF09s3Jeyb64118LmcI2w_yqWz7Cmmot00LFeLhGJmEuOsx3PT26G8glQQdHemrwcXoiAQbv-c2qypoRjF_FaHpihIO3v9d_xP2EZbd05nkZiEH568_ZK12Zm5xw3ydaz25laS4RDevLAXnTYrlRaBiNZz0dLRP5EOCk-ZHQZv8L2jI2F9fgbgVNvAHcFBDtpJnysxDqzXhGTm9f9Hlxc1XerTyrrXKDTqBcx-u1eLoW1OUPKt5JObCyJNitCd6hDXT8wNq8V3a-8oJ5vTd9kvbKtkxXN3z7JjpiPRM8oD9qkyUu8qhTXDaotkYhglB5kuzY7x60QHAciXCiR044FfJ_7py6kmbwCPonF1ILezGPWXpXnCYHstzjaL-lGbGNa9gTgdBqUctZ5HEFvTq456NJw51ExjxsOHO1KUTXI4PkXnI6fduPsNGMaQZvubdMPOHWxo1ouOKQ">Permutations by interchanges</a>, Heap, The Computer Journal 6.3, 1963</li>
+                        <li> <a href="https://dl.acm.org/doi/pdf/10.1145/356689.356692">Permutation Generation Methods</a>, Robert Sedgewick, ACM Computing Surveys, 1977</li>    
+                    </ul>
+                    <li> <b>LaTeX Resources</b> </li>
+                    <ul>
+                        <b>User Manual</b>
+                        <li><a href="http://14.99.188.242:8080/jspui/bitstream/123456789/12240/1/LaTeX%20in%2024%20Hours.pdf">LaTeX in 24 hours: a practical guide for scientific writing</a>, Dilip Datta, Springer, 2017</a></li>
+                        <li>
+                            <a href="https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.432.3039&rep=rep1&type=pdf">The Not So Short Introduction to LATEX2ε (v. 5.03)</a>, Tobias Oetiker Hubert Partl, Irene Hyna, and Elisabeth Schlegl, 2021
+                        </li>
+                        <li>
+                            <a href="https://en.wikibooks.org/wiki/LaTeX/Importing_Graphics">How to Insert Graphics into LaTex Document</a>
+                        </li>
+                        <b>Software</b>
+                        <li><a href="https://www.overleaf.com/">Overleaf</a> is a cloud-based LaTeX editor used for writing, editing and publishing scientific documents. It is free through University (required VT email).</li>
+                        <li><a href="https://miktex.org">MiKTeX</a> is a free cross-platform TeX distribution for Windows, Linux and macOS.</li>
+                        <li><a href="https://www.tug.org/mactex/">MacTeX</a> is a free redistribution of <a href="https://tug.org/texlive/">TeX Live</a> for specific Mac users.</li>
+                        <li><a href="https://texstudio.org">TeXstudio</a> is a free cross-platform IDE to prepare LaTeX document on local machine (Windows, Linux, macOS).</li>
+                    </ul>
+                    <li> <b>LaTeX sample of previous years' homework assignments</b> </li>
+                        <ul>
+                            <li>
+                                <a href="files/ref/sample_hw1_F19.tar">Fall 2019 (with solution)</a>
+                            </li>
+                        </ul>
+                    
+                </ul>
+
+            </div>
+        </section>
+
+
+        <section id="grading" >
+            <div class="container">
+        <h3>Grading Policy</h3>
+                                        
+        <table>
+            <tr>
+            <td style="text-align:right">Homework assignments</td> <td style="padding-left: 25px; text-align:right">50%</td>
+            </tr>
+            <tr>
+            <td style="text-align:right">Midterm</td> <td style="padding-left: 25px; text-align:right">20%</td>
+            </tr>
+            <td style="text-align:right">Final exam</td> <td style="padding-left: 25px; text-align:right">30%</td>
+            </tr>
+            <tr  style="border-top:  1px solid #000;">
+            <td style="text-align:right"> Total</td> <td style="padding-left: 25px; text-align:right" >100%</td>
+            </tr>
+        </table>
+        
+
+        <h4>Grading Scale </h4>
+        <p> A(&ge;93) &nbsp; A-(<93 - 90) &nbsp; B+(<90 - 87) &nbsp; B(<87 - 83) &nbsp; B-(<83 - 80) &nbsp; C+(<80 - 77) &nbsp; C(<77 - 73) &nbsp; C-(<73 - 70) &nbsp;  D+(<70 - 67) &nbsp;  D(<67 - 63) &nbsp;  D-(<63 - 60) &nbsp; F(<60) </p>
+        
+        <b>Grading will not be curved!</b> <br/>
+
+        <b>Late submission </b> is <u>NOT</u> allowed unless emergency situation (require doctor's note or police report).
+
+
+        <h4>Code of Conduct</h4>
+        <p>  This course strictly follows the <a href="https://www.honorsystem.vt.edu/">VT code of conduct</a>. </p>
+        
+        </div>
+        </section>
+
+
+    </content>
+
+    <footer>
+        <div class="container">
+            
+        </div>
+    </footer>
+	</body>
+	
+	<!-- Google Analytics -->
+	<script>
+	  
+
+	</script>
+
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/classie.js"></script>
+    <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/cbpAnimatedHeader.js"></script>
+
+
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
+
+<script src="js/index.js"></script>
+
+
+<script>
+    var _second = 1000;
+    var _minute = _second * 60;
+    var _hour = _minute * 60;
+    var _day = _hour * 24;
+
+    function setTimer(enddate, elem)
+    {
+        //var now = new Date();
+        //var distance = end - now;
+        (function tick() 
+        {
+            var now = new Date().getTime();
+            var distance = enddate - now;
+            if (distance < 0) 
+            {
+                elem.innerHTML = '(expired!)';
+                return;
+            }
+            setTimeout(tick,1000);
+            var days = Math.floor(distance / _day);
+            var hours = Math.floor((distance % _day) / _hour);
+            var minutes = Math.floor((distance % _hour) / _minute);
+            var seconds = Math.floor((distance % _minute) / _second);
+            var str = "(";
+            if (days > 0 )
+            {
+                str += days;
+                str += "+ days " 
+            }
+            else
+            {
+                if (hours > 15)
+                {
+                    if (hours<10)
+                    {
+                        str+= '0';
+                        
+                    }
+                    str += hours + ' hrs ';
+                }
+                else
+                {
+                    if (hours<10)
+                    {
+                        str +='0';
+                    }
+                    str += hours + ':';
+                    if (minutes > 0)
+                    {
+                        if (minutes<10)
+                        {
+                            str +='0';
+                        }
+                        str += minutes + ':';
+                    }
+                    if (seconds<10)
+                    {
+                        str +='0';
+                    }
+                    str += seconds + ' ';
+                }
+            }
+            str += 'left)';
+            elem.innerHTML = str;
+        })()
+    }
+    setTimer(
+    new Date("12/11/2023 05:00 PM"),
+    document.getElementById("countdown")
+    );
+
+
+
+
+</script>
+
+</html>
