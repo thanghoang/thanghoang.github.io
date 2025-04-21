@@ -1,8 +1,8 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "AccuRevoke: Enhancing Certificate Revocation with Distributed Cryptographic Accumulators"
-authors: [Munshi Rejwan Ala Muid*, Taejoong Chung, Thang Hoang]
+title: "Hermes: Efficient and Secure Multi-Writer Encrypted Database"
+authors: [Tung Le*, Thang Hoang]
 date: 2025-05-12T00:00:00-07:00
 doi: ""
 highlight: 1
@@ -25,7 +25,9 @@ publication_types: ["1"]
 publication: "IEEE Symposium on Security and Privacy"
 publication_short: "S&P"
 
-abstract: ""
+abstract: "Searchable encryption (SE) enables privacy-preserving keyword search on encrypted data. Public-key SE (PKSE) supports multi-user searches but suffers from high search latency due to expensive public-key operations. Symmetric SE (SSE) offers a sublinear search but is mainly limited to single-user settings. Recently, hybrid SE (HSE) has combined SSE and PKSE to achieve the best of both worlds, including multi-writer encrypted search functionalities, forward privacy, and sublinear search with respect to database size. Despite its advantages, HSE inherits critical security limitations, such as susceptibility to dictionary attacks, and still incurs significant overhead for search access control verification, requiring costly public-key operation invocations (i.e., pairing) across all authorized keywords. Additionally, its search access control component must be rebuilt periodically for forward privacy, imposing substantial writer overhead. \\ 
+
+In this paper, we propose Hermes, a new HSE scheme that addresses the aforementioned security issues in prior HSE designs while maintaining minimal search complexity and user efficiency at the same time. Hermes enables multi-writer encrypted search functionalities and offers forward privacy along with resilience to dictionary attacks. To achieve this, we develop a new identity-based encryption scheme with hidden identity and key-aggregate properties, which could be of independent interest. We also design novel partitioning and epoch encoding techniques in Hermes to minimize search complexity and offer low user overhead in maintaining forward privacy. We conducted intensive experiments to assess and compare the performance of Hermes and its counterpart on commodity hardware. Experimental results showed that Hermes performs search one to two orders of magnitude faster than the state-of-the-art HSE while offering stronger security guarantees to prevent dictionary and injection attacks."
 
 # Summary. An optional shortened abstract.
 summary: ""
@@ -43,7 +45,7 @@ featured: false
 #   icon: twitter
 
 url_pdf: 
-url_code: 
+url_code: https://github.com/vt-asaplab/hermes
 url_dataset: 
 url_poster:
 url_project:
