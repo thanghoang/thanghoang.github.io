@@ -27,7 +27,8 @@
   
     
   
-  <meta name="description" content="">
+  <meta name="description" content="Searchable encryption (SE) enables privacy-preserving keyword search on encrypted data. Public-key SE (PKSE) supports multi-user searches but suffers from high search latency due to expensive public-key operations. Symmetric SE (SSE) offers a sublinear search but is mainly limited to single-user settings. Recently, hybrid SE (HSE) has combined SSE and PKSE to achieve the best of both worlds, including multi-writer encrypted search functionalities, forward privacy, and sublinear search with respect to database size. Despite its advantages, HSE inherits critical security limitations, such as susceptibility to dictionary attacks, and still incurs significant overhead for search access control verification, requiring costly public-key operation invocations (i.e., pairing) across all authorized keywords. Additionally, its search access control component must be rebuilt periodically for forward privacy, imposing substantial writer overhead. \
+In this paper, we propose Hermes, a new HSE scheme that addresses the aforementioned security issues in prior HSE designs while maintaining minimal search complexity and user efficiency at the same time. Hermes enables multi-writer encrypted search functionalities and offers forward privacy along with resilience to dictionary attacks. To achieve this, we develop a new identity-based encryption scheme with hidden identity and key-aggregate properties, which could be of independent interest. We also design novel partitioning and epoch encoding techniques in Hermes to minimize search complexity and offer low user overhead in maintaining forward privacy. We conducted intensive experiments to assess and compare the performance of Hermes and its counterpart on commodity hardware. Experimental results showed that Hermes performs search one to two orders of magnitude faster than the state-of-the-art HSE while offering stronger security guarantees to prevent dictionary and injection attacks.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://thanghoang.github.io/publication/25_sp_hermes/">
@@ -273,8 +274,9 @@
   
   <meta property="og:site_name" content="Thang Hoang">
   <meta property="og:url" content="https://thanghoang.github.io/publication/25_sp_hermes/">
-  <meta property="og:title" content="AccuRevoke: Enhancing Certificate Revocation with Distributed Cryptographic Accumulators | Thang Hoang">
-  <meta property="og:description" content=""><meta property="og:image" content="https://thanghoang.github.io/images/icon_hu6592025347619829331.png">
+  <meta property="og:title" content="Hermes: Efficient and Secure Multi-Writer Encrypted Database | Thang Hoang">
+  <meta property="og:description" content="Searchable encryption (SE) enables privacy-preserving keyword search on encrypted data. Public-key SE (PKSE) supports multi-user searches but suffers from high search latency due to expensive public-key operations. Symmetric SE (SSE) offers a sublinear search but is mainly limited to single-user settings. Recently, hybrid SE (HSE) has combined SSE and PKSE to achieve the best of both worlds, including multi-writer encrypted search functionalities, forward privacy, and sublinear search with respect to database size. Despite its advantages, HSE inherits critical security limitations, such as susceptibility to dictionary attacks, and still incurs significant overhead for search access control verification, requiring costly public-key operation invocations (i.e., pairing) across all authorized keywords. Additionally, its search access control component must be rebuilt periodically for forward privacy, imposing substantial writer overhead. \
+In this paper, we propose Hermes, a new HSE scheme that addresses the aforementioned security issues in prior HSE designs while maintaining minimal search complexity and user efficiency at the same time. Hermes enables multi-writer encrypted search functionalities and offers forward privacy along with resilience to dictionary attacks. To achieve this, we develop a new identity-based encryption scheme with hidden identity and key-aggregate properties, which could be of independent interest. We also design novel partitioning and epoch encoding techniques in Hermes to minimize search complexity and offer low user overhead in maintaining forward privacy. We conducted intensive experiments to assess and compare the performance of Hermes and its counterpart on commodity hardware. Experimental results showed that Hermes performs search one to two orders of magnitude faster than the state-of-the-art HSE while offering stronger security guarantees to prevent dictionary and injection attacks."><meta property="og:image" content="https://thanghoang.github.io/images/icon_hu6592025347619829331.png">
   <meta property="twitter:image" content="https://thanghoang.github.io/images/icon_hu6592025347619829331.png"><meta property="og:locale" content="en-us">
   
     
@@ -304,14 +306,14 @@
     "@type": "WebPage",
     "@id": "https://thanghoang.github.io/publication/25_sp_hermes/"
   },
-  "headline": "AccuRevoke: Enhancing Certificate Revocation with Distributed Cryptographic Accumulators",
+  "headline": "Hermes: Efficient and Secure Multi-Writer Encrypted Database",
   
   "datePublished": "2025-03-10T00:00:00-07:00",
   "dateModified": "2025-05-12T00:00:00-07:00",
   
   "author": {
     "@type": "Person",
-    "name": "Munshi Rejwan Ala Muid*"
+    "name": "Tung Le*"
   },
   
   "publisher": {
@@ -322,7 +324,7 @@
       "url": "https://thanghoang.github.io/images/icon_hu17218309069777335469.png"
     }
   },
-  "description": ""
+  "description": "Searchable encryption (SE) enables privacy-preserving keyword search on encrypted data. Public-key SE (PKSE) supports multi-user searches but suffers from high search latency due to expensive public-key operations. Symmetric SE (SSE) offers a sublinear search but is mainly limited to single-user settings. Recently, hybrid SE (HSE) has combined SSE and PKSE to achieve the best of both worlds, including multi-writer encrypted search functionalities, forward privacy, and sublinear search with respect to database size. Despite its advantages, HSE inherits critical security limitations, such as susceptibility to dictionary attacks, and still incurs significant overhead for search access control verification, requiring costly public-key operation invocations (i.e., pairing) across all authorized keywords. Additionally, its search access control component must be rebuilt periodically for forward privacy, imposing substantial writer overhead. \\\nIn this paper, we propose Hermes, a new HSE scheme that addresses the aforementioned security issues in prior HSE designs while maintaining minimal search complexity and user efficiency at the same time. Hermes enables multi-writer encrypted search functionalities and offers forward privacy along with resilience to dictionary attacks. To achieve this, we develop a new identity-based encryption scheme with hidden identity and key-aggregate properties, which could be of independent interest. We also design novel partitioning and epoch encoding techniques in Hermes to minimize search complexity and offer low user overhead in maintaining forward privacy. We conducted intensive experiments to assess and compare the performance of Hermes and its counterpart on commodity hardware. Experimental results showed that Hermes performs search one to two orders of magnitude faster than the state-of-the-art HSE while offering stronger security guarantees to prevent dictionary and injection attacks."
 }
 </script>
 
@@ -340,7 +342,7 @@
 
 
 
-  <title>AccuRevoke: Enhancing Certificate Revocation with Distributed Cryptographic Accumulators | Thang Hoang</title>
+  <title>Hermes: Efficient and Secure Multi-Writer Encrypted Database | Thang Hoang</title>
 
 </head>
 
@@ -673,7 +675,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>AccuRevoke: Enhancing Certificate Revocation with Distributed Cryptographic Accumulators</h1>
+  <h1>Hermes: Efficient and Secure Multi-Writer Encrypted Database</h1>
 
   
 
@@ -692,8 +694,7 @@
 
   
   <span> 
-          <u>Munshi Rejwan Ala Muid</u></span>, <span>
-          Taejoong Chung</span>, <span>
+          <u>Tung Le</u></span>, <span>
         
           <b>Thang Hoang</b></a></span>
   </div>
@@ -732,10 +733,57 @@
 
 
 
+  
 
 
 
 
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1" href="/publication/25_sp_hermes/25_sp_hermes.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/vt-asaplab/hermes" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
 
 
   
@@ -745,6 +793,10 @@
 
   <div class="article-container">
   
+    
+    <h3>Abstract</h3>
+    <p class="pub-abstract">Searchable encryption (SE) enables privacy-preserving keyword search on encrypted data. Public-key SE (PKSE) supports multi-user searches but suffers from high search latency due to expensive public-key operations. Symmetric SE (SSE) offers a sublinear search but is mainly limited to single-user settings. Recently, hybrid SE (HSE) has combined SSE and PKSE to achieve the best of both worlds, including multi-writer encrypted search functionalities, forward privacy, and sublinear search with respect to database size. Despite its advantages, HSE inherits critical security limitations, such as susceptibility to dictionary attacks, and still incurs significant overhead for search access control verification, requiring costly public-key operation invocations (i.e., pairing) across all authorized keywords. Additionally, its search access control component must be rebuilt periodically for forward privacy, imposing substantial writer overhead. <br>
+In this paper, we propose Hermes, a new HSE scheme that addresses the aforementioned security issues in prior HSE designs while maintaining minimal search complexity and user efficiency at the same time. Hermes enables multi-writer encrypted search functionalities and offers forward privacy along with resilience to dictionary attacks. To achieve this, we develop a new identity-based encryption scheme with hidden identity and key-aggregate properties, which could be of independent interest. We also design novel partitioning and epoch encoding techniques in Hermes to minimize search complexity and offer low user overhead in maintaining forward privacy. We conducted intensive experiments to assess and compare the performance of Hermes and its counterpart on commodity hardware. Experimental results showed that Hermes performs search one to two orders of magnitude faster than the state-of-the-art HSE while offering stronger security guarantees to prevent dictionary and injection attacks.</p>
     
 
     
@@ -809,7 +861,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://thanghoang.github.io/publication/25_sp_hermes/&amp;text=AccuRevoke:%20Enhancing%20Certificate%20Revocation%20with%20Distributed%20Cryptographic%20Accumulators" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://thanghoang.github.io/publication/25_sp_hermes/&amp;text=Hermes:%20Efficient%20and%20Secure%20Multi-Writer%20Encrypted%20Database" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -822,7 +874,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://thanghoang.github.io/publication/25_sp_hermes/&amp;t=AccuRevoke:%20Enhancing%20Certificate%20Revocation%20with%20Distributed%20Cryptographic%20Accumulators" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://thanghoang.github.io/publication/25_sp_hermes/&amp;t=Hermes:%20Efficient%20and%20Secure%20Multi-Writer%20Encrypted%20Database" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -835,7 +887,7 @@
       
       
       <li>
-        <a href="mailto:?subject=AccuRevoke:%20Enhancing%20Certificate%20Revocation%20with%20Distributed%20Cryptographic%20Accumulators&amp;body=https://thanghoang.github.io/publication/25_sp_hermes/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Hermes:%20Efficient%20and%20Secure%20Multi-Writer%20Encrypted%20Database&amp;body=https://thanghoang.github.io/publication/25_sp_hermes/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -848,7 +900,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://thanghoang.github.io/publication/25_sp_hermes/&amp;title=AccuRevoke:%20Enhancing%20Certificate%20Revocation%20with%20Distributed%20Cryptographic%20Accumulators" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://thanghoang.github.io/publication/25_sp_hermes/&amp;title=Hermes:%20Efficient%20and%20Secure%20Multi-Writer%20Encrypted%20Database" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -861,7 +913,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=AccuRevoke:%20Enhancing%20Certificate%20Revocation%20with%20Distributed%20Cryptographic%20Accumulators%20https://thanghoang.github.io/publication/25_sp_hermes/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Hermes:%20Efficient%20and%20Secure%20Multi-Writer%20Encrypted%20Database%20https://thanghoang.github.io/publication/25_sp_hermes/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -874,7 +926,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://thanghoang.github.io/publication/25_sp_hermes/&amp;title=AccuRevoke:%20Enhancing%20Certificate%20Revocation%20with%20Distributed%20Cryptographic%20Accumulators" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://thanghoang.github.io/publication/25_sp_hermes/&amp;title=Hermes:%20Efficient%20and%20Secure%20Multi-Writer%20Encrypted%20Database" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -900,17 +952,6 @@
 
 
 
-
-
-  
-    
-    
-
-
-
-
-
-  
 
 
   
@@ -1046,14 +1087,14 @@
   
   <div class="post-nav-item">
     <div class="meta-nav">Next</div>
-    <a href="/publication/25_pets_pirex/" rel="next">Client-Efficient Online-Offline Private Information Retrieval</a>
+    <a href="/publication/25_sp_accurevoke/" rel="next">AccuRevoke: Enhancing Certificate Revocation with Distributed Cryptographic Accumulators</a>
   </div>
   
   
   
   <div class="post-nav-item">
     <div class="meta-nav">Previous</div>
-    <a href="/publication/25_sp_accurevoke/" rel="prev">Hermes: Efficient and Secure Multi-Writer Encrypted Database</a>
+    <a href="/publication/24_acsac_eseafl/" rel="prev">Efficient Secure Aggregation for Privacy-Preserving Federated Machine Learning</a>
   </div>
   
 </div>
@@ -1068,15 +1109,15 @@
     <h3>Related</h3>
     <ul>
       
-      <li><a href="/publication/25_sp_accurevoke/">Hermes: Efficient and Secure Multi-Writer Encrypted Database</a></li>
+      <li><a href="/publication/24_usenixsec_muses/">MUSES: Efficient Multi-User Searchable Encrypted Database</a></li>
+      
+      <li><a href="/publication/23_pets_maple/">MAPLE: A Metadata-Hiding Policy-Controllable Encrypted Search Platform with Minimal Trust</a></li>
+      
+      <li><a href="/publication/23_ndss_por/">Efficient Dynamic Proof of Retrievability for Cold Storage</a></li>
+      
+      <li><a href="/publication/25_sp_accurevoke/">AccuRevoke: Enhancing Certificate Revocation with Distributed Cryptographic Accumulators</a></li>
       
       <li><a href="/publication/25_pets_pirex/">Client-Efficient Online-Offline Private Information Retrieval</a></li>
-      
-      <li><a href="/publication/24_acsac_eseafl/">Efficient Secure Aggregation for Privacy-Preserving Federated Machine Learning</a></li>
-      
-      <li><a href="/publication/24_acsac_vpin/">Privacy-Preserving Verifiable Neural Network Inference Service</a></li>
-      
-      <li><a href="/publication/24_raid_heterofl/">Breaking Privacy in Model-Heterogeneous Federated Learning</a></li>
       
     </ul>
   </div>
