@@ -1,2 +1,5 @@
 # Ignore macOS system files
 .DS_Store
+
+# ignore accidental git backups
+.git-*/
