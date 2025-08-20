@@ -5,12 +5,28 @@
     <link>https://thanghoang.github.io/</link>
       <atom:link href="https://thanghoang.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Thang Hoang</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 14 Jul 2025 00:00:00 -0700</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 13 Oct 2025 00:00:00 -0700</lastBuildDate>
     <image>
       <url>https://thanghoang.github.io/images/icon_hu90c008e4d96deb53d5ad25d414e3485e_13497_512x512_fill_lanczos_center_3.png</url>
       <title>Thang Hoang</title>
       <link>https://thanghoang.github.io/</link>
     </image>
+    
+    <item>
+      <title>Zero-Knowledge AI Inference with High Precision</title>
+      <link>https://thanghoang.github.io/publication/25_ccs_zip/</link>
+      <pubDate>Mon, 13 Oct 2025 00:00:00 -0700</pubDate>
+      <guid>https://thanghoang.github.io/publication/25_ccs_zip/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Secret-Key Agreement Through Hidden Markov Modeling of Wavelet Scattering Embeddings</title>
+      <link>https://thanghoang.github.io/publication/25_cns_keygen/</link>
+      <pubDate>Mon, 08 Sep 2025 00:00:00 -0700</pubDate>
+      <guid>https://thanghoang.github.io/publication/25_cns_keygen/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Client-Efficient Online-Offline Private Information Retrieval</title>
