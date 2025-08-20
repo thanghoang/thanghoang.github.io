@@ -3,6 +3,14 @@
 # pub_type: 1 : conference, 2: journal
 services:
 
+- year: 2026
+  venue: "[IEEE S&P](https://sp2026.ieee-security.org)"
+  service_type: 3
+
+- year: 2025
+  venue: "[ACSAC](https://acsac.org)"
+  service_type: 3
+
 - year: 2025
   venue: "[IEEE MASS](https://ieeemass2025.github.io/ieeemass2025/programcommittee.html) (S&P track)"
   service_type: 3

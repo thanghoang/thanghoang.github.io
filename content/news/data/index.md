@@ -6,8 +6,12 @@ news:
   #  title: "Invited to serve on an NSF Panel." 
   #  highlight: 0
 
+  - date: 2025-08-20
+    title: "Paper on zero-knowledge machine learning accepted to [ACM CCS 2025](https://www.sigsac.org/ccs/CCS2025/). Congrats Arman!" 
+    highlight: 0
+
   - date: 2025-03-10
-    title: "Two papers accepted to [IEEE S&P 2025](https://sp2025.ieee-security.org): one on encrypted search and one on certifcate revocation. Congratulations to Tung and, especially, Munshi for his first lead author paper!" 
+    title: "Two papers accepted to [IEEE S&P 2025](https://sp2025.ieee-security.org): one on encrypted search and one on certificate revocation. Congratulations to Tung and, especially, Munshi for his first lead author paper!" 
     highlight: 0
 
   - date: 2025-02-24
