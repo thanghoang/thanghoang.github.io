@@ -6,3 +6,7 @@
 
 # ignore accidental git backups
 .git-*/
+
+# ignore public and themes
+/public/
+/themes/
