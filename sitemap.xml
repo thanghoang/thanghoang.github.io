@@ -23,10 +23,10 @@
     <loc>https://thanghoang.github.io/author/rouzbeh-behnia/</loc>
     <lastmod>2025-10-13T00:00:00-07:00</lastmod>
   </url><url>
-    <loc>https://thanghoang.github.io/author/thang-hoang/</loc>
+    <loc>https://thanghoang.github.io/</loc>
     <lastmod>2025-10-13T00:00:00-07:00</lastmod>
   </url><url>
-    <loc>https://thanghoang.github.io/</loc>
+    <loc>https://thanghoang.github.io/author/thang-hoang/</loc>
     <lastmod>2025-10-13T00:00:00-07:00</lastmod>
   </url><url>
     <loc>https://thanghoang.github.io/author/viet-vo/</loc>
@@ -102,6 +102,9 @@
     <lastmod>2024-08-18T00:00:00-07:00</lastmod>
   </url><url>
     <loc>https://thanghoang.github.io/publication/24_tdsc_ezdps/</loc>
+    <lastmod>2024-08-18T00:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://thanghoang.github.io/author/haodi-wang/</loc>
     <lastmod>2024-08-18T00:00:00-07:00</lastmod>
   </url><url>
     <loc>https://thanghoang.github.io/author/rongfang-bie/</loc>
@@ -281,6 +284,9 @@
     <loc>https://thanghoang.github.io/publication/17_isc/</loc>
     <lastmod>2017-11-06T21:41:33-07:00</lastmod>
   </url><url>
+    <loc>https://thanghoang.github.io/author/lam-tran/</loc>
+    <lastmod>2017-11-06T21:41:33-07:00</lastmod>
+  </url><url>
     <loc>https://thanghoang.github.io/publication/17_ccs_s3oram/</loc>
     <lastmod>2017-10-06T21:41:20-07:00</lastmod>
   </url><url>
@@ -345,7 +351,5 @@
     <loc>https://thanghoang.github.io/tags/</loc>
   </url><url>
     <loc>https://thanghoang.github.io/teaching/</loc>
-  </url><url>
-    <loc>https://thanghoang.github.io/author/thang-hoang/</loc>
   </url>
 </urlset>

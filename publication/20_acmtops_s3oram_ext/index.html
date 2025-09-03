@@ -253,8 +253,8 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu90c008e4d96deb53d5ad25d414e3485e_13497_32x32_fill_lanczos_center_3.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu90c008e4d96deb53d5ad25d414e3485e_13497_192x192_fill_lanczos_center_3.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu16820028812748582346.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu17218309069777335469.png">
 
   <link rel="canonical" href="https://thanghoang.github.io/publication/20_acmtops_s3oram_ext/">
 
@@ -274,8 +274,8 @@
   <meta property="og:site_name" content="Thang Hoang">
   <meta property="og:url" content="https://thanghoang.github.io/publication/20_acmtops_s3oram_ext/">
   <meta property="og:title" content="A Multi-server ORAM Framework with Constant Client Bandwidth Blowup | Thang Hoang">
-  <meta property="og:description" content="Oblivious Random Access Machine (ORAM) allows a client to hide the access pattern when accessing sensitive data on a remote server. It is known that there exists a logarithmic communication lower bound on any passive ORAM construction, where the server only acts as the storage service. This overhead, however, was shown costly for some applications. Several active ORAM schemes with server computation have been proposed to overcome this limitation. However, they mostly rely on costly homomorphic encryptions, whose performance is worse than passive ORAM. In this article, we propose S3ORAM, a new multi-server ORAM framework, which features O(1) client bandwidth blowup and low client storage without relying on costly cryptographic primitives. Our key idea is to harness Shamir Secret Sharing and a multi-party multiplication protocol on applicable binary tree-ORAM paradigms. This strategy allows the client to instruct the server(s) to perform secure and efficient computation on his/her behalf with a low intervention thereby, achieving a constant client bandwidth blowup and low server computational overhead. Our framework can also work atop a general k-ary tree ORAM structure (k ≥ 2). We fully implemented our framework, and strictly evaluated its performance on a commodity cloud platform (Amazon EC2). Our comprehensive experiments confirmed the efficiency of S3ORAM framework, where it is approximately 10× faster than the most efficient passive ORAM (i.e., Path-ORAM) for a moderate network bandwidth while being three orders of magnitude faster than active ORAM with O(1) bandwidth blowup (i.e., Onion-ORAM). We have open-sourced the implementation of our framework for public testing and adaptation."><meta property="og:image" content="https://thanghoang.github.io/images/icon_hu90c008e4d96deb53d5ad25d414e3485e_13497_512x512_fill_lanczos_center_3.png">
-  <meta property="twitter:image" content="https://thanghoang.github.io/images/icon_hu90c008e4d96deb53d5ad25d414e3485e_13497_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="Oblivious Random Access Machine (ORAM) allows a client to hide the access pattern when accessing sensitive data on a remote server. It is known that there exists a logarithmic communication lower bound on any passive ORAM construction, where the server only acts as the storage service. This overhead, however, was shown costly for some applications. Several active ORAM schemes with server computation have been proposed to overcome this limitation. However, they mostly rely on costly homomorphic encryptions, whose performance is worse than passive ORAM. In this article, we propose S3ORAM, a new multi-server ORAM framework, which features O(1) client bandwidth blowup and low client storage without relying on costly cryptographic primitives. Our key idea is to harness Shamir Secret Sharing and a multi-party multiplication protocol on applicable binary tree-ORAM paradigms. This strategy allows the client to instruct the server(s) to perform secure and efficient computation on his/her behalf with a low intervention thereby, achieving a constant client bandwidth blowup and low server computational overhead. Our framework can also work atop a general k-ary tree ORAM structure (k ≥ 2). We fully implemented our framework, and strictly evaluated its performance on a commodity cloud platform (Amazon EC2). Our comprehensive experiments confirmed the efficiency of S3ORAM framework, where it is approximately 10× faster than the most efficient passive ORAM (i.e., Path-ORAM) for a moderate network bandwidth while being three orders of magnitude faster than active ORAM with O(1) bandwidth blowup (i.e., Onion-ORAM). We have open-sourced the implementation of our framework for public testing and adaptation."><meta property="og:image" content="https://thanghoang.github.io/images/icon_hu6592025347619829331.png">
+  <meta property="twitter:image" content="https://thanghoang.github.io/images/icon_hu6592025347619829331.png"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2020-01-01T21:43:01-07:00">
@@ -319,7 +319,7 @@
     "name": "Thang Hoang",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://thanghoang.github.io/images/icon_hu90c008e4d96deb53d5ad25d414e3485e_13497_192x192_fill_lanczos_center_3.png"
+      "url": "https://thanghoang.github.io/images/icon_hu17218309069777335469.png"
     }
   },
   "description": "Oblivious Random Access Machine (ORAM) allows a client to hide the access pattern when accessing sensitive data on a remote server. It is known that there exists a logarithmic communication lower bound on any passive ORAM construction, where the server only acts as the storage service. This overhead, however, was shown costly for some applications. Several active ORAM schemes with server computation have been proposed to overcome this limitation. However, they mostly rely on costly homomorphic encryptions, whose performance is worse than passive ORAM. In this article, we propose S3ORAM, a new multi-server ORAM framework, which features O(1) client bandwidth blowup and low client storage without relying on costly cryptographic primitives. Our key idea is to harness Shamir Secret Sharing and a multi-party multiplication protocol on applicable binary tree-ORAM paradigms. This strategy allows the client to instruct the server(s) to perform secure and efficient computation on his/her behalf with a low intervention thereby, achieving a constant client bandwidth blowup and low server computational overhead. Our framework can also work atop a general k-ary tree ORAM structure (k ≥ 2). We fully implemented our framework, and strictly evaluated its performance on a commodity cloud platform (Amazon EC2). Our comprehensive experiments confirmed the efficiency of S3ORAM framework, where it is approximately 10× faster than the most efficient passive ORAM (i.e., Path-ORAM) for a moderate network bandwidth while being three orders of magnitude faster than active ORAM with O(1) bandwidth blowup (i.e., Onion-ORAM). We have open-sourced the implementation of our framework for public testing and adaptation."
@@ -953,6 +953,111 @@
 
 
 
+  
+    
+    
+    
+      
+    
+    
+    
+    <div class="media author-card content-widget-hr">
+      
+        
+        <img class="avatar mr-3 avatar-circle" src="/author/thang-hoang/avatar_hu17443794399145303515.jpg" alt="Thang Hoang">
+      
+
+      <div class="media-body">
+        <h5 class="card-title"><a href="https://thanghoang.github.io/">Thang Hoang</a></h5>
+        <h6 class="card-subtitle">Assistant Professor</h6>
+        
+        <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=VCjqqogAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/thanghoang" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="http://dblp.uni-trier.de/pers/hd/h/Hoang:Thang" target="_blank" rel="noopener">
+        <i class="ai ai-dblp"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/hoangth/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </div>
   
 
 
