@@ -1,0 +1,12 @@
+# Ignore macOS system files
+.DS_Store
+
+# ignore accidental git backups
+.git-*/
+
+# ignore accidental git backups
+.git-*/
+
+# ignore public and themes
+/public/
+/themes/
